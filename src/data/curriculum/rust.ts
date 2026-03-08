@@ -162,6 +162,27 @@ const rustSection1 = {
         },
       ],
     },
+    {
+      id: 'rust-functions',
+      sectionId: 'rust-basics',
+      title: 'Functions',
+      description: 'Define and call functions in Rust.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'rs-fn-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'How do you declare a function in Rust?',
+          difficulty: 'easy' as const,
+          question: 'Which keyword declares a function in Rust?',
+          options: ['func', 'function', 'fn', 'def'],
+          correctAnswer: 'fn',
+          explanation: 'Rust uses fn to declare functions. fn greet() { ... }',
+        },
+      ],
+    },
   ],
 };
 
