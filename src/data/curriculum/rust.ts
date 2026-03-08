@@ -728,6 +728,32 @@ const rustSection4 = {
         },
       ],
     },
+    {
+      id: 'rust-iterators',
+      sectionId: 'rust-traits',
+      title: 'Iterators',
+      description: 'Functional iteration with map, filter, and collect.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'rs-it-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What does .iter() produce?',
+          difficulty: 'medium' as const,
+          question: 'What does calling .iter() on a Vec produce?',
+          options: [
+            'A new Vec with copies of the elements',
+            'An iterator yielding references to each element',
+            'A sorted list',
+            'A mutable reference to the Vec',
+          ],
+          correctAnswer: 'An iterator yielding references to each element',
+          explanation: '.iter() creates an iterator of &T references. .into_iter() consumes the Vec, yielding owned T.',
+        },
+      ],
+    },
   ],
 };
 
