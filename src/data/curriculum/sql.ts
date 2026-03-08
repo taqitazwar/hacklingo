@@ -851,6 +851,32 @@ const sqlSection3 = {
         },
       ],
     },
+    {
+      id: 'sql-boss',
+      sectionId: 'sql-aggregates',
+      title: 'SQL Boss',
+      description: 'The ultimate SQL challenge.',
+      lessonType: 'boss' as const,
+      order: 99,
+      completionXpBonus: 100,
+      challenges: [
+        {
+          id: 'sql-b-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'Find the highest earner per department',
+          difficulty: 'hard' as const,
+          question: 'Which query finds the maximum salary per department?',
+          options: [
+            'SELECT department, MAX(salary) FROM employees;',
+            'SELECT department, MAX(salary) FROM employees GROUP BY department;',
+            'SELECT department, salary FROM employees ORDER BY salary DESC;',
+            'SELECT department, TOP(salary) FROM employees GROUP BY department;',
+          ],
+          correctAnswer: 'SELECT department, MAX(salary) FROM employees GROUP BY department;',
+          explanation: 'GROUP BY department groups rows, MAX(salary) finds the highest per group.',
+        },
+      ],
+    },
   ],
 };
 
