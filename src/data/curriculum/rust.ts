@@ -263,7 +263,34 @@ const rustSection4 = {
   description: 'Shared behavior and generic code.',
   accentColor: Colors.teal,
   order: 4,
-  lessons: [],
+  lessons: [
+    {
+      id: 'rust-traits-intro',
+      sectionId: 'rust-traits',
+      title: 'Traits',
+      description: 'Define shared behavior across types.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'rs-tr-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a trait in Rust?',
+          difficulty: 'medium' as const,
+          question: 'What does a trait define in Rust?',
+          options: [
+            'A single concrete type',
+            'A set of methods a type must implement',
+            'A function with multiple arguments',
+            'A compile-time constant',
+          ],
+          correctAnswer: 'A set of methods a type must implement',
+          explanation: 'Traits are like interfaces. trait Greet { fn greet(&self) -> String; } defines a contract.',
+        },
+      ],
+    },
+  ],
 };
 
 const rustLanguage: Language = {
