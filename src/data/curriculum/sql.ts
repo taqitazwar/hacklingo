@@ -157,6 +157,27 @@ const sqlSection1 = {
         },
       ],
     },
+    {
+      id: 'sql-functions',
+      sectionId: 'sql-select',
+      title: 'String & Date Functions',
+      description: 'UPPER, LOWER, TRIM, DATE functions.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'sql-fn-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What does UPPER() do?',
+          difficulty: 'easy' as const,
+          question: 'What does SELECT UPPER("hello") return?',
+          options: ['hello', 'HELLO', 'Hello', 'Error'],
+          correctAnswer: 'HELLO',
+          explanation: 'UPPER() converts all characters to uppercase. LOWER() does the reverse.',
+        },
+      ],
+    },
   ],
 };
 
