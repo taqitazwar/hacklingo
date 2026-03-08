@@ -511,6 +511,16 @@ const pythonBasicsSection: CourseSection = {
           explanation: 'Variables must be defined before use. The if block comes before else.',
           hint: 'Define the variable first, then write the condition.',
         },
+        {
+          id: 'cond-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is printed?',
+          difficulty: 'medium',
+          code: 'grade = 85\nif grade >= 90:\n    print("A")\nelif grade >= 80:\n    print("B")\nelse:\n    print("C")',
+          options: ['A', 'B', 'C', 'Error'],
+          correctAnswer: 'B',
+          explanation: 'grade=85. It fails the first check (>=90). It passes elif (>=80), so "B" is printed.',
+        },
       ],
     },
     {
