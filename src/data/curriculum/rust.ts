@@ -578,6 +578,18 @@ const rustSection3 = {
           correctAnswer: 'struct',
           explanation: 'struct defines a custom data type. struct Point { x: f64, y: f64 }',
         },
+        {
+          id: 'rs-st-2',
+          type: 'FILL_BLANK' as const,
+          instruction: 'Access a struct field',
+          difficulty: 'easy' as const,
+          codeWithBlank: 'let p = Point { x: 1.0, y: 2.0 };
+println!("{}", p.___);
+// prints 1',
+          options: ['x', 'fields.x', 'get(x)', '0'],
+          correctAnswer: 'x',
+          explanation: 'Struct fields are accessed with dot notation: p.x gives the value of x.',
+        },
       ],
     },
   ],
