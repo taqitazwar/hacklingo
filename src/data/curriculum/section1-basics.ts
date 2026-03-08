@@ -91,6 +91,16 @@ const pythonBasicsSection: CourseSection = {
           correctAnswer: 'end',
           explanation: 'The end parameter controls what is printed at the end. Default is "\\n". Use "" to omit the newline.',
         },
+        {
+          id: 'hpy-8',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is the separator between values?',
+          difficulty: 'medium',
+          code: 'print("a", "b", "c", sep="-")',
+          options: ['a b c', 'a-b-c', 'a, b, c', 'abc'],
+          correctAnswer: 'a-b-c',
+          explanation: 'The sep parameter sets the separator between values. Default is a space; here it is "-".',
+        },
       ],
     },
     {
