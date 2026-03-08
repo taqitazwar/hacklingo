@@ -440,6 +440,21 @@ const rustSection2 = {
           correctAnswer: 'The reference lives for the entire duration of the program',
           explanation: "'static references live for the entire program. String literals like "hello" have 'static lifetime.",
         },
+        {
+          id: 'rs-lt-4',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'Does this code compile?',
+          difficulty: 'hard' as const,
+          code: "let r;
+{
+    let x = 5;
+    r = &x;
+}
+println!("{}", r);",
+          options: ['5', 'Error: x does not live long enough', '0', 'undefined'],
+          correctAnswer: 'Error: x does not live long enough',
+          explanation: 'x goes out of scope before r is used. Rust catches this at compile time: dangling reference.',
+        },
       ],
     },
   ],
