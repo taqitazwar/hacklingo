@@ -521,6 +521,17 @@ const goSection3 = {
           correctAnswer: 'New',
           explanation: 'errors.New("message") creates a new error value with the given message.',
         },
+        {
+          id: 'go-er-3',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What does this print?',
+          difficulty: 'medium' as const,
+          code: 'err := fmt.Errorf("code: %d", 404)
+fmt.Println(err)',
+          options: ['404', 'code: 404', 'Error', 'nil'],
+          correctAnswer: 'code: 404',
+          explanation: 'fmt.Errorf formats an error message. Printing the error calls its Error() string method.',
+        },
       ],
     },
   ],
