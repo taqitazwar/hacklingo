@@ -72,6 +72,22 @@ const masterySection: CourseSection = {
           correctAnswer: 'The current instance of the class',
           explanation: 'self refers to the specific object calling the method. It is how methods access instance data.',
         },
+        {
+          id: 'mas-1-6',
+          type: 'FIX_BUG',
+          instruction: 'Fix the __init__ method',
+          difficulty: 'hard',
+          buggyCode: 'class Person:\n    def init(self, name):\n        self.name = name\n\np = Person("Alice")\nprint(p.name)',
+          bugLineIndex: 1,
+          options: [
+            '    def __init__(self, name):',
+            '    def initialize(self, name):',
+            '    def __new__(self, name):',
+            '    def setup(self, name):',
+          ],
+          correctAnswer: '    def __init__(self, name):',
+          explanation: 'The constructor method must be named __init__ (double underscores on each side).',
+        },
       ],
     },
     {
