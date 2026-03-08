@@ -33,6 +33,7 @@ interface ProgressActions {
   refillHearts: () => void;
   consumeAiHelp: () => boolean;
   resetDailyAiHelps: () => void;
+  resetProgress: () => Promise<void>;
   getLessonStatus: (lessonId: string) => 'locked' | 'available' | 'completed';
   isLessonCompleted: (lessonId: string) => boolean;
 }
@@ -156,6 +157,11 @@ const useProgressStore = create<ProgressStore>((set, get) => ({
       aiHelpsLastResetDate: todayDateString(),
     };
     set(updated);
+  },
+
+  resetProgress: async () => {
+    await AsyncStorage.removeItem(STORAGE_KEY);
+    set(defaultProgress);
   },
 
   getLessonStatus: (lessonId): 'locked' | 'available' | 'completed' => {
