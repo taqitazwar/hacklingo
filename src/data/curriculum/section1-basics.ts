@@ -419,6 +419,16 @@ const pythonBasicsSection: CourseSection = {
           explanation: '>= means "greater than or equal to". age >= 18 is True for 18 and above.',
           hint: 'Age 18 should also count as an adult.',
         },
+        {
+          id: 'bool-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does "not" do?',
+          difficulty: 'easy',
+          code: 'x = False\nprint(not x)',
+          options: ['False', 'True', 'not False', 'Error'],
+          correctAnswer: 'True',
+          explanation: '"not" inverts a boolean. not False = True.',
+        },
       ],
     },
     {
