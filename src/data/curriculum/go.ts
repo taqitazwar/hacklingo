@@ -492,6 +492,27 @@ const goSection3 = {
         },
       ],
     },
+    {
+      id: 'go-error-types',
+      sectionId: 'go-structs',
+      title: 'Custom Errors',
+      description: 'Implement the error interface and create custom error types.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'go-er-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is the error interface?',
+          difficulty: 'medium' as const,
+          question: 'What method must a type implement to satisfy the error interface in Go?',
+          options: ['Error() string', 'Throw() error', 'Message() string', 'String() error'],
+          correctAnswer: 'Error() string',
+          explanation: 'The error interface requires one method: Error() string. Any type with this method is an error.',
+        },
+      ],
+    },
   ],
 };
 
