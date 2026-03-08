@@ -11,6 +11,7 @@ import section6 from './section6-strings';
 import section7 from './section7-files';
 import section8 from './section8-pythonic';
 import section9 from './section9-intermediate';
+import section10 from './section10-mastery';
 import comingSoonSections from './coming-soon-sections';
 
 const pythonLanguage: Language = {
@@ -19,7 +20,7 @@ const pythonLanguage: Language = {
   description: 'The most beginner-friendly language. Used in data science, automation, and web backends.',
   icon: '🐍',
   status: 'available',
-  sections: [section1, section2, section3, section4, section5, section6, section7, section8, section9, ...comingSoonSections],
+  sections: [section1, section2, section3, section4, section5, section6, section7, section8, section9, section10],
 };
 
 export default pythonLanguage;
