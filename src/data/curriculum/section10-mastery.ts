@@ -160,6 +160,16 @@ const masterySection: CourseSection = {
           correctAnswer: 'class Dog(Animal):',
           explanation: 'Python uses parentheses for inheritance, not "extends". class Child(Parent):',
         },
+        {
+          id: 'mas-2-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does isinstance check?',
+          difficulty: 'hard',
+          code: 'class Animal: pass\nclass Dog(Animal): pass\n\nd = Dog()\nprint(isinstance(d, Animal))',
+          options: ['False', 'True', 'Dog', 'Error'],
+          correctAnswer: 'True',
+          explanation: 'isinstance(d, Animal) returns True because Dog inherits from Animal — d IS an Animal.',
+        },
       ],
     },
     {
