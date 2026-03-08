@@ -7,7 +7,34 @@ const sqlSection1 = {
   description: 'Query data with SELECT, WHERE, and ORDER BY.',
   accentColor: Colors.blue,
   order: 1,
-  lessons: [],
+  lessons: [
+    {
+      id: 'sql-select-intro',
+      sectionId: 'sql-select',
+      title: 'SELECT & FROM',
+      description: 'Retrieve data from a table.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 12,
+      challenges: [
+        {
+          id: 'sql-s-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'Which clause retrieves all columns?',
+          difficulty: 'easy' as const,
+          question: 'Which SQL query selects all columns from a table named users?',
+          options: [
+            'GET * FROM users',
+            'SELECT * FROM users',
+            'FETCH ALL FROM users',
+            'READ * users',
+          ],
+          correctAnswer: 'SELECT * FROM users',
+          explanation: 'SELECT * FROM table_name retrieves all columns. The * wildcard means "all columns".',
+        },
+      ],
+    },
+  ],
 };
 
 const sqlSection2 = {
