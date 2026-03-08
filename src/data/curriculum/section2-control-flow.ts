@@ -77,6 +77,16 @@ const controlFlowSection: CourseSection = {
           explanation: 'range(1, 4) gives 1, 2, 3. total = 0 + 1 + 2 + 3 = 6.',
           hint: '1 + 2 + 3 = ?',
         },
+        {
+          id: 'for-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does range(0, 10, 2) generate?',
+          difficulty: 'medium',
+          code: 'print(list(range(0, 10, 2)))',
+          options: ['[0, 2, 4, 6, 8]', '[0, 2, 4, 6, 8, 10]', '[2, 4, 6, 8]', '[0, 1, 2]'],
+          correctAnswer: '[0, 2, 4, 6, 8]',
+          explanation: 'range(start, stop, step) with step=2 gives every other number from 0 to 9.',
+        },
       ],
     },
     {
