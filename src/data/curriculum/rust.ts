@@ -94,7 +94,29 @@ const rustSection2 = {
   description: 'Rust\'s unique memory management model.',
   accentColor: Colors.orange,
   order: 2,
-  lessons: [],
+  lessons: [
+    {
+      id: 'rust-ownership-basics',
+      sectionId: 'rust-ownership',
+      title: 'Ownership Rules',
+      description: 'Every value has one owner at a time.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'rs-own-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'How many owners can a value have in Rust?',
+          difficulty: 'easy' as const,
+          question: 'How many owners can a Rust value have at any given time?',
+          options: ['Unlimited', 'Two', 'One', 'Zero'],
+          correctAnswer: 'One',
+          explanation: 'Each value in Rust has exactly one owner. When the owner goes out of scope, the value is dropped.',
+        },
+      ],
+    },
+  ],
 };
 
 const rustSection3 = {
