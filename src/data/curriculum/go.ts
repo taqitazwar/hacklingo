@@ -726,6 +726,32 @@ fmt.Println(val)',
         },
       ],
     },
+    {
+      id: 'go-mutex',
+      sectionId: 'go-concurrency',
+      title: 'Mutex & Sync',
+      description: 'Protect shared state with sync.Mutex.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'go-mx-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a race condition?',
+          difficulty: 'hard' as const,
+          question: 'What is a race condition in concurrent programming?',
+          options: [
+            'When two goroutines complete at the same time',
+            'When multiple goroutines access shared data concurrently and at least one writes',
+            'When a goroutine runs too slowly',
+            'When a channel blocks indefinitely',
+          ],
+          correctAnswer: 'When multiple goroutines access shared data concurrently and at least one writes',
+          explanation: 'A race condition causes unpredictable behavior when goroutines read/write shared data without synchronization.',
+        },
+      ],
+    },
   ],
 };
 
