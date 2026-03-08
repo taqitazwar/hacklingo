@@ -58,6 +58,16 @@ const goSection1 = {
           explanation: 'Go initializes all variables to their zero value. For int that is 0, string is "", bool is false.',
         },
         {
+          id: 'go-v-4b',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What is printed?',
+          difficulty: 'medium' as const,
+          code: 'package main\nimport "fmt"\nfunc main() {\n    s := "hello"\n    fmt.Println(len(s))\n}',
+          options: ['hello', '5', '4', 'Error'],
+          correctAnswer: '5',
+          explanation: 'len(s) returns the number of bytes in the string. "hello" has 5 bytes/characters.',
+        },
+        {
           id: 'go-v-5',
           type: 'FIX_BUG' as const,
           instruction: 'Fix the variable declaration',
