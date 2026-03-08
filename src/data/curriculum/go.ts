@@ -84,7 +84,29 @@ const goSection2 = {
   description: 'Multiple return values and error handling.',
   accentColor: Colors.teal,
   order: 2,
-  lessons: [],
+  lessons: [
+    {
+      id: 'go-func-basics',
+      sectionId: 'go-functions',
+      title: 'Go Functions',
+      description: 'Define functions with typed parameters and return values.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'go-fn-1',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What is returned?',
+          difficulty: 'easy' as const,
+          code: 'func add(a int, b int) int {\n    return a + b\n}\nfmt.Println(add(3, 4))',
+          options: ['a + b', '7', '3', 'Error'],
+          correctAnswer: '7',
+          explanation: 'Go functions declare parameter types and the return type. add(3,4) returns 3+4=7.',
+        },
+      ],
+    },
+  ],
 };
 
 const goSection3 = {
