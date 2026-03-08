@@ -338,6 +338,16 @@ const functionsSection: CourseSection = {
           correctAnswer: '150',
           explanation: 'global total allows the function to modify the outer variable. 100 + 50 = 150.',
         },
+        {
+          id: 'fn-4-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does nonlocal do?',
+          difficulty: 'hard',
+          code: 'def outer():\n    x = 10\n    def inner():\n        nonlocal x\n        x = 20\n    inner()\n    return x\n\nprint(outer())',
+          options: ['10', '20', 'Error', 'None'],
+          correctAnswer: '20',
+          explanation: "nonlocal allows inner() to modify x from outer()'s scope. After inner() runs, x becomes 20.",
+        },
       ],
     },
     {
