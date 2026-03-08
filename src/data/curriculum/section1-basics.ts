@@ -266,6 +266,21 @@ const pythonBasicsSection: CourseSection = {
           correctAnswer: '3',
           explanation: '//= is the floor division assignment. 7 // 2 = 3 (rounded down).',
         },
+        {
+          id: 'num-7',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What is the modulo operator?',
+          difficulty: 'easy',
+          question: 'What does the % operator return?',
+          options: [
+            'The quotient of division',
+            'The remainder after division',
+            'A percentage as a decimal',
+            'The floor of the result',
+          ],
+          correctAnswer: 'The remainder after division',
+          explanation: '10 % 3 = 1 because 10 = 3*3 + 1. The remainder is 1.',
+        },
       ],
     },
     {
