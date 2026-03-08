@@ -170,6 +170,16 @@ const functionsSection: CourseSection = {
           explanation: 'double() requires one argument. Calling it without an argument causes a TypeError.',
           hint: 'Pass a number to the function when calling it.',
         },
+        {
+          id: 'fn-2-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does *args allow?',
+          difficulty: 'hard',
+          code: 'def total(*nums):\n    return sum(nums)\n\nprint(total(1, 2, 3, 4))',
+          options: ['10', '4', 'Error', 'nums'],
+          correctAnswer: '10',
+          explanation: '*args collects all positional arguments into a tuple. sum((1,2,3,4)) = 10.',
+        },
       ],
     },
     {
