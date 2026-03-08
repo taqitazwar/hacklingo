@@ -221,6 +221,16 @@ const stringsAdvancedSection: CourseSection = {
           correctAnswer: 'Returns every other character',
           explanation: '[::2] uses a step of 2, selecting every 2nd character: index 0, 2, 4, ...',
         },
+        {
+          id: 'ss-3-6',
+          type: 'FILL_BLANK',
+          instruction: 'Get the last character of a string',
+          difficulty: 'easy',
+          codeWithBlank: 'word = "Python"\nlast = word[___]',
+          options: ['-1', '5', 'last', '-0'],
+          correctAnswer: '-1',
+          explanation: 'Negative indices count from the end. word[-1] is the last character: "n".',
+        },
       ],
     },
     {
