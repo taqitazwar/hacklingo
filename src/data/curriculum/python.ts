@@ -7,6 +7,7 @@ import section2 from './section2-control-flow';
 import section3 from './section3-lists';
 import section4 from './section4-dictionaries';
 import section5 from './section5-functions';
+import section6 from './section6-strings';
 import comingSoonSections from './coming-soon-sections';
 
 const pythonLanguage: Language = {
@@ -15,7 +16,7 @@ const pythonLanguage: Language = {
   description: 'The most beginner-friendly language. Used in data science, automation, and web backends.',
   icon: '🐍',
   status: 'available',
-  sections: [section1, section2, section3, section4, section5, ...comingSoonSections],
+  sections: [section1, section2, section3, section4, section5, section6, ...comingSoonSections],
 };
 
 export default pythonLanguage;

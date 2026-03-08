@@ -7,14 +7,6 @@ import { Colors } from '../../constants';
 
 const comingSoonSections: CourseSection[] = [
   {
-    id: 'strings-advanced',
-    title: 'Strings & Formatting',
-    description: 'f-strings, methods, split, join, and text parsing.',
-    accentColor: Colors.section6,
-    order: 6,
-    lessons: [],
-  },
-  {
     id: 'files-automation',
     title: 'Files & Automation',
     description: 'Read, write files. Automate tasks with Python.',
