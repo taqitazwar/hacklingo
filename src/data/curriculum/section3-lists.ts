@@ -171,6 +171,16 @@ const listsSection: CourseSection = {
           correctAnswer: 'index',
           explanation: '.index(value) returns the position of the first occurrence of value in the list.',
         },
+        {
+          id: 'lm-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does count() return?',
+          difficulty: 'medium',
+          code: 'nums = [1, 2, 2, 3, 2, 4]\nprint(nums.count(2))',
+          options: ['2', '3', '6', 'Error'],
+          correctAnswer: '3',
+          explanation: '.count(value) returns how many times the value appears in the list. 2 appears 3 times.',
+        },
       ],
     },
     {
