@@ -243,6 +243,16 @@ const pythonicSection: CourseSection = {
           correctAnswer: '["hi", "bye"]',
           explanation: 'filter(None, ...) removes falsy values. Empty strings are falsy, so they are removed.',
         },
+        {
+          id: 'py-3-6',
+          type: 'FILL_BLANK',
+          instruction: 'Use reduce to multiply all numbers',
+          difficulty: 'hard',
+          codeWithBlank: 'from functools import reduce\nnums = [1, 2, 3, 4]\nresult = reduce(___, nums)',
+          options: ['lambda a, b: a * b', 'lambda x: x * 2', 'lambda a: a * a', 'multiply'],
+          correctAnswer: 'lambda a, b: a * b',
+          explanation: 'reduce() takes a function with two args and an iterable. It accumulates: ((1*2)*3)*4 = 24.',
+        },
       ],
     },
     {
