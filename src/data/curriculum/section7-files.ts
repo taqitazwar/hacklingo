@@ -168,6 +168,21 @@ const filesSection: CourseSection = {
           ],
           explanation: 'Define the list, open the file, loop through names, write each with a newline.',
         },
+        {
+          id: 'fw-2-6',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What is the difference between write and writelines?',
+          difficulty: 'medium',
+          question: 'What does f.writelines(list) do?',
+          options: [
+            'Writes each item on a separate line automatically',
+            'Writes each string in the list, without adding newlines',
+            'Writes the list as a Python literal',
+            'Only works with lists of numbers',
+          ],
+          correctAnswer: 'Writes each string in the list, without adding newlines',
+          explanation: 'writelines() writes each string in the iterable. No newlines are added — include them yourself.',
+        },
       ],
     },
     {
