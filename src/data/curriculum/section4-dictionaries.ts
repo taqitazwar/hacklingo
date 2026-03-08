@@ -86,6 +86,21 @@ const dictionariesSection: CourseSection = {
           correctAnswer: '1',
           explanation: 'You start with an empty dict, add one key-value pair, so len() returns 1.',
         },
+        {
+          id: 'dict-1-7',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'Which data structure maps keys to values?',
+          difficulty: 'easy',
+          question: 'What is a Python dictionary in terms of data structure?',
+          options: [
+            'An ordered list of items',
+            'A hash map mapping unique keys to values',
+            'A sorted set of unique elements',
+            'A pair of parallel arrays',
+          ],
+          correctAnswer: 'A hash map mapping unique keys to values',
+          explanation: 'Dicts use hash maps internally, giving O(1) average time for get/set/delete operations.',
+        },
       ],
     },
     {
