@@ -226,6 +226,32 @@ const javascriptSection1 = {
         },
       ],
     },
+    {
+      id: 'js-prototypes',
+      sectionId: 'js-basics',
+      title: 'Prototypes',
+      description: 'Prototype chain and object inheritance in JavaScript.',
+      lessonType: 'standard' as const,
+      order: 4,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-pr-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is the prototype chain?',
+          difficulty: 'hard' as const,
+          question: 'What is the prototype chain in JavaScript?',
+          options: [
+            'A linked list of functions',
+            'A chain of objects where each inherits from the previous via __proto__',
+            'The call stack of nested functions',
+            'A sequence of event listeners',
+          ],
+          correctAnswer: 'A chain of objects where each inherits from the previous via __proto__',
+          explanation: 'Every object has a prototype. Property lookup traverses the chain until found or null is reached.',
+        },
+      ],
+    },
   ],
 };
 
