@@ -534,6 +534,27 @@ const javascriptSection3 = {
         },
       ],
     },
+    {
+      id: 'js-destructuring',
+      sectionId: 'js-arrays',
+      title: 'Destructuring & Spread',
+      description: 'Unpack arrays/objects and spread values.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-ds-1',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What is printed?',
+          difficulty: 'easy' as const,
+          code: 'const [a, b] = [10, 20];\nconsole.log(a);',
+          options: ['[10, 20]', '10', '20', 'undefined'],
+          correctAnswer: '10',
+          explanation: 'Array destructuring assigns values by position. a gets 10 (first), b gets 20 (second).',
+        },
+      ],
+    },
   ],
 };
 
