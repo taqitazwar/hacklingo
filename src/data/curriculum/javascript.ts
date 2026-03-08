@@ -231,6 +231,32 @@ const javascriptSection2 = {
         },
       ],
     },
+    {
+      id: 'js-closures',
+      sectionId: 'js-functions',
+      title: 'Closures',
+      description: 'Functions that remember their outer scope.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'js-cl-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a closure?',
+          difficulty: 'medium' as const,
+          question: 'What is a closure in JavaScript?',
+          options: [
+            'A function that cannot be called',
+            'A function that has access to variables from its outer scope',
+            'A function that closes the browser window',
+            'A private class method',
+          ],
+          correctAnswer: 'A function that has access to variables from its outer scope',
+          explanation: 'A closure is formed when a function "remembers" variables from the scope where it was defined.',
+        },
+      ],
+    },
   ],
 };
 
