@@ -167,6 +167,16 @@ const pythonicSection: CourseSection = {
           correctAnswer: 'square = lambda x: x ** 2',
           explanation: 'lambda parameters are not wrapped in parentheses. It is lambda x: ..., not lambda(x):...',
         },
+        {
+          id: 'py-2-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is the key for sorting?',
+          difficulty: 'hard',
+          code: 'pairs = [(1, "b"), (3, "a"), (2, "c")]\npairs.sort(key=lambda p: p[1])\nprint(pairs[0])',
+          options: ['(1, "b")', '(3, "a")', '(2, "c")', 'Error'],
+          correctAnswer: '(3, "a")',
+          explanation: 'Sorting by p[1] (second element) sorts alphabetically: "a", "b", "c". First item is (3, "a").',
+        },
       ],
     },
     {
