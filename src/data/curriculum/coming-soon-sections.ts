@@ -7,14 +7,6 @@ import { Colors } from '../../constants';
 
 const comingSoonSections: CourseSection[] = [
   {
-    id: 'intermediate',
-    title: 'Intermediate Python',
-    description: 'Modules, error handling, testing, and optimization.',
-    accentColor: Colors.section9,
-    order: 9,
-    lessons: [],
-  },
-  {
     id: 'mastery',
     title: 'Mastery',
     description: 'Advanced mixed challenges and developer simulation.',
