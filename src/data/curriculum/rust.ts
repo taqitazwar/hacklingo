@@ -176,7 +176,34 @@ const rustSection3 = {
   description: 'Custom data types and pattern matching.',
   accentColor: Colors.blue,
   order: 3,
-  lessons: [],
+  lessons: [
+    {
+      id: 'rust-enums',
+      sectionId: 'rust-structs',
+      title: 'Enums & Match',
+      description: 'Powerful enums and exhaustive pattern matching.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'rs-en-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What makes Rust enums special?',
+          difficulty: 'medium' as const,
+          question: 'What makes Rust enums more powerful than enums in most other languages?',
+          options: [
+            'They can only hold integers',
+            'Each variant can hold different types of data',
+            'They are automatically sorted',
+            'They cannot be used in match expressions',
+          ],
+          correctAnswer: 'Each variant can hold different types of data',
+          explanation: 'Rust enums are algebraic data types. enum Shape { Circle(f64), Rect(f64, f64) } — each variant carries data.',
+        },
+      ],
+    },
+  ],
 };
 
 const rustSection4 = {
