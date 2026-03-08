@@ -836,6 +836,32 @@ const javascriptSection4 = {
         },
       ],
     },
+    {
+      id: 'js-event-loop',
+      sectionId: 'js-async',
+      title: 'Event Loop',
+      description: 'How JavaScript handles asynchronous operations.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-el-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is the event loop?',
+          difficulty: 'hard' as const,
+          question: 'What is the event loop responsible for in JavaScript?',
+          options: [
+            'Running multiple threads simultaneously',
+            'Executing code, collecting events, and running queued tasks',
+            'Managing memory allocation',
+            'Compiling JavaScript to machine code',
+          ],
+          correctAnswer: 'Executing code, collecting events, and running queued tasks',
+          explanation: 'The event loop checks the call stack and task queue, running queued tasks when the stack is empty.',
+        },
+      ],
+    },
   ],
 };
 
