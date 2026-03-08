@@ -888,6 +888,32 @@ println!("{}", sum);',
         },
       ],
     },
+    {
+      id: 'rust-closures',
+      sectionId: 'rust-traits',
+      title: 'Closures',
+      description: 'Anonymous functions that capture their environment.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'rs-cl-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a Rust closure?',
+          difficulty: 'medium' as const,
+          question: 'What is a closure in Rust?',
+          options: [
+            'A function that closes over a file',
+            'An anonymous function that can capture variables from its enclosing scope',
+            'A function with no parameters',
+            'A method on a struct',
+          ],
+          correctAnswer: 'An anonymous function that can capture variables from its enclosing scope',
+          explanation: 'Closures are |params| body. They can capture variables by reference (&), mutable reference (&mut), or value (move).',
+        },
+      ],
+    },
   ],
 };
 
