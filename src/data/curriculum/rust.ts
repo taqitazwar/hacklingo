@@ -391,6 +391,32 @@ const rustSection2 = {
         },
       ],
     },
+    {
+      id: 'rust-lifetimes',
+      sectionId: 'rust-ownership',
+      title: 'Lifetimes',
+      description: 'Ensure references are always valid.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'rs-lt-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a lifetime in Rust?',
+          difficulty: 'hard' as const,
+          question: 'What do lifetime annotations ensure in Rust?',
+          options: [
+            'That values are stored on the heap',
+            'That references do not outlive the data they point to',
+            'That functions run within a time limit',
+            'That closures capture variables correctly',
+          ],
+          correctAnswer: 'That references do not outlive the data they point to',
+          explanation: 'Lifetimes prevent dangling references by ensuring a reference is valid for a given scope.',
+        },
+      ],
+    },
   ],
 };
 
