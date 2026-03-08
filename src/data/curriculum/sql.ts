@@ -80,6 +80,27 @@ const sqlSection1 = {
         },
       ],
     },
+    {
+      id: 'sql-limit',
+      sectionId: 'sql-select',
+      title: 'LIMIT & DISTINCT',
+      description: 'Control the number of results and remove duplicates.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 12,
+      challenges: [
+        {
+          id: 'sql-ld-1',
+          type: 'FILL_BLANK' as const,
+          instruction: 'Return only the first 10 rows',
+          difficulty: 'easy' as const,
+          codeWithBlank: 'SELECT * FROM products\nORDER BY price DESC\n___ 10;',
+          options: ['LIMIT', 'TOP', 'MAX', 'TAKE'],
+          correctAnswer: 'LIMIT',
+          explanation: 'LIMIT restricts the number of rows returned. LIMIT 10 returns the first 10 rows after ordering.',
+        },
+      ],
+    },
   ],
 };
 
