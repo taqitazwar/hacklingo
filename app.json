@@ -1,30 +1,38 @@
 {
   "expo": {
-    "name": "hacklingo",
+    "name": "Hacklingo",
     "slug": "hacklingo",
     "version": "1.0.0",
+    "description": "Learn to code for free. Hacklingo teaches Python and more with bite-sized, gamified lessons guided by Bug the Ladybug — your personal coding companion.",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#E03232"
     },
+    "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.hacklingo.app",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "We use this to improve your learning experience.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.hacklingo.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#E03232",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
