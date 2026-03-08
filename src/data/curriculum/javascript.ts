@@ -1353,6 +1353,27 @@ const javascriptSection4 = {
         },
       ],
     },
+    {
+      id: 'js-boss',
+      sectionId: 'js-async',
+      title: 'JavaScript Boss',
+      description: 'The ultimate JavaScript challenge.',
+      lessonType: 'boss' as const,
+      order: 99,
+      completionXpBonus: 100,
+      challenges: [
+        {
+          id: 'js-b-1',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What is the output?',
+          difficulty: 'hard' as const,
+          code: 'const obj = { a: 1 };\nconst copy = { ...obj };\ncopy.a = 99;\nconsole.log(obj.a);',
+          options: ['1', '99', 'undefined', 'Error'],
+          correctAnswer: '1',
+          explanation: 'Spread creates a shallow copy. Changing copy.a does not affect obj.a because they are separate objects.',
+        },
+      ],
+    },
   ],
 };
 
