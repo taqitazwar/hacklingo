@@ -1130,6 +1130,27 @@ const javascriptSection4 = {
         },
       ],
     },
+    {
+      id: 'js-error-handling',
+      sectionId: 'js-async',
+      title: 'Error Handling',
+      description: 'try/catch/finally, Error types, and custom errors.',
+      lessonType: 'standard' as const,
+      order: 4,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-eh-1',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What is logged?',
+          difficulty: 'medium' as const,
+          code: 'try {\n  throw new Error("oops");\n} catch (e) {\n  console.log(e.message);\n}',
+          options: ['Error', 'oops', 'undefined', 'throw'],
+          correctAnswer: 'oops',
+          explanation: 'e.message contains the error message string passed to new Error(). e.name would be "Error".',
+        },
+      ],
+    },
   ],
 };
 
