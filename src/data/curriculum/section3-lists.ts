@@ -151,6 +151,16 @@ const listsSection: CourseSection = {
           explanation: 'sort() on strings uses alphabetical order. "hey" < "hi" < "hello" alphabetically.',
           hint: 'Strings are sorted alphabetically. Compare the second character when the first matches.',
         },
+        {
+          id: 'lm-6',
+          type: 'FILL_BLANK',
+          instruction: 'Find the index of an element in a list',
+          difficulty: 'medium',
+          codeWithBlank: 'colors = ["red", "green", "blue"]\nidx = colors.___(\"green\")',
+          options: ['index', 'find', 'search', 'get'],
+          correctAnswer: 'index',
+          explanation: '.index(value) returns the position of the first occurrence of value in the list.',
+        },
       ],
     },
     {
