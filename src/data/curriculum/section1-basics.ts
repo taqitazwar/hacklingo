@@ -157,6 +157,16 @@ const pythonBasicsSection: CourseSection = {
           explanation: '= is for assignment, == is for comparison.',
           hint: 'Use a single = to assign a value.',
         },
+        {
+          id: 'var-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is printed?',
+          difficulty: 'easy',
+          code: 'a = b = c = 0\nprint(a, b, c)',
+          options: ['Error', '0 0 0', 'a b c', '0'],
+          correctAnswer: '0 0 0',
+          explanation: 'Python allows chained assignment. a, b, and c all get the value 0.',
+        },
       ],
     },
     {
