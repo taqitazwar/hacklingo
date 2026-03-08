@@ -171,6 +171,16 @@ const dictionariesSection: CourseSection = {
           ],
           explanation: 'You must create the dict before you can access its values.',
         },
+        {
+          id: 'dict-2-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does .keys() return?',
+          difficulty: 'medium',
+          code: 'data = {"x": 1, "y": 2, "z": 3}\nprint(list(data.keys()))',
+          options: ['[1, 2, 3]', '["x", "y", "z"]', 'dict_keys', 'Error'],
+          correctAnswer: '["x", "y", "z"]',
+          explanation: '.keys() returns a view of all keys. list() converts it to a list.',
+        },
       ],
     },
     {
