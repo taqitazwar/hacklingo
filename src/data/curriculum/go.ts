@@ -598,6 +598,21 @@ const goSection4 = {
           correctAnswer: 'It waits on multiple channel operations and runs the first that is ready',
           explanation: 'select is like a switch for channels. It blocks until one of its cases can proceed.',
         },
+        {
+          id: 'go-sel-2',
+          type: 'FILL_BLANK' as const,
+          instruction: 'Add a default case to select',
+          difficulty: 'hard' as const,
+          codeWithBlank: 'select {
+case msg := <-ch:
+    fmt.Println(msg)
+___:
+    fmt.Println("no message")
+}',
+          options: ['default', 'else', 'otherwise', 'fallthrough'],
+          correctAnswer: 'default',
+          explanation: 'A default case in select runs when no other case is ready, making it non-blocking.',
+        },
       ],
     },
   ],
