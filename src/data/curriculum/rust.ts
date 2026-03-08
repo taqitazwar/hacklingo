@@ -472,6 +472,32 @@ println!("{}", r);",
         },
       ],
     },
+    {
+      id: 'rust-smart-pointers',
+      sectionId: 'rust-ownership',
+      title: 'Smart Pointers',
+      description: 'Box<T>, Rc<T>, and RefCell<T> for flexible ownership.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'rs-sp-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What does Box<T> do?',
+          difficulty: 'hard' as const,
+          question: 'What is Box<T> used for in Rust?',
+          options: [
+            'Boxing and unboxing primitive types',
+            'Allocating a value on the heap with a single owner',
+            'Sharing data between threads',
+            'Creating circular references',
+          ],
+          correctAnswer: 'Allocating a value on the heap with a single owner',
+          explanation: 'Box<T> allocates T on the heap. Useful for recursive types and when you need a known-size pointer to heap data.',
+        },
+      ],
+    },
   ],
 };
 
