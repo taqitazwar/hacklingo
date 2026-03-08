@@ -6,6 +6,7 @@ import {
   SafeAreaView,
   StatusBar,
   ScrollView,
+  Pressable,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
@@ -32,7 +33,13 @@ const StatRow: React.FC<StatRowProps> = ({ icon, iconColor, label, value }) => (
   </View>
 );
 
-const ProfileScreen: React.FC = () => {
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RootStackParamList } from '../../types';
+
+type ProfileNav = StackNavigationProp<RootStackParamList, 'MainTabs'>;
+interface Props { navigation: ProfileNav; }
+
+const ProfileScreen: React.FC<Props> = ({ navigation }) => {
   const {
     totalXp,
     currentStreak,
@@ -63,6 +70,9 @@ const ProfileScreen: React.FC = () => {
 
       <View style={styles.header}>
         <Text style={styles.screenTitle}>Profile</Text>
+        <Pressable onPress={() => navigation.navigate('Settings')} hitSlop={8}>
+          <Ionicons name="settings-outline" size={24} color={Colors.textSecondary} />
+        </Pressable>
       </View>
 
       <ScrollView
