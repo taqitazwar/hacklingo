@@ -74,6 +74,16 @@ const stringsAdvancedSection: CourseSection = {
           correctAnswer: 'print(f"Your score: {score}")',
           explanation: 'Without the f prefix, {score} is treated as literal text, not a variable.',
         },
+        {
+          id: 'fs-1-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does the :.2f format spec do?',
+          difficulty: 'hard',
+          code: 'pi = 3.14159\nprint(f"Pi is {pi:.2f}")',
+          options: ['Pi is 3.14159', 'Pi is 3.14', 'Pi is 3', 'Error'],
+          correctAnswer: 'Pi is 3.14',
+          explanation: ':.2f formats a float to 2 decimal places. Very useful for displaying currency or measurements.',
+        },
       ],
     },
     {
