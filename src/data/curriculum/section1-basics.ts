@@ -345,6 +345,16 @@ const pythonBasicsSection: CourseSection = {
           explanation: 'Strings must have both an opening and closing quote.',
           hint: 'Every opening quote needs a matching closing quote.',
         },
+        {
+          id: 'str-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does len() return for a string?',
+          difficulty: 'easy',
+          code: 'word = "Python"\nprint(len(word))',
+          options: ['5', '6', 'Python', 'Error'],
+          correctAnswer: '6',
+          explanation: 'len() counts the number of characters. "Python" has 6 characters.',
+        },
       ],
     },
     {
