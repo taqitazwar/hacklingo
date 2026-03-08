@@ -271,6 +271,16 @@ const controlFlowSection: CourseSection = {
           ],
           explanation: 'Define the list, loop through it, check if even, print and break on first match.',
         },
+        {
+          id: 'bc-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does continue do?',
+          difficulty: 'medium',
+          code: 'for i in range(5):\n    if i == 3:\n        continue\n    print(i)',
+          options: ['0\n1\n2\n3\n4', '0\n1\n2\n4', '3', 'Error'],
+          correctAnswer: '0\n1\n2\n4',
+          explanation: 'continue skips the rest of the current iteration. When i=3, the print is skipped.',
+        },
       ],
     },
     {
