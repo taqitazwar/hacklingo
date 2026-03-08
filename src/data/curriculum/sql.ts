@@ -464,6 +464,32 @@ const sqlSection2 = {
         },
       ],
     },
+    {
+      id: 'sql-views',
+      sectionId: 'sql-joins',
+      title: 'Views & CTEs',
+      description: 'Create reusable views and common table expressions.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'sql-vw-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a view?',
+          difficulty: 'medium' as const,
+          question: 'What is a SQL view?',
+          options: [
+            'A cached copy of query results',
+            'A virtual table based on a SELECT query',
+            'A database index on multiple columns',
+            'A stored procedure',
+          ],
+          correctAnswer: 'A virtual table based on a SELECT query',
+          explanation: 'A view is a named SELECT statement. It looks like a table but computes results on access.',
+        },
+      ],
+    },
   ],
 };
 
