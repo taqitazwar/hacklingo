@@ -752,6 +752,19 @@ const rustSection4 = {
           correctAnswer: 'An iterator yielding references to each element',
           explanation: '.iter() creates an iterator of &T references. .into_iter() consumes the Vec, yielding owned T.',
         },
+        {
+          id: 'rs-it-2',
+          type: 'FILL_BLANK' as const,
+          instruction: 'Double each element with map',
+          difficulty: 'medium' as const,
+          codeWithBlank: 'let doubled: Vec<i32> = vec![1,2,3]
+    .iter()
+    .___(|x| x * 2)
+    .collect();',
+          options: ['map', 'apply', 'transform', 'each'],
+          correctAnswer: 'map',
+          explanation: '.map() transforms each element. Combined with .collect() it produces a new Vec.',
+        },
       ],
     },
   ],
