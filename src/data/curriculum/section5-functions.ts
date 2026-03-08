@@ -255,6 +255,21 @@ const functionsSection: CourseSection = {
           ],
           explanation: 'Define the function first, write the formula in the body, then call it.',
         },
+        {
+          id: 'fn-3-6',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'Can a function return multiple values?',
+          difficulty: 'hard',
+          question: 'How does Python return multiple values from a function?',
+          options: [
+            'It is not possible',
+            'Using the multi keyword',
+            'By returning a tuple',
+            'Using global variables',
+          ],
+          correctAnswer: 'By returning a tuple',
+          explanation: 'return a, b returns a tuple. The caller can unpack: x, y = func()',
+        },
       ],
     },
     {
