@@ -231,6 +231,16 @@ const pythonBasicsSection: CourseSection = {
           explanation: '** is the exponentiation operator in Python. 2 ** 8 = 256.',
           hint: 'Python uses ** for "to the power of".',
         },
+        {
+          id: 'num-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is printed?',
+          difficulty: 'medium',
+          code: 'x = 7\nx //= 2\nprint(x)',
+          options: ['3.5', '3', '4', '2'],
+          correctAnswer: '3',
+          explanation: '//= is the floor division assignment. 7 // 2 = 3 (rounded down).',
+        },
       ],
     },
     {
