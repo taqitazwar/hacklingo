@@ -166,7 +166,34 @@ const goSection3 = {
   description: 'Go\'s approach to object-oriented programming.',
   accentColor: Colors.orange,
   order: 3,
-  lessons: [],
+  lessons: [
+    {
+      id: 'go-struct-basics',
+      sectionId: 'go-structs',
+      title: 'Structs',
+      description: 'Group related data together with structs.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'go-st-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a struct in Go?',
+          difficulty: 'easy' as const,
+          question: 'What is a struct in Go?',
+          options: [
+            'A function that returns multiple values',
+            'A collection of named fields (like a class without methods)',
+            'A built-in array type',
+            'A way to import packages',
+          ],
+          correctAnswer: 'A collection of named fields (like a class without methods)',
+          explanation: 'A struct groups fields. type Person struct { Name string; Age int }. Go has no classes.',
+        },
+      ],
+    },
+  ],
 };
 
 const goSection4 = {
