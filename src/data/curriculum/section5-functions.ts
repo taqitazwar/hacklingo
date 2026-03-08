@@ -86,6 +86,16 @@ const functionsSection: CourseSection = {
           correctAnswer: 'A string placed right after def that documents what the function does',
           explanation: 'Docstrings appear right after the def line in triple quotes and describe what the function does.',
         },
+        {
+          id: 'fn-1-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is printed when calling without args?',
+          difficulty: 'medium',
+          code: 'def power(base, exp=2):\n    return base ** exp\n\nprint(power(3))',
+          options: ['3', '6', '9', 'Error'],
+          correctAnswer: '9',
+          explanation: 'power(3) uses default exp=2. 3 ** 2 = 9.',
+        },
       ],
     },
     {
