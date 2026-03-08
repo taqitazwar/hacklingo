@@ -181,7 +181,29 @@ const sqlSection3 = {
   description: 'COUNT, SUM, AVG, GROUP BY, and HAVING.',
   accentColor: Colors.orange,
   order: 3,
-  lessons: [],
+  lessons: [
+    {
+      id: 'sql-agg-intro',
+      sectionId: 'sql-aggregates',
+      title: 'COUNT & SUM',
+      description: 'Aggregate functions for counting and summing.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'sql-ag-1',
+          type: 'FILL_BLANK' as const,
+          instruction: 'Count all rows in a table',
+          difficulty: 'easy' as const,
+          codeWithBlank: 'SELECT ___(*)  FROM orders;',
+          options: ['COUNT', 'SUM', 'TOTAL', 'NUM'],
+          correctAnswer: 'COUNT',
+          explanation: 'COUNT(*) counts all rows in the result set. Use COUNT(column) to count non-NULL values.',
+        },
+      ],
+    },
+  ],
 };
 
 const sqlLanguage: Language = {
