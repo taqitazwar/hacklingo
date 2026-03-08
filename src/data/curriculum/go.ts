@@ -574,6 +574,32 @@ const goSection4 = {
         },
       ],
     },
+    {
+      id: 'go-select',
+      sectionId: 'go-concurrency',
+      title: 'Select Statement',
+      description: 'Multiplex channel operations with select.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'go-sel-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is the select statement used for?',
+          difficulty: 'hard' as const,
+          question: 'What is the purpose of select in Go?',
+          options: [
+            'It is a switch statement for strings',
+            'It waits on multiple channel operations and runs the first that is ready',
+            'It selects elements from a slice',
+            'It filters goroutines',
+          ],
+          correctAnswer: 'It waits on multiple channel operations and runs the first that is ready',
+          explanation: 'select is like a switch for channels. It blocks until one of its cases can proceed.',
+        },
+      ],
+    },
   ],
 };
 
