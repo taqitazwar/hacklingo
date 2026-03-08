@@ -77,6 +77,32 @@ const javascriptSection1 = {
         },
       ],
     },
+    {
+      id: 'js-data-types',
+      sectionId: 'js-basics',
+      title: 'Data Types',
+      description: 'Strings, numbers, booleans, null, and undefined.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 12,
+      challenges: [
+        {
+          id: 'js-dt-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'Which type represents absence of value?',
+          difficulty: 'easy' as const,
+          question: 'What is the difference between null and undefined in JavaScript?',
+          options: [
+            'They are identical',
+            'null is intentional absence; undefined is uninitialized',
+            'undefined is intentional; null is uninitialized',
+            'null is a number; undefined is a string',
+          ],
+          correctAnswer: 'null is intentional absence; undefined is uninitialized',
+          explanation: 'null is explicitly set. undefined means a variable was declared but not assigned.',
+        },
+      ],
+    },
   ],
 };
 
