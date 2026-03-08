@@ -591,6 +591,16 @@ const pythonBasicsSection: CourseSection = {
           correctAnswer: 'I love Python',
           explanation: 'The input is stored in lang, then concatenated to "I love ".',
         },
+        {
+          id: 'inp-6',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What type does input() always return?',
+          difficulty: 'easy',
+          question: 'What type does Python\'s input() function always return?',
+          options: ['int', 'float', 'str', 'depends on what the user types'],
+          correctAnswer: 'str',
+          explanation: 'input() always returns a string. You must convert it with int() or float() if you need a number.',
+        },
       ],
     },
     {
