@@ -236,6 +236,27 @@ const javascriptSection3 = {
         },
       ],
     },
+    {
+      id: 'js-objects',
+      sectionId: 'js-arrays',
+      title: 'Objects',
+      description: 'Key-value pairs and dot notation.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-obj-1',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What is logged?',
+          difficulty: 'easy' as const,
+          code: 'const person = { name: "Bug", age: 2 };\nconsole.log(person.name);',
+          options: ['person', '{ name: "Bug", age: 2 }', 'Bug', 'Error'],
+          correctAnswer: 'Bug',
+          explanation: 'Dot notation (person.name) accesses the value at the "name" key.',
+        },
+      ],
+    },
   ],
 };
 
