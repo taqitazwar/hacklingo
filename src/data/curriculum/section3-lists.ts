@@ -77,6 +77,16 @@ const listsSection: CourseSection = {
           explanation: 'Parentheses () create a tuple which is immutable. Lists use [] and support append().',
           hint: 'Lists use square brackets. Tuples use parentheses and cannot be changed.',
         },
+        {
+          id: 'lst-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is printed?',
+          difficulty: 'medium',
+          code: 'a = [1, 2, 3]\nb = [4, 5]\nprint(a + b)',
+          options: ['[1, 2, 3, 4, 5]', '[5, 7]', 'Error', '[1, 2, 3], [4, 5]'],
+          correctAnswer: '[1, 2, 3, 4, 5]',
+          explanation: '+ concatenates two lists, creating a new combined list.',
+        },
       ],
     },
     {
