@@ -971,6 +971,32 @@ mu.Unlock()',
         },
       ],
     },
+    {
+      id: 'go-context',
+      sectionId: 'go-concurrency',
+      title: 'Context',
+      description: 'Propagate cancellation and deadlines with context.Context.',
+      lessonType: 'standard' as const,
+      order: 4,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'go-ctx-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is context.Context for?',
+          difficulty: 'hard' as const,
+          question: 'What is the primary purpose of context.Context in Go?',
+          options: [
+            'Managing global variables',
+            'Propagating cancellation signals and deadlines across goroutines',
+            'Storing database connections',
+            'Logging request metadata',
+          ],
+          correctAnswer: 'Propagating cancellation signals and deadlines across goroutines',
+          explanation: 'Context carries deadlines, cancellations, and values across API boundaries and goroutines.',
+        },
+      ],
+    },
   ],
 };
 
