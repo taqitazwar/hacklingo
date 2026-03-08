@@ -538,6 +538,32 @@ const javascriptSection2 = {
         },
       ],
     },
+    {
+      id: 'js-generators',
+      sectionId: 'js-functions',
+      title: 'Generators & Iterators',
+      description: 'Pausable functions with function* and yield.',
+      lessonType: 'standard' as const,
+      order: 4,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'js-gen-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a generator function?',
+          difficulty: 'hard' as const,
+          question: 'What is a generator function in JavaScript?',
+          options: [
+            'A function that runs in a separate thread',
+            'A function that can pause execution and yield values one at a time',
+            'A function that generates random numbers',
+            'A function with no return statement',
+          ],
+          correctAnswer: 'A function that can pause execution and yield values one at a time',
+          explanation: 'function* creates a generator. yield pauses execution and returns a value. .next() resumes it.',
+        },
+      ],
+    },
   ],
 };
 
