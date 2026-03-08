@@ -87,6 +87,16 @@ const listsSection: CourseSection = {
           correctAnswer: '[1, 2, 3, 4, 5]',
           explanation: '+ concatenates two lists, creating a new combined list.',
         },
+        {
+          id: 'lst-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does list multiplication do?',
+          difficulty: 'medium',
+          code: 'zeros = [0] * 4\nprint(zeros)',
+          options: ['[0, 0, 0, 0]', '[0]', '0', 'Error'],
+          correctAnswer: '[0, 0, 0, 0]',
+          explanation: 'Multiplying a list by n repeats its elements n times. [0] * 4 gives [0, 0, 0, 0].',
+        },
       ],
     },
     {
