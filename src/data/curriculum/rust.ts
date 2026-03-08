@@ -765,6 +765,20 @@ const rustSection4 = {
           correctAnswer: 'map',
           explanation: '.map() transforms each element. Combined with .collect() it produces a new Vec.',
         },
+        {
+          id: 'rs-it-3',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What does filter produce?',
+          difficulty: 'medium' as const,
+          code: 'let evens: Vec<&i32> = vec![1,2,3,4,5]
+    .iter()
+    .filter(|&&x| x % 2 == 0)
+    .collect();
+println!("{}", evens.len());',
+          options: ['5', '2', '3', 'Error'],
+          correctAnswer: '2',
+          explanation: '.filter() keeps elements where the closure returns true. 2 and 4 are even, so len() is 2.',
+        },
       ],
     },
   ],
