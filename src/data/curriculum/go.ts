@@ -482,6 +482,32 @@ fmt.Println(add(3, 4))',
         },
       ],
     },
+    {
+      id: 'go-testing',
+      sectionId: 'go-functions',
+      title: 'Testing',
+      description: 'Write unit tests with the testing package.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'go-tst-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'How do you name a test file in Go?',
+          difficulty: 'easy' as const,
+          question: 'What naming convention do Go test files follow?',
+          options: [
+            'test_filename.go',
+            'filename_spec.go',
+            'filename_test.go',
+            'test.filename.go',
+          ],
+          correctAnswer: 'filename_test.go',
+          explanation: 'Go test files end in _test.go. The go test command automatically finds and runs them.',
+        },
+      ],
+    },
   ],
 };
 
