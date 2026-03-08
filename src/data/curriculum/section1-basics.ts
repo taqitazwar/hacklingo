@@ -177,6 +177,21 @@ const pythonBasicsSection: CourseSection = {
           correctAnswer: '0 0 0',
           explanation: 'Python allows chained assignment. a, b, and c all get the value 0.',
         },
+        {
+          id: 'var-7',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What is variable swapping in Python?',
+          difficulty: 'medium',
+          question: 'What does "a, b = b, a" do in Python?',
+          options: [
+            'It causes a SyntaxError',
+            'It swaps the values of a and b',
+            'It creates a list',
+            'It compares a and b',
+          ],
+          correctAnswer: 'It swaps the values of a and b',
+          explanation: 'Python allows tuple unpacking for elegant variable swapping without a temp variable.',
+        },
       ],
     },
     {
