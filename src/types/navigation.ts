@@ -6,6 +6,7 @@ export type RootStackParamList = {
   Onboarding: undefined;
   MainTabs: undefined;
   Lesson: { lesson: Lesson; sectionTitle: string; accentColor: string };
+  Settings: undefined;
   Results: {
     xpEarned: number;
     accuracy: number;
