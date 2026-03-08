@@ -685,6 +685,32 @@ const javascriptSection2 = {
         },
       ],
     },
+    {
+      id: 'js-modules',
+      sectionId: 'js-functions',
+      title: 'Modules',
+      description: 'ES6 import/export and module patterns.',
+      lessonType: 'standard' as const,
+      order: 5,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-mod-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a JavaScript module?',
+          difficulty: 'medium' as const,
+          question: 'What is an ES6 module?',
+          options: [
+            'A file with no exports',
+            'A file that has its own scope and can export/import values',
+            'A library installed via npm',
+            'A class with static methods',
+          ],
+          correctAnswer: 'A file that has its own scope and can export/import values',
+          explanation: 'Modules create private scope. Values are shared via export/import. Each file is its own module.',
+        },
+      ],
+    },
   ],
 };
 
