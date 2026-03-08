@@ -161,6 +161,16 @@ const intermediateSection: CourseSection = {
           correctAnswer: 'from math import sqrt, floor',
           explanation: 'You need to import floor specifically. The original only imports sqrt.',
         },
+        {
+          id: 'int-2-6',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What does sys.argv contain?',
+          difficulty: 'hard',
+          question: 'What does sys.argv[1] give you when running: python script.py hello',
+          options: ['python', 'script.py', 'hello', 'sys'],
+          correctAnswer: 'hello',
+          explanation: 'sys.argv is a list of command-line arguments. [0] is the script name, [1] is the first argument.',
+        },
       ],
     },
     {
