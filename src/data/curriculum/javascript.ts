@@ -317,7 +317,34 @@ const javascriptSection4 = {
   description: 'Promises, async/await, and fetch.',
   accentColor: Colors.teal,
   order: 4,
-  lessons: [],
+  lessons: [
+    {
+      id: 'js-promises',
+      sectionId: 'js-async',
+      title: 'Promises',
+      description: 'Handle async operations with Promise chains.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'js-pr-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What are the three states of a Promise?',
+          difficulty: 'easy' as const,
+          question: 'What are the three possible states of a JavaScript Promise?',
+          options: [
+            'start, running, done',
+            'pending, fulfilled, rejected',
+            'loading, success, error',
+            'open, closed, failed',
+          ],
+          correctAnswer: 'pending, fulfilled, rejected',
+          explanation: 'A Promise starts as pending. It settles to fulfilled (success) or rejected (failure).',
+        },
+      ],
+    },
+  ],
 };
 
 const javascriptLanguage: Language = {
