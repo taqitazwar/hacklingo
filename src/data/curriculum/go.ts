@@ -1129,6 +1129,32 @@ mu.Unlock()',
         },
       ],
     },
+    {
+      id: 'go-boss',
+      sectionId: 'go-concurrency',
+      title: 'Go Boss',
+      description: 'The ultimate Go challenge.',
+      lessonType: 'boss' as const,
+      order: 99,
+      completionXpBonus: 100,
+      challenges: [
+        {
+          id: 'go-b-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a goroutine leak?',
+          difficulty: 'hard' as const,
+          question: 'What is a goroutine leak?',
+          options: [
+            'A goroutine that returns too quickly',
+            'A goroutine that never terminates, consuming resources indefinitely',
+            'A goroutine that crashes the program',
+            'A goroutine blocked on a mutex',
+          ],
+          correctAnswer: 'A goroutine that never terminates, consuming resources indefinitely',
+          explanation: 'Goroutine leaks happen when goroutines block forever (e.g., on a channel with no sender). Use context for cancellation.',
+        },
+      ],
+    },
   ],
 };
 
