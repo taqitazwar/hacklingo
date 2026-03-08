@@ -403,6 +403,32 @@ const sqlSection3 = {
         },
       ],
     },
+    {
+      id: 'sql-subqueries',
+      sectionId: 'sql-aggregates',
+      title: 'Subqueries',
+      description: 'Nest queries inside SELECT, WHERE, and FROM.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'sql-sq-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a subquery?',
+          difficulty: 'medium' as const,
+          question: 'What is a subquery in SQL?',
+          options: [
+            'A stored procedure',
+            'A query nested inside another query',
+            'A view that runs automatically',
+            'A query that returns no rows',
+          ],
+          correctAnswer: 'A query nested inside another query',
+          explanation: 'Subqueries are queries within queries. They can appear in SELECT, FROM, or WHERE clauses.',
+        },
+      ],
+    },
   ],
 };
 
