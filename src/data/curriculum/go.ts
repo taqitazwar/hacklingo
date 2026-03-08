@@ -157,6 +157,32 @@ const goSection1 = {
         },
       ],
     },
+    {
+      id: 'go-types',
+      sectionId: 'go-basics',
+      title: 'Types & Constants',
+      description: 'Go type system, const, and iota.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'go-ty-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'How are types declared in Go?',
+          difficulty: 'easy' as const,
+          question: 'In Go, how do you declare a variable with a specific type?',
+          options: [
+            'var x = int(5)',
+            'int x = 5',
+            'var x int = 5',
+            'x: int = 5',
+          ],
+          correctAnswer: 'var x int = 5',
+          explanation: 'Go uses var name type = value. The type comes after the variable name.',
+        },
+      ],
+    },
   ],
 };
 
