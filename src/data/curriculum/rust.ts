@@ -181,6 +181,18 @@ const rustSection1 = {
           correctAnswer: 'fn',
           explanation: 'Rust uses fn to declare functions. fn greet() { ... }',
         },
+        {
+          id: 'rs-fn-2',
+          type: 'FILL_BLANK' as const,
+          instruction: 'Specify the return type',
+          difficulty: 'easy' as const,
+          codeWithBlank: 'fn add(a: i32, b: i32) ___ i32 {
+    a + b
+}',
+          options: ['->', ':', '=>', 'returns'],
+          correctAnswer: '->',
+          explanation: '-> specifies the return type. fn add(a: i32, b: i32) -> i32 returns an i32.',
+        },
       ],
     },
   ],
