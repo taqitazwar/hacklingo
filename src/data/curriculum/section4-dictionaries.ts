@@ -250,6 +250,16 @@ const dictionariesSection: CourseSection = {
           explanation: '.update() overwrites existing keys. "apple" was 2, now it becomes 5.',
           hint: '.update() replaces values for keys that already exist.',
         },
+        {
+          id: 'dict-3-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does .values() return?',
+          difficulty: 'medium',
+          code: 'scores = {"Alice": 90, "Bob": 85}\nprint(sum(scores.values()))',
+          options: ['90', '85', '175', 'Error'],
+          correctAnswer: '175',
+          explanation: '.values() returns all dictionary values. sum() adds them: 90 + 85 = 175.',
+        },
       ],
     },
     {
