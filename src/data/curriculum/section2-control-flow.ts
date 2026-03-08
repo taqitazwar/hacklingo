@@ -182,6 +182,16 @@ const controlFlowSection: CourseSection = {
           correctAnswer: 'break',
           explanation: 'break is the correct way to exit a while True loop from inside the loop body.',
         },
+        {
+          id: 'wh-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'How many times does this loop run?',
+          difficulty: 'medium',
+          code: 'count = 0\nwhile count < 5:\n    count += 2\nprint(count)',
+          options: ['4', '5', '6', 'Error'],
+          correctAnswer: '6',
+          explanation: 'count goes 0, 2, 4, 6. At 4 count += 2 makes it 6. Then 6 < 5 is False. Final value: 6.',
+        },
       ],
     },
     {
