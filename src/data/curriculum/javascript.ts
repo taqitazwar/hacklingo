@@ -385,6 +385,32 @@ const javascriptSection2 = {
         },
       ],
     },
+    {
+      id: 'js-this',
+      sectionId: 'js-functions',
+      title: 'this Keyword',
+      description: 'Understand how this is bound in different contexts.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-th-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is this in a regular function?',
+          difficulty: 'medium' as const,
+          question: 'What does this refer to in a regular function called in non-strict mode?',
+          options: [
+            'undefined',
+            'The function itself',
+            'The global object',
+            'null',
+          ],
+          correctAnswer: 'The global object',
+          explanation: 'In non-strict mode, this in a regular function is the global object (window in browsers). In strict mode, it is undefined.',
+        },
+      ],
+    },
   ],
 };
 
