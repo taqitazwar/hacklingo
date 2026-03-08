@@ -365,6 +365,18 @@ fmt.Println(c(), c())',
           correctAnswer: '1 2',
           explanation: 'Each call to c() increments n and returns it. n is captured in the closure: first call returns 1, second returns 2.',
         },
+        {
+          id: 'go-cl-3',
+          type: 'FILL_BLANK' as const,
+          instruction: 'Define an immediately invoked function',
+          difficulty: 'medium' as const,
+          codeWithBlank: 'result := ___(x int) int {
+    return x * x
+}(5)',
+          options: ['func', 'fn', 'lambda', 'closure'],
+          correctAnswer: 'func',
+          explanation: 'func creates an anonymous function. Appending (5) immediately invokes it with argument 5.',
+        },
       ],
     },
   ],
