@@ -241,6 +241,27 @@ println!("{}", double(5));',
         },
       ],
     },
+    {
+      id: 'rust-types',
+      sectionId: 'rust-basics',
+      title: 'Primitive Types',
+      description: 'Integers, floats, booleans, and tuples.',
+      lessonType: 'standard' as const,
+      order: 4,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'rs-ty-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is the default integer type?',
+          difficulty: 'easy' as const,
+          question: 'What is the default integer type inferred by Rust?',
+          options: ['i64', 'i32', 'u32', 'isize'],
+          correctAnswer: 'i32',
+          explanation: 'Rust infers integer literals as i32 by default. You can annotate explicitly: let x: i64 = 42;',
+        },
+      ],
+    },
   ],
 };
 
