@@ -78,6 +78,28 @@ const filesSection: CourseSection = {
         },
       ],
     },
+    {
+      id: 'file-writing',
+      sectionId: 'files-automation',
+      title: 'Writing Files',
+      description: 'Create and write to text files.',
+      lessonType: 'standard',
+      order: 2,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'fw-2-1',
+          type: 'FILL_BLANK',
+          instruction: 'Open a file for writing',
+          difficulty: 'easy',
+          codeWithBlank: 'with open("out.txt", "___") as f:\n    f.write("Hello")',
+          options: ['w', 'r', 'x', 'a'],
+          correctAnswer: 'w',
+          explanation: '"w" mode creates or overwrites a file for writing.',
+          hint: '"w" stands for write.',
+        },
+      ],
+    },
   ],
 };
 
