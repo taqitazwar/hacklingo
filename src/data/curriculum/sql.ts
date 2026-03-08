@@ -282,6 +282,17 @@ const sqlSection1 = {
           correctAnswer: 'Concurrent transactions execute as if they were sequential',
           explanation: 'Isolation prevents dirty reads, non-repeatable reads, and phantom reads between concurrent transactions.',
         },
+        {
+          id: 'sql-tx-5',
+          type: 'FILL_BLANK' as const,
+          instruction: 'Save a savepoint within a transaction',
+          difficulty: 'hard' as const,
+          codeWithBlank: 'BEGIN;\nINSERT INTO accounts VALUES (1, 500);\nSAVEPOINT ___;
+INSERT INTO accounts VALUES (2, 300);\nROLLBACK TO step1;',
+          options: ['step1', 'checkpoint', 'mark1', 'save1'],
+          correctAnswer: 'step1',
+          explanation: 'SAVEPOINT creates a point within a transaction to roll back to without canceling the entire transaction.',
+        },
       ],
     },
   ],
