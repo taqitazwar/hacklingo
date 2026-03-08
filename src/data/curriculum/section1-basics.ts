@@ -81,6 +81,16 @@ const pythonBasicsSection: CourseSection = {
           correctAnswer: 'line1 line2',
           explanation: 'print() with multiple arguments separates them with a space by default.',
         },
+        {
+          id: 'hpy-7',
+          type: 'FILL_BLANK',
+          instruction: 'Print without a newline at the end',
+          difficulty: 'medium',
+          codeWithBlank: 'print("Hello", ___="")',
+          options: ['end', 'sep', 'newline', 'suffix'],
+          correctAnswer: 'end',
+          explanation: 'The end parameter controls what is printed at the end. Default is "\\n". Use "" to omit the newline.',
+        },
       ],
     },
     {
