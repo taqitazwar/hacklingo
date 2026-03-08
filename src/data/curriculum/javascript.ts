@@ -824,6 +824,32 @@ const javascriptSection3 = {
         },
       ],
     },
+    {
+      id: 'js-map-set',
+      sectionId: 'js-arrays',
+      title: 'Map & Set',
+      description: 'ES6 Map and Set data structures.',
+      lessonType: 'standard' as const,
+      order: 4,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-ms-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a Map?',
+          difficulty: 'medium' as const,
+          question: 'What is the difference between a Map and a plain object in JavaScript?',
+          options: [
+            'Maps can only hold string keys',
+            'Maps allow any value (including objects) as keys and maintain insertion order',
+            'Maps are arrays of key-value pairs',
+            'Maps are read-only',
+          ],
+          correctAnswer: 'Maps allow any value (including objects) as keys and maintain insertion order',
+          explanation: 'Map keys can be any type. Objects only support string/symbol keys. Maps are ordered and have .size.',
+        },
+      ],
+    },
   ],
 };
 
