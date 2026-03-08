@@ -71,6 +71,21 @@ const functionsSection: CourseSection = {
           correctAnswer: '3',
           explanation: 'ping() is called 3 times, so "ping" is printed 3 times.',
         },
+        {
+          id: 'fn-1-6',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What is a function docstring?',
+          difficulty: 'easy',
+          question: 'What is a docstring in a Python function?',
+          options: [
+            'A comment that disables the function',
+            'A string placed right after def that documents what the function does',
+            'The return value of the function',
+            'A string that names the function',
+          ],
+          correctAnswer: 'A string placed right after def that documents what the function does',
+          explanation: 'Docstrings appear right after the def line in triple quotes and describe what the function does.',
+        },
       ],
     },
     {
