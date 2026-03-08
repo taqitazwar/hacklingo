@@ -7,6 +7,7 @@ import WelcomeScreen from '../screens/Welcome/WelcomeScreen';
 import OnboardingScreen from '../screens/Onboarding/OnboardingScreen';
 import LessonScreen from '../screens/Lesson/LessonScreen';
 import ResultsScreen from '../screens/Results/ResultsScreen';
+import SettingsScreen from '../screens/Settings/SettingsScreen';
 import TabNavigator from './TabNavigator';
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -37,6 +38,11 @@ const AppNavigator: React.FC = () => {
         name="Results"
         component={ResultsScreen}
         options={{ presentation: 'modal', gestureEnabled: false }}
+      />
+      <Stack.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{ animation: 'none' }}
       />
     </Stack.Navigator>
   );
