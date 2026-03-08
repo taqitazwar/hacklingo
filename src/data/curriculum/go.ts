@@ -628,6 +628,19 @@ ___:
           correctAnswer: 'Buffered channels hold multiple values without blocking immediately',
           explanation: 'make(chan int, 5) creates a buffered channel with capacity 5. Sends block only when the buffer is full.',
         },
+        {
+          id: 'go-sel-4',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'Will this deadlock?',
+          difficulty: 'hard' as const,
+          code: 'ch := make(chan int, 1)
+ch <- 42
+val := <-ch
+fmt.Println(val)',
+          options: ['42', '0', 'deadlock', 'Error'],
+          correctAnswer: '42',
+          explanation: 'Buffered channel with capacity 1 can hold one value without a receiver ready. No deadlock occurs.',
+        },
       ],
     },
   ],
