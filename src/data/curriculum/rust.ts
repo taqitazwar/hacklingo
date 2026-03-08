@@ -1106,6 +1106,32 @@ println!("{}", sum);',
         },
       ],
     },
+    {
+      id: 'rust-boss',
+      sectionId: 'rust-traits',
+      title: 'Rust Boss',
+      description: 'The ultimate Rust challenge.',
+      lessonType: 'boss' as const,
+      order: 99,
+      completionXpBonus: 100,
+      challenges: [
+        {
+          id: 'rs-b-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is zero-cost abstraction?',
+          difficulty: 'hard' as const,
+          question: 'What does "zero-cost abstraction" mean in Rust?',
+          options: [
+            'Abstractions compile to zero bytes',
+            'High-level abstractions compile to the same machine code as hand-written low-level code',
+            'No runtime checks are performed',
+            'Generic code has no compile time cost',
+          ],
+          correctAnswer: 'High-level abstractions compile to the same machine code as hand-written low-level code',
+          explanation: 'Rust's iterators, closures, and generics compile to the same efficient code as manual loops and function calls.',
+        },
+      ],
+    },
   ],
 };
 
