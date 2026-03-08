@@ -162,6 +162,16 @@ const controlFlowSection: CourseSection = {
           correctAnswer: '-2',
           explanation: 'n goes 10, 7, 4, 1, -2. When n = -2, n > 0 is False so the loop stops.',
         },
+        {
+          id: 'wh-6',
+          type: 'FILL_BLANK',
+          instruction: 'Exit an infinite loop safely',
+          difficulty: 'medium',
+          codeWithBlank: 'while True:\n    data = input("Enter: ")\n    if data == "quit":\n        ___',
+          options: ['break', 'exit', 'stop', 'return'],
+          correctAnswer: 'break',
+          explanation: 'break is the correct way to exit a while True loop from inside the loop body.',
+        },
       ],
     },
     {
