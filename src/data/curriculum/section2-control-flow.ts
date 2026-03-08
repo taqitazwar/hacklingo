@@ -87,6 +87,16 @@ const controlFlowSection: CourseSection = {
           correctAnswer: '[0, 2, 4, 6, 8]',
           explanation: 'range(start, stop, step) with step=2 gives every other number from 0 to 9.',
         },
+        {
+          id: 'for-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does enumerate produce?',
+          difficulty: 'medium',
+          code: 'fruits = ["apple", "banana"]\nfor i, f in enumerate(fruits):\n    print(i, f)',
+          options: ['0 apple\n1 banana', 'apple banana', '0\n1', 'Error'],
+          correctAnswer: '0 apple\n1 banana',
+          explanation: 'enumerate() returns (index, value) pairs. Unpacking with i, f gives both simultaneously.',
+        },
       ],
     },
     {
