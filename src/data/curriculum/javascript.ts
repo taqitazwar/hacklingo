@@ -168,7 +168,29 @@ const javascriptSection3 = {
   description: 'Work with arrays, objects, and destructuring.',
   accentColor: Colors.blue,
   order: 3,
-  lessons: [],
+  lessons: [
+    {
+      id: 'js-array-methods',
+      sectionId: 'js-arrays',
+      title: 'Array Methods',
+      description: 'map, filter, reduce, and more.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-am-1',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What does filter return?',
+          difficulty: 'easy' as const,
+          code: 'const nums = [1, 2, 3, 4, 5];\nconst evens = nums.filter(n => n % 2 === 0);\nconsole.log(evens);',
+          options: ['[1, 3, 5]', '[2, 4]', '[1, 2, 3, 4, 5]', 'Error'],
+          correctAnswer: '[2, 4]',
+          explanation: '.filter() keeps only elements where the callback returns true. n % 2 === 0 is true for even numbers.',
+        },
+      ],
+    },
+  ],
 };
 
 const javascriptSection4 = {
