@@ -71,6 +71,16 @@ const pythonBasicsSection: CourseSection = {
           correctAnswer: 'Python\nis fun',
           explanation: 'Each print() call outputs on a new line by default.',
         },
+        {
+          id: 'hpy-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does this print?',
+          difficulty: 'easy',
+          code: 'print("line1", "line2")',
+          options: ['line1\nline2', 'line1 line2', 'line1line2', 'Error'],
+          correctAnswer: 'line1 line2',
+          explanation: 'print() with multiple arguments separates them with a space by default.',
+        },
       ],
     },
     {
