@@ -722,6 +722,32 @@ println!("{}", r.area());',
         },
       ],
     },
+    {
+      id: 'rust-pattern-matching',
+      sectionId: 'rust-structs',
+      title: 'Pattern Matching',
+      description: 'if let, while let, and destructuring patterns.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'rs-pm-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is if let used for?',
+          difficulty: 'medium' as const,
+          question: 'What is if let in Rust a shortcut for?',
+          options: [
+            'An if statement with let binding inside',
+            'A match expression with one arm — less verbose for single pattern matching',
+            'Lazy variable initialization',
+            'Conditional type casting',
+          ],
+          correctAnswer: 'A match expression with one arm — less verbose for single pattern matching',
+          explanation: 'if let Some(x) = option { } is shorthand for match with one arm. Ignores other variants.',
+        },
+      ],
+    },
   ],
 };
 
