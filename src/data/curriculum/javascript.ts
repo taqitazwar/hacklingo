@@ -302,6 +302,32 @@ const javascriptSection1 = {
         },
       ],
     },
+    {
+      id: 'js-classes',
+      sectionId: 'js-basics',
+      title: 'ES6 Classes',
+      description: 'class syntax, constructors, getters, and static methods.',
+      lessonType: 'standard' as const,
+      order: 5,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'js-cls-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a class in JS?',
+          difficulty: 'medium' as const,
+          question: 'What is an ES6 class in JavaScript?',
+          options: [
+            'A completely new object system',
+            'Syntactic sugar over constructor functions and prototypes',
+            'A compile-time construct with no runtime behavior',
+            'A sealed object with fixed properties',
+          ],
+          correctAnswer: 'Syntactic sugar over constructor functions and prototypes',
+          explanation: 'ES6 class syntax is cleaner but still uses prototypes under the hood.',
+        },
+      ],
+    },
   ],
 };
 
