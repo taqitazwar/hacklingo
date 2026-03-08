@@ -223,6 +223,27 @@ const sqlSection1 = {
         },
       ],
     },
+    {
+      id: 'sql-transactions',
+      sectionId: 'sql-select',
+      title: 'Transactions',
+      description: 'ACID properties and transaction control with COMMIT and ROLLBACK.',
+      lessonType: 'standard' as const,
+      order: 4,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'sql-tx-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What does ACID stand for?',
+          difficulty: 'medium' as const,
+          question: 'What does the A in ACID stand for?',
+          options: ['Automated', 'Atomic', 'Accessible', 'Aligned'],
+          correctAnswer: 'Atomic',
+          explanation: 'ACID: Atomicity (all or nothing), Consistency, Isolation, Durability.',
+        },
+      ],
+    },
   ],
 };
 
