@@ -323,6 +323,32 @@ const goSection2 = {
         },
       ],
     },
+    {
+      id: 'go-closures',
+      sectionId: 'go-functions',
+      title: 'Closures',
+      description: 'Functions that capture their surrounding scope.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'go-cl-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a closure in Go?',
+          difficulty: 'medium' as const,
+          question: 'What best describes a closure in Go?',
+          options: [
+            'A function with no parameters',
+            'A function that captures variables from its surrounding scope',
+            'A function that returns nothing',
+            'A method on a struct',
+          ],
+          correctAnswer: 'A function that captures variables from its surrounding scope',
+          explanation: 'Closures are anonymous functions that reference variables from the enclosing function.',
+        },
+      ],
+    },
   ],
 };
 
