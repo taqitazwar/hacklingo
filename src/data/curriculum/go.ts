@@ -347,6 +347,24 @@ const goSection2 = {
           correctAnswer: 'A function that captures variables from its surrounding scope',
           explanation: 'Closures are anonymous functions that reference variables from the enclosing function.',
         },
+        {
+          id: 'go-cl-2',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What does the counter print?',
+          difficulty: 'medium' as const,
+          code: 'func makeCounter() func() int {
+    n := 0
+    return func() int {
+        n++
+        return n
+    }
+}
+c := makeCounter()
+fmt.Println(c(), c())',
+          options: ['0 1', '1 1', '1 2', '0 0'],
+          correctAnswer: '1 2',
+          explanation: 'Each call to c() increments n and returns it. n is captured in the closure: first call returns 1, second returns 2.',
+        },
       ],
     },
   ],
