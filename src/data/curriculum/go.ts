@@ -253,7 +253,29 @@ const goSection4 = {
   description: 'Concurrency with goroutines and channels.',
   accentColor: Colors.brandRed,
   order: 4,
-  lessons: [],
+  lessons: [
+    {
+      id: 'go-goroutines',
+      sectionId: 'go-concurrency',
+      title: 'Goroutines & Channels',
+      description: 'Launch concurrent tasks with go keyword.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'go-gr-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'How do you launch a goroutine?',
+          difficulty: 'easy' as const,
+          question: 'Which keyword launches a goroutine in Go?',
+          options: ['async', 'thread', 'go', 'spawn'],
+          correctAnswer: 'go',
+          explanation: 'Prefix a function call with go to run it as a goroutine. go myFunc() runs concurrently.',
+        },
+      ],
+    },
+  ],
 };
 
 const goLanguage: Language = {
