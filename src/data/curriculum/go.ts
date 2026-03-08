@@ -793,6 +793,29 @@ mu.Unlock()',
           correctAnswer: 'When reads are frequent but writes are rare — allows concurrent reads',
           explanation: 'RWMutex allows multiple concurrent readers but only one writer. Use RLock()/RUnlock() for reads.',
         },
+        {
+          id: 'go-mx-5',
+          type: 'FIX_BUG' as const,
+          instruction: 'Fix the missing unlock',
+          difficulty: 'hard' as const,
+          buggyCode: 'func increment(mu *sync.Mutex, n *int) {
+    mu.Lock()
+    *n++
+}',
+          bugLineIndex: 2,
+          options: [
+            '    *n++
+    mu.Unlock()',
+            '    defer mu.Lock()
+    *n++',
+            '    *n++
+    mu.Release()',
+            '    *n += mu.Unlock()',
+          ],
+          correctAnswer: '    *n++
+    mu.Unlock()',
+          explanation: 'Every Lock() must have a corresponding Unlock(). Missing Unlock causes a deadlock.',
+        },
       ],
     },
   ],
