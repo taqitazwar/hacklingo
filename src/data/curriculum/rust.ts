@@ -559,6 +559,27 @@ const rustSection3 = {
         },
       ],
     },
+    {
+      id: 'rust-structs-basics',
+      sectionId: 'rust-structs',
+      title: 'Structs',
+      description: 'Define custom data structures with struct.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'rs-st-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'How do you define a struct?',
+          difficulty: 'easy' as const,
+          question: 'Which keyword defines a struct in Rust?',
+          options: ['class', 'object', 'struct', 'type'],
+          correctAnswer: 'struct',
+          explanation: 'struct defines a custom data type. struct Point { x: f64, y: f64 }',
+        },
+      ],
+    },
   ],
 };
 
