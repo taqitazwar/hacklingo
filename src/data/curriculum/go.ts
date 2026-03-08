@@ -241,6 +241,32 @@ fmt.Println(y)',
         },
       ],
     },
+    {
+      id: 'go-pointers',
+      sectionId: 'go-basics',
+      title: 'Pointers',
+      description: 'Pass by reference using pointers in Go.',
+      lessonType: 'standard' as const,
+      order: 4,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'go-ptr-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a pointer?',
+          difficulty: 'medium' as const,
+          question: 'What does a pointer store in Go?',
+          options: [
+            'A copy of the value',
+            'The memory address of a value',
+            'A reference to a function',
+            'An index into a slice',
+          ],
+          correctAnswer: 'The memory address of a value',
+          explanation: 'A pointer holds the memory address where a value is stored. var p *int = &x stores the address of x.',
+        },
+      ],
+    },
   ],
 };
 
