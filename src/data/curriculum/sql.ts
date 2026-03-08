@@ -770,6 +770,32 @@ const sqlSection3 = {
         },
       ],
     },
+    {
+      id: 'sql-window-functions',
+      sectionId: 'sql-aggregates',
+      title: 'Window Functions',
+      description: 'ROW_NUMBER, RANK, LAG, and LEAD functions.',
+      lessonType: 'standard' as const,
+      order: 4,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'sql-wf-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a window function?',
+          difficulty: 'hard' as const,
+          question: 'What makes a window function different from a regular aggregate?',
+          options: [
+            'It runs on a separate server window',
+            'It computes across a set of rows related to the current row without collapsing them',
+            'It only works on sorted data',
+            'It requires a subquery',
+          ],
+          correctAnswer: 'It computes across a set of rows related to the current row without collapsing them',
+          explanation: 'Window functions use OVER() to define a window of rows. Unlike GROUP BY, they do not collapse rows.',
+        },
+      ],
+    },
   ],
 };
 
