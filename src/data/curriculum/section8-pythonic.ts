@@ -79,6 +79,16 @@ const pythonicSection: CourseSection = {
           correctAnswer: 'upper = [w.upper() for w in words]',
           explanation: 'upper is a method — it needs () to be called. Without (), it returns the method object.',
         },
+        {
+          id: 'py-1-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is the result of this dict comprehension?',
+          difficulty: 'hard',
+          code: 'nums = [1, 2, 3]\nsquares = {n: n**2 for n in nums}\nprint(squares[2])',
+          options: ['2', '4', '{2: 4}', 'Error'],
+          correctAnswer: '4',
+          explanation: 'Dict comprehensions create dictionaries. {n: n**2 for n in nums} maps 1->1, 2->4, 3->9. squares[2] is 4.',
+        },
       ],
     },
     {
