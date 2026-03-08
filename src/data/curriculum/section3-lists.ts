@@ -1,0 +1,85 @@
+import { CourseSection } from '../../types';
+import { Colors } from '../../constants';
+
+const listsSection: CourseSection = {
+  id: 'lists',
+  title: 'Lists',
+  description: 'Store collections of data and manipulate them.',
+  accentColor: Colors.section3,
+  order: 3,
+  lessons: [
+    {
+      id: 'lists-intro',
+      sectionId: 'lists',
+      title: 'List Basics',
+      description: 'Create and access lists.',
+      lessonType: 'standard',
+      order: 1,
+      completionXpBonus: 10,
+      challenges: [
+        {
+          id: 'lst-1',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is printed?',
+          difficulty: 'easy',
+          code: 'colors = ["red", "green", "blue"]\nprint(colors[0])',
+          options: ['red', 'green', 'blue', '1'],
+          correctAnswer: 'red',
+          explanation: 'List indexing starts at 0. colors[0] is the first element, "red".',
+          hint: 'Lists use zero-based indexing, just like strings.',
+        },
+        {
+          id: 'lst-2',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does len() return here?',
+          difficulty: 'easy',
+          code: 'items = [10, 20, 30, 40]\nprint(len(items))',
+          options: ['3', '4', '40', '0'],
+          correctAnswer: '4',
+          explanation: 'len() counts the number of elements. There are 4 items in the list.',
+        },
+        {
+          id: 'lst-3',
+          type: 'FILL_BLANK',
+          instruction: 'Access the last element using negative indexing',
+          difficulty: 'medium',
+          codeWithBlank: 'nums = [1, 2, 3, 4]\nprint(nums[___])',
+          options: ['-1', 'last', '4', '-4'],
+          correctAnswer: '-1',
+          explanation: '-1 always refers to the last element. -2 is second-to-last, and so on.',
+          hint: 'Negative indexes count from the end of the list.',
+        },
+        {
+          id: 'lst-4',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is the output?',
+          difficulty: 'medium',
+          code: 'nums = [1, 2, 3, 4, 5]\nprint(nums[1:3])',
+          options: ['[1, 2, 3]', '[2, 3]', '[2, 3, 4]', '[1, 2]'],
+          correctAnswer: '[2, 3]',
+          explanation: 'Slicing [1:3] gives elements at index 1 and 2 (stops before index 3).',
+          hint: 'Slicing is inclusive of start, exclusive of end.',
+        },
+        {
+          id: 'lst-5',
+          type: 'FIX_BUG',
+          instruction: 'Fix the list creation',
+          difficulty: 'easy',
+          buggyCode: 'scores = (90, 85, 78)\nscores.append(95)',
+          bugLineIndex: 0,
+          options: [
+            'scores = [90, 85, 78]',
+            'scores = {90, 85, 78}',
+            'scores = <90, 85, 78>',
+            'scores = list(90, 85, 78)',
+          ],
+          correctAnswer: 'scores = [90, 85, 78]',
+          explanation: 'Parentheses () create a tuple which is immutable. Lists use [] and support append().',
+          hint: 'Lists use square brackets. Tuples use parentheses and cannot be changed.',
+        },
+      ],
+    },
+  ],
+};
+
+export default listsSection;
