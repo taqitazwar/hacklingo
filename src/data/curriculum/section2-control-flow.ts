@@ -1,0 +1,85 @@
+import { CourseSection } from '../../types';
+import { Colors } from '../../constants';
+
+const controlFlowSection: CourseSection = {
+  id: 'control-flow',
+  title: 'Control Flow',
+  description: 'Loops, patterns, break, continue — making code repeat.',
+  accentColor: Colors.section2,
+  order: 2,
+  lessons: [
+    {
+      id: 'cf-for-loops',
+      sectionId: 'control-flow',
+      title: 'For Loops',
+      description: 'Repeat actions with for loops.',
+      lessonType: 'standard',
+      order: 1,
+      completionXpBonus: 10,
+      challenges: [
+        {
+          id: 'for-1',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does this print?',
+          difficulty: 'easy',
+          code: 'for i in range(3):\n    print(i)',
+          options: ['1 2 3', '0 1 2', '0 1 2 3', '3'],
+          correctAnswer: '0 1 2',
+          explanation: 'range(3) generates 0, 1, 2. Each value is printed on its own line.',
+          hint: 'range() starts at 0 by default.',
+        },
+        {
+          id: 'for-2',
+          type: 'FILL_BLANK',
+          instruction: 'Loop over a list of fruits',
+          difficulty: 'easy',
+          codeWithBlank: 'fruits = ["apple", "banana"]\nfor ___ in fruits:\n    print(fruit)',
+          options: ['fruit', 'i', 'item', 'f'],
+          correctAnswer: 'fruit',
+          explanation: 'The variable name must match inside the loop. "fruit" matches print(fruit).',
+          hint: 'The loop variable name must match what you use inside the loop.',
+        },
+        {
+          id: 'for-3',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is the output?',
+          difficulty: 'easy',
+          code: 'for i in range(2, 5):\n    print(i)',
+          options: ['2 3 4 5', '2 3 4', '1 2 3 4', '0 1 2 3 4'],
+          correctAnswer: '2 3 4',
+          explanation: 'range(2, 5) starts at 2 and stops before 5: generates 2, 3, 4.',
+        },
+        {
+          id: 'for-4',
+          type: 'FIX_BUG',
+          instruction: 'Fix the loop',
+          difficulty: 'easy',
+          buggyCode: 'for i in range(3)\n    print(i)',
+          bugLineIndex: 0,
+          options: [
+            'for i in range(3):',
+            'for i range(3):',
+            'for i = range(3):',
+            'for (i in range(3)):',
+          ],
+          correctAnswer: 'for i in range(3):',
+          explanation: 'for loops need a colon at the end, just like if statements.',
+          hint: 'All compound statements in Python end with a colon.',
+        },
+        {
+          id: 'for-5',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does this accumulate?',
+          difficulty: 'medium',
+          code: 'total = 0\nfor n in range(1, 4):\n    total += n\nprint(total)',
+          options: ['3', '6', '10', '0'],
+          correctAnswer: '6',
+          explanation: 'range(1, 4) gives 1, 2, 3. total = 0 + 1 + 2 + 3 = 6.',
+          hint: '1 + 2 + 3 = ?',
+        },
+      ],
+    },
+  ],
+};
+
+export default controlFlowSection;
