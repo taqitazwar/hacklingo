@@ -539,6 +539,32 @@ const javascriptSection4 = {
         },
       ],
     },
+    {
+      id: 'js-async-await',
+      sectionId: 'js-async',
+      title: 'Async/Await',
+      description: 'Write async code that reads like synchronous code.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 18,
+      challenges: [
+        {
+          id: 'js-aw-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What does await do?',
+          difficulty: 'easy' as const,
+          question: 'What does the await keyword do inside an async function?',
+          options: [
+            'Runs code in a separate thread',
+            'Pauses execution until a Promise resolves',
+            'Creates a new Promise',
+            'Makes a function synchronous',
+          ],
+          correctAnswer: 'Pauses execution until a Promise resolves',
+          explanation: 'await suspends the async function until the Promise settles, then resumes with the resolved value.',
+        },
+      ],
+    },
   ],
 };
 
