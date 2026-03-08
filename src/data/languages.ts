@@ -4,40 +4,16 @@
  */
 import { Language } from '../types';
 import pythonLanguage from './curriculum/python';
+import javascriptLanguage from './curriculum/javascript';
+import sqlLanguage from './curriculum/sql';
+import goLanguage from './curriculum/go';
+import rustLanguage from './curriculum/rust';
 
 const comingSoonLanguages: Language[] = [
-  {
-    id: 'javascript',
-    name: 'JavaScript',
-    description: 'The language of the web. Build interactive websites and apps.',
-    icon: '🟨',
-    status: 'coming_soon',
-    sections: [],
-  },
-  {
-    id: 'sql',
-    name: 'SQL',
-    description: 'Query and manage databases. Essential for every developer.',
-    icon: '🗄️',
-    status: 'coming_soon',
-    sections: [],
-  },
-  {
-    id: 'go',
-    name: 'Go',
-    description: 'Fast, simple systems language built by Google.',
-    icon: '🔵',
-    status: 'coming_soon',
-    sections: [],
-  },
-  {
-    id: 'rust',
-    name: 'Rust',
-    description: 'Systems programming with memory safety and blazing speed.',
-    icon: '🦀',
-    status: 'coming_soon',
-    sections: [],
-  },
+  javascriptLanguage,
+  sqlLanguage,
+  goLanguage,
+  rustLanguage,
 ];
 
 const allLanguages: Language[] = [pythonLanguage, ...comingSoonLanguages];
