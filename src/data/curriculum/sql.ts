@@ -89,7 +89,34 @@ const sqlSection2 = {
   description: 'Combine data from multiple tables with JOINs.',
   accentColor: Colors.teal,
   order: 2,
-  lessons: [],
+  lessons: [
+    {
+      id: 'sql-joins-intro',
+      sectionId: 'sql-joins',
+      title: 'INNER JOIN',
+      description: 'Combine rows from two tables on a matching key.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'sql-j-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What does INNER JOIN return?',
+          difficulty: 'easy' as const,
+          question: 'What rows does an INNER JOIN return?',
+          options: [
+            'All rows from the left table',
+            'All rows from both tables',
+            'Only rows with matching values in both tables',
+            'Rows with no match in either table',
+          ],
+          correctAnswer: 'Only rows with matching values in both tables',
+          explanation: 'INNER JOIN returns rows where the join condition is true in both tables.',
+        },
+      ],
+    },
+  ],
 };
 
 const sqlSection3 = {
