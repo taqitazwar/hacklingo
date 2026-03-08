@@ -713,6 +713,32 @@ fmt.Println(err)',
         },
       ],
     },
+    {
+      id: 'go-embedding',
+      sectionId: 'go-structs',
+      title: 'Embedding & Composition',
+      description: 'Compose structs through embedding for code reuse.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'go-emb-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is struct embedding?',
+          difficulty: 'hard' as const,
+          question: 'What does embedding a struct in Go achieve?',
+          options: [
+            'It copies all fields at compile time',
+            'The outer struct gains the embedded struct's methods and fields',
+            'It creates a read-only view of the inner struct',
+            'It is syntactic sugar for interface implementation',
+          ],
+          correctAnswer: 'The outer struct gains the embedded struct's methods and fields',
+          explanation: 'Embedding promotes fields and methods. type Dog struct { Animal } — Dog has all Animal methods.',
+        },
+      ],
+    },
   ],
 };
 
