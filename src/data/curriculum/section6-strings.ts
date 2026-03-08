@@ -145,6 +145,16 @@ const stringsAdvancedSection: CourseSection = {
           correctAnswer: '.startswith()',
           explanation: '.startswith(prefix) returns True if the string begins with the given prefix.',
         },
+        {
+          id: 'sm-2-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does upper() do?',
+          difficulty: 'easy',
+          code: 'text = "hello world"\nprint(text.upper())',
+          options: ['hello world', 'HELLO WORLD', 'Hello World', 'Error'],
+          correctAnswer: 'HELLO WORLD',
+          explanation: '.upper() converts all characters to uppercase.',
+        },
       ],
     },
     {
