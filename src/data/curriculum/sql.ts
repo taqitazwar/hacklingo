@@ -618,6 +618,32 @@ const sqlSection3 = {
         },
       ],
     },
+    {
+      id: 'sql-indexes',
+      sectionId: 'sql-aggregates',
+      title: 'Indexes & Performance',
+      description: 'Speed up queries with indexes. Understand query planning.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'sql-idx-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is an index?',
+          difficulty: 'medium' as const,
+          question: 'What is the purpose of a database index?',
+          options: [
+            'To store backup copies of data',
+            'To speed up data retrieval at the cost of extra storage',
+            'To encrypt sensitive columns',
+            'To enforce referential integrity',
+          ],
+          correctAnswer: 'To speed up data retrieval at the cost of extra storage',
+          explanation: 'An index is a data structure that enables fast lookups. Like a book index — faster to find than reading every page.',
+        },
+      ],
+    },
   ],
 };
 
