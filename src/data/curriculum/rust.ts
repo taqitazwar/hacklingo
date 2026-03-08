@@ -7,7 +7,34 @@ const rustSection1 = {
   description: 'Variables, types, and ownership fundamentals.',
   accentColor: Colors.brandRed,
   order: 1,
-  lessons: [],
+  lessons: [
+    {
+      id: 'rust-variables',
+      sectionId: 'rust-basics',
+      title: 'Variables & Mutability',
+      description: 'let, mut, and const in Rust.',
+      lessonType: 'standard' as const,
+      order: 1,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'rs-v-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'Are Rust variables mutable by default?',
+          difficulty: 'easy' as const,
+          question: 'What happens when you try to reassign a variable declared with let in Rust?',
+          options: [
+            'It works fine — let is mutable',
+            'You get a compile error — variables are immutable by default',
+            'The old value is silently ignored',
+            'You get a runtime panic',
+          ],
+          correctAnswer: 'You get a compile error — variables are immutable by default',
+          explanation: 'Rust variables are immutable by default. Use let mut to allow reassignment.',
+        },
+      ],
+    },
+  ],
 };
 
 const rustSection2 = {
