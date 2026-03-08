@@ -7,14 +7,6 @@ import { Colors } from '../../constants';
 
 const comingSoonSections: CourseSection[] = [
   {
-    id: 'files-automation',
-    title: 'Files & Automation',
-    description: 'Read, write files. Automate tasks with Python.',
-    accentColor: Colors.section7,
-    order: 7,
-    lessons: [],
-  },
-  {
     id: 'pythonic-thinking',
     title: 'Pythonic Thinking',
     description: 'Comprehensions, generators, lambda, and idiomatic Python.',
