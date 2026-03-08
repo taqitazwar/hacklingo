@@ -750,6 +750,19 @@ fmt.Println(val)',
           correctAnswer: 'When multiple goroutines access shared data concurrently and at least one writes',
           explanation: 'A race condition causes unpredictable behavior when goroutines read/write shared data without synchronization.',
         },
+        {
+          id: 'go-mx-2',
+          type: 'FILL_BLANK' as const,
+          instruction: 'Lock a mutex before accessing shared data',
+          difficulty: 'hard' as const,
+          codeWithBlank: 'var mu sync.Mutex
+mu.___()  // acquire lock
+sharedData++
+mu.Unlock()',
+          options: ['Lock', 'Acquire', 'Wait', 'Hold'],
+          correctAnswer: 'Lock',
+          explanation: 'mu.Lock() acquires the mutex. Only one goroutine can hold the lock at a time.',
+        },
       ],
     },
   ],
