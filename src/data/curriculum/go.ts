@@ -191,6 +191,21 @@ const goSection1 = {
           correctAnswer: 'const',
           explanation: 'const declares a compile-time constant. Constants cannot be changed after declaration.',
         },
+        {
+          id: 'go-ty-3',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What does iota produce?',
+          difficulty: 'medium' as const,
+          code: 'const (
+    A = iota
+    B
+    C
+)
+fmt.Println(A, B, C)',
+          options: ['0 0 0', '1 2 3', '0 1 2', 'A B C'],
+          correctAnswer: '0 1 2',
+          explanation: 'iota starts at 0 and increments by 1 for each const in the block. A=0, B=1, C=2.',
+        },
       ],
     },
   ],
