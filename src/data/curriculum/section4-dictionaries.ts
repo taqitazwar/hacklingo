@@ -76,6 +76,16 @@ const dictionariesSection: CourseSection = {
           correctAnswer: 'person = {"name": "Bug"}',
           explanation: 'Dict keys and values are separated by : (colon), not = (equals).',
         },
+        {
+          id: 'dict-1-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is printed?',
+          difficulty: 'easy',
+          code: 'data = {}\ndata["key"] = "value"\nprint(len(data))',
+          options: ['0', '1', '2', 'Error'],
+          correctAnswer: '1',
+          explanation: 'You start with an empty dict, add one key-value pair, so len() returns 1.',
+        },
       ],
     },
     {
