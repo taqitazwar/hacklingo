@@ -249,6 +249,32 @@ const sqlSection2 = {
         },
       ],
     },
+    {
+      id: 'sql-outer-joins',
+      sectionId: 'sql-joins',
+      title: 'Outer Joins',
+      description: 'RIGHT JOIN, FULL OUTER JOIN, and CROSS JOIN.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'sql-oj-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What does RIGHT JOIN return?',
+          difficulty: 'medium' as const,
+          question: 'What does a RIGHT JOIN return that an INNER JOIN does not?',
+          options: [
+            'All rows from both tables',
+            'All rows from the right table, even without a match in the left',
+            'Only matching rows from both tables',
+            'Rows sorted by the right table',
+          ],
+          correctAnswer: 'All rows from the right table, even without a match in the left',
+          explanation: 'RIGHT JOIN keeps all rows from the right table. Unmatched left-table columns are NULL.',
+        },
+      ],
+    },
   ],
 };
 
