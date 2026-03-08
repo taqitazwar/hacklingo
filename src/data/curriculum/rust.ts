@@ -590,6 +590,21 @@ println!("{}", p.___);
           correctAnswer: 'x',
           explanation: 'Struct fields are accessed with dot notation: p.x gives the value of x.',
         },
+        {
+          id: 'rs-st-3',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What does this struct method return?',
+          difficulty: 'medium' as const,
+          code: 'struct Rect { w: u32, h: u32 }
+impl Rect {
+    fn area(&self) -> u32 { self.w * self.h }
+}
+let r = Rect { w: 3, h: 4 };
+println!("{}", r.area());',
+          options: ['7', '12', '34', 'Error'],
+          correctAnswer: '12',
+          explanation: 'area() returns self.w * self.h = 3 * 4 = 12. impl defines methods on a struct.',
+        },
       ],
     },
   ],
