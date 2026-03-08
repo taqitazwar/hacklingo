@@ -79,6 +79,16 @@ const intermediateSection: CourseSection = {
           correctAnswer: 'except FileNotFoundError:',
           explanation: 'Catching specific exceptions is better practice than a bare except clause.',
         },
+        {
+          id: 'int-1-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is the output when no exception occurs?',
+          difficulty: 'medium',
+          code: 'try:\n    x = int("42")\nexcept ValueError:\n    print("bad")\nelse:\n    print("good")',
+          options: ['bad', 'good', 'good\nbad', '42'],
+          correctAnswer: 'good',
+          explanation: 'The else block runs only if no exception was raised. int("42") succeeds, so else runs.',
+        },
       ],
     },
     {
