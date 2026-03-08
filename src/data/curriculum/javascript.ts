@@ -149,6 +149,32 @@ const javascriptSection1 = {
         },
       ],
     },
+    {
+      id: 'js-scope',
+      sectionId: 'js-basics',
+      title: 'Scope & Hoisting',
+      description: 'var hoisting, let/const block scope, and temporal dead zone.',
+      lessonType: 'standard' as const,
+      order: 3,
+      completionXpBonus: 12,
+      challenges: [
+        {
+          id: 'js-sc-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is hoisting?',
+          difficulty: 'medium' as const,
+          question: 'What does hoisting mean in JavaScript?',
+          options: [
+            'Moving code to a CDN server',
+            'Variable and function declarations are moved to the top of their scope before execution',
+            'Converting strings to uppercase',
+            'Lazy evaluation of expressions',
+          ],
+          correctAnswer: 'Variable and function declarations are moved to the top of their scope before execution',
+          explanation: 'var declarations and function declarations are hoisted. let/const are hoisted but not initialized.',
+        },
+      ],
+    },
   ],
 };
 
