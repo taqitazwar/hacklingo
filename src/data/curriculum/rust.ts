@@ -309,6 +309,32 @@ println!("{}", point.1);',
         },
       ],
     },
+    {
+      id: 'rust-error-handling',
+      sectionId: 'rust-basics',
+      title: 'Error Handling',
+      description: 'Result<T,E>, the ? operator, and error propagation.',
+      lessonType: 'standard' as const,
+      order: 5,
+      completionXpBonus: 16,
+      challenges: [
+        {
+          id: 'rs-err-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is Result<T, E>?',
+          difficulty: 'medium' as const,
+          question: 'What does Result<T, E> represent in Rust?',
+          options: [
+            'A value that may be null',
+            'Either Ok(T) for success or Err(E) for failure',
+            'A type that wraps multiple return values',
+            'An async operation result',
+          ],
+          correctAnswer: 'Either Ok(T) for success or Err(E) for failure',
+          explanation: 'Result is Rust's error handling type. Ok wraps a success value; Err wraps an error. No exceptions.',
+        },
+      ],
+    },
   ],
 };
 
