@@ -76,6 +76,16 @@ const filesSection: CourseSection = {
           explanation: 'Always close files after reading. Or better, use "with open(...) as f:" to close automatically.',
           hint: 'After using a file, you must close it.',
         },
+        {
+          id: 'fl-1-6',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does this strip from each line?',
+          difficulty: 'medium',
+          code: 'lines = ["hello\\n", "world\\n"]\nclean = [l.strip() for l in lines]\nprint(clean)',
+          options: ["['hello', 'world']", "['hello\\n', 'world\\n']", "hello\\nworld\\n", 'Error'],
+          correctAnswer: "['hello', 'world']",
+          explanation: '.strip() removes leading and trailing whitespace including newlines from each line.',
+        },
       ],
     },
     {
