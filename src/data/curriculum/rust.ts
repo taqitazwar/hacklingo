@@ -193,6 +193,19 @@ const rustSection1 = {
           correctAnswer: '->',
           explanation: '-> specifies the return type. fn add(a: i32, b: i32) -> i32 returns an i32.',
         },
+        {
+          id: 'rs-fn-3',
+          type: 'PREDICT_OUTPUT' as const,
+          instruction: 'What does this function return?',
+          difficulty: 'medium' as const,
+          code: 'fn double(x: i32) -> i32 {
+    x * 2
+}
+println!("{}", double(5));',
+          options: ['5', '10', '25', 'Error'],
+          correctAnswer: '10',
+          explanation: 'double(5) returns 5 * 2 = 10. The last expression without a semicolon is the return value.',
+        },
       ],
     },
   ],
