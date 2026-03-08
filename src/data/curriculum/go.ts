@@ -85,6 +85,32 @@ const goSection1 = {
         },
       ],
     },
+    {
+      id: 'go-slices',
+      sectionId: 'go-basics',
+      title: 'Slices & Maps',
+      description: 'Dynamic arrays and key-value collections in Go.',
+      lessonType: 'standard' as const,
+      order: 2,
+      completionXpBonus: 14,
+      challenges: [
+        {
+          id: 'go-sl-1',
+          type: 'MULTIPLE_CHOICE' as const,
+          instruction: 'What is a slice in Go?',
+          difficulty: 'easy' as const,
+          question: 'What is a Go slice?',
+          options: [
+            'A fixed-size array',
+            'A dynamic view over an underlying array',
+            'A linked list',
+            'A dictionary type',
+          ],
+          correctAnswer: 'A dynamic view over an underlying array',
+          explanation: 'Slices are flexible, dynamic references to arrays. []int{1,2,3} is a slice literal.',
+        },
+      ],
+    },
   ],
 };
 
