@@ -112,6 +112,18 @@ fmt.Println(Pi)",
           correctAnswer: 'false',
           explanation: 'In Go, bool defaults to false, int to 0, string to "", pointer to nil.',
           xpReward: 15, difficulty: 'easy',
+        },
+        {
+          id: 'go-vars-extra-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'x := 10
+y := &x
+*y++
+fmt.Println(x)',
+          correctAnswer: '11',
+          explanation: '&x gets pointer. *y++ increments the value at that address. x is now 11.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
