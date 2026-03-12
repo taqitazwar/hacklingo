@@ -96,7 +96,19 @@ const listsSection: CourseSection = {
           options: ['[0, 0, 0, 0]', '[0]', '0', 'Error'],
           correctAnswer: '[0, 0, 0, 0]',
           explanation: 'Multiplying a list by n repeats its elements n times. [0] * 4 gives [0, 0, 0, 0].',
-        },
+        },,
+        {
+          id: 'lists-intro-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "nums = [1, 2, 3]
+nums.append(4)
+print(len(nums))",
+          correctAnswer: '4',
+          explanation: 'append() adds one element. The list now has 4 items.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
