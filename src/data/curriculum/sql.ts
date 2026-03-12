@@ -970,7 +970,16 @@ SELECT AVG(value) FROM scores;",
           ],
           correctAnswer: 'RANK() leaves gaps after ties; DENSE_RANK() does not',
           explanation: 'RANK: tied rows get same rank but next rank skips (1,1,3). DENSE_RANK: no gaps (1,1,2).',
-        },
+        },,
+        {
+          id: 'sql-window-extra-1',
+          type: 'FILL_BLANK',
+          question: "Rank rows by salary",
+          codeSnippet: "SELECT name, salary,\n___(salary) OVER (ORDER BY salary DESC) AS rank\nFROM employees;",
+          correctAnswer: 'RANK',
+          explanation: 'RANK() assigns ranks. OVER clause defines the window (partition/order).',
+          xpReward: 20, difficulty: 'hard',
+        }
       ],
     },
     {
