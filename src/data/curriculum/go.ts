@@ -1022,6 +1022,21 @@ const goSection4 = {
           correctAnswer: 'A lightweight thread managed by the Go runtime',
           explanation: 'Goroutines are cheaper than OS threads and managed by the Go scheduler.',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'go-goroutine-extra-3',
+          type: 'FILL_BLANK',
+          question: "Wait for goroutines with WaitGroup",
+          codeSnippet: "var wg sync.WaitGroup
+wg.Add(1)
+go func() {
+    defer wg.___()
+    fmt.Println("done")
+}()
+wg.Wait()",
+          correctAnswer: 'Done',
+          explanation: 'WaitGroup.Done() signals that a goroutine has finished. Wait() blocks until count is 0.',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
