@@ -263,6 +263,20 @@ const javascriptSection1 = {
           explanation: 'var is hoisted to function scope but not initialized. This is hoisting behavior.',
           xpReward: 15,
           difficulty: 'hard',
+        },
+        {
+          id: 'js-scope-extra-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the temporal dead zone (TDZ)?",
+          options: [
+            'A network timeout period',
+            'The time before a let/const variable is initialized',
+            'A garbage collection phase',
+            'An async waiting period'
+          ],
+          correctAnswer: 'The time before a let/const variable is initialized',
+          explanation: 'Accessing let/const before their declaration causes ReferenceError due to TDZ.',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
