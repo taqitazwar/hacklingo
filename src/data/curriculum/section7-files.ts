@@ -269,6 +269,20 @@ print(len(lines))",
           explanation: "'a' mode appends to the file without erasing existing content.",
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'file-writing-3',
+          type: 'MULTIPLE_CHOICE',
+          question: "What does 'x' mode do when opening a file?",
+          options: [
+            'Reads and writes',
+            'Exclusive create — fails if file exists',
+            'Truncates existing file',
+            'Opens in binary mode'
+          ],
+          correctAnswer: 'Exclusive create — fails if file exists',
+          explanation: "'x' mode creates a new file and fails with FileExistsError if it already exists.",
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
