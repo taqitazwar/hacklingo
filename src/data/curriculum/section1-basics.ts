@@ -417,7 +417,18 @@ print(y)",
           options: ['5', '6', 'Python', 'Error'],
           correctAnswer: '6',
           explanation: 'len() counts the number of characters. "Python" has 6 characters.',
-        },
+        },,
+        {
+          id: 'basics-str-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is the output?",
+          codeSnippet: "s = 'hello'
+print(s[1])",
+          correctAnswer: 'e',
+          explanation: 'String indexing starts at 0. Index 1 is the second character.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
