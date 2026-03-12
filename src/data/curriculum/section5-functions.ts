@@ -438,6 +438,17 @@ print(check(-3))",
           correctAnswer: 'non-positive',
           explanation: '-3 > 0 is False, so the second return executes.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'func-return-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "def power(base, exp=2):
+    return base ** exp
+print(power(3), power(3, 3))",
+          correctAnswer: '9 27',
+          explanation: 'power(3) uses default exp=2: 3^2=9. power(3,3): 3^3=27.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
