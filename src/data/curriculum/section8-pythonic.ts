@@ -313,6 +313,16 @@ const pythonicSection: CourseSection = {
           correctAnswer: 'Generator expressions compute lazily on demand',
           explanation: '(x**2 for x in range(1000)) computes values one at a time. Uses less memory than a list.',
         },
+        {
+          id: 'py-3-8',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does this generator yield?',
+          difficulty: 'hard',
+          code: 'def count_up(n):\n    i = 0\n    while i < n:\n        yield i\n        i += 1\nprint(list(count_up(3)))',
+          options: ['[0, 1, 2]', '[1, 2, 3]', '[0, 1, 2, 3]', 'Error'],
+          correctAnswer: '[0, 1, 2]',
+          explanation: 'Generator yields 0, 1, 2 (i < 3). list() collects all values.',
+        },
       ],
     },
     {
