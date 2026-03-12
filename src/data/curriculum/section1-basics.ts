@@ -1131,6 +1131,16 @@ print(result)",
           correctAnswer: 'even',
           explanation: 'Ternary expression: value_if_true if condition else value_if_false.',
           xpReward: 20, difficulty: 'medium',
+        },
+        {
+          id: 'basics-boss-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 5
+print(x > 3 and x < 10)",
+          correctAnswer: 'True',
+          explanation: '5>3 is True, 5<10 is True. True and True = True.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
