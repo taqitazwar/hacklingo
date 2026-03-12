@@ -912,7 +912,20 @@ println!("{}", r.area());',
           ],
           correctAnswer: '    name: String,',
           explanation: 'str without & cannot be stored in a struct — it is unsized. Use String (owned) or &str with a lifetime.',
-        },
+        },,
+        {
+          id: 'rust-struct-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: '#[derive(Debug)]
+struct Point { x: i32, y: i32 }
+
+let p = Point { x: 3, y: 4 };
+println!("{} {}", p.x, p.y);',
+          correctAnswer: '3 4',
+          explanation: 'Struct fields are accessed with dot notation.',
+          xpReward: 10, difficulty: 'easy',
+        }
       ],
     },
     {
