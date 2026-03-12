@@ -410,6 +410,16 @@ print(d['a'], d['b'])",
           correctAnswer: '1 2',
           explanation: 'setdefault() only sets the value if the key is absent. a already exists, so it stays 1.',
           xpReward: 10, difficulty: 'medium',
+        },
+        {
+          id: 'dict-methods-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "d = {'a': 1, 'b': 2, 'c': 3}
+print(max(d, key=d.get))",
+          correctAnswer: 'c',
+          explanation: 'max on a dict iterates keys. key=d.get compares by value. c has value 3 (max).',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
