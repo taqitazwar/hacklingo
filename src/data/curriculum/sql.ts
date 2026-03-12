@@ -798,7 +798,16 @@ SELECT AVG(value) FROM scores;",
           ],
           correctAnswer: '      FROM employees GROUP BY department) AS stats',
           explanation: 'Subqueries in FROM must have an alias. Add AS stats after the closing parenthesis.',
-        },
+        },,
+        {
+          id: 'sql-sub-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this return?",
+          codeSnippet: "-- employees table has salaries: 50000, 75000, 90000\nSELECT MAX(salary) FROM employees\nWHERE salary < (SELECT MAX(salary) FROM employees);",
+          correctAnswer: '75000',
+          explanation: 'The subquery gets MAX = 90000. Outer query gets MAX salary below 90000 = 75000.',
+          xpReward: 15, difficulty: 'hard',
+        }
       ],
     },
     {
