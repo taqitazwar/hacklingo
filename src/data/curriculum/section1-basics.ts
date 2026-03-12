@@ -149,6 +149,16 @@ print(x * 3)",
           correctAnswer: 'int',
           explanation: 'type() returns the type object. __name__ gets its name.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'basics-hello-7',
+          type: 'FILL_BLANK',
+          question: "Print without newline",
+          codeSnippet: "print('Hello', ___='')
+print('World')",
+          correctAnswer: 'end',
+          explanation: "The end parameter controls what print() appends. Default is newline.",
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
