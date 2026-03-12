@@ -577,7 +577,18 @@ const sqlSection2 = {
           ],
           correctAnswer: 'CTEs can be referenced multiple times in the same query',
           explanation: 'CTEs improve readability and can be referenced multiple times. Recursive CTEs also enable tree traversal.',
-        },
+        },,
+        {
+          id: 'sql-view-extra-1',
+          type: 'FILL_BLANK',
+          question: "Create a virtual table (view)",
+          codeSnippet: "___ VIEW active_users AS
+SELECT * FROM users WHERE status = 'active';",
+          correctAnswer: 'CREATE',
+          explanation: 'CREATE VIEW defines a stored query as a virtual table.',
+          xpReward: 15,
+          difficulty: 'medium',
+        }
       ],
     },
   ],
