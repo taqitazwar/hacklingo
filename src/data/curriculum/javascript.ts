@@ -961,6 +961,20 @@ const javascriptSection3 = {
           correctAnswer: '4',
           explanation: 'find() returns the first element matching the condition. 4 > 3 is the first match.',
           xpReward: 10, difficulty: 'medium',
+        },
+        {
+          id: 'js-arr-extra-4',
+          type: 'MULTIPLE_CHOICE',
+          question: "What does Array.from() do?",
+          options: [
+            'Creates a new Array class',
+            'Converts array-like or iterable objects to arrays',
+            'Clones an array deeply',
+            'Creates a typed array'
+          ],
+          correctAnswer: 'Converts array-like or iterable objects to arrays',
+          explanation: 'Array.from() creates arrays from strings, Sets, Maps, NodeLists, etc.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
