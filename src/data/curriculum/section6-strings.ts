@@ -165,6 +165,16 @@ const stringsAdvancedSection: CourseSection = {
           correctAnswer: 'startswith',
           explanation: '.startswith(prefix) returns True if the string starts with the given prefix.',
         },
+        {
+          id: 'sm-2-8',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does .replace() return?',
+          difficulty: 'easy',
+          code: 's = "hello world"\nprint(s.replace("world", "Python"))',
+          options: ['hello world', 'hello Python', 'Python', 'Error'],
+          correctAnswer: 'hello Python',
+          explanation: '.replace(old, new) returns a new string with all occurrences of old replaced by new.',
+        },
       ],
     },
     {
