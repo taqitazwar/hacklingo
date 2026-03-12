@@ -244,6 +244,18 @@ print(y)",
           explanation: 'Variable names can start with underscore, but not digits or hyphens. class is a keyword.',
           xpReward: 15,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-vars-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 10
+y = 3
+print(x % y)",
+          correctAnswer: '1',
+          explanation: '10 % 3 = 1 (remainder of 10 / 3).',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
