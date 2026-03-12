@@ -1003,6 +1003,15 @@ const javascriptSection3 = {
           correctAnswer: 'Converts array-like or iterable objects to arrays',
           explanation: 'Array.from() creates arrays from strings, Sets, Maps, NodeLists, etc.',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'js-arr-extra-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is logged?",
+          codeSnippet: "const arr = [1, 2, 3];\nconst [first, ...rest] = arr;\nconsole.log(rest);",
+          correctAnswer: '[2, 3]',
+          explanation: 'Array destructuring with rest captures remaining elements into rest.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
