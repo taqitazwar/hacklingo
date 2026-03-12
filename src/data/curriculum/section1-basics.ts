@@ -984,6 +984,17 @@ ___, ___ = b, a",
           explanation: 'Python supports multiple assignment in one line for swapping values.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'basics-boss-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 10
+result = 'even' if x % 2 == 0 else 'odd'
+print(result)",
+          correctAnswer: 'even',
+          explanation: 'Ternary expression: value_if_true if condition else value_if_false.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
