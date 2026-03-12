@@ -477,7 +477,17 @@ print(lo, hi)",
           options: ['global', 'nonlocal', 'extern', 'var'],
           correctAnswer: 'global',
           explanation: 'global count declares that count refers to the module-level variable, not a local one.',
-        },
+        },,
+        {
+          id: 'func-scope-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is LEGB in Python?",
+          options: ['Loop, Error, Global, Break', 'Local, Enclosing, Global, Built-in', 'List, Enum, Generator, Bool', 'Lambda, Exec, Group, Byte'],
+          correctAnswer: 'Local, Enclosing, Global, Built-in',
+          explanation: 'LEGB is the scope resolution order Python uses to look up names.',
+          xpReward: 15,
+          difficulty: 'medium',
+        }
       ],
     },
     {
