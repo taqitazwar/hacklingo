@@ -298,6 +298,21 @@ const pythonicSection: CourseSection = {
           correctAnswer: 'lambda a, b: a * b',
           explanation: 'reduce() takes a function with two args and an iterable. It accumulates: ((1*2)*3)*4 = 24.',
         },
+        {
+          id: 'py-3-7',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'Generator expressions vs list comprehensions?',
+          difficulty: 'hard',
+          question: 'How do generator expressions differ from list comprehensions?',
+          options: [
+            'Generator expressions use [] instead of ()',
+            'Generator expressions compute lazily on demand',
+            'Generator expressions are always faster',
+            'Generator expressions produce tuples',
+          ],
+          correctAnswer: 'Generator expressions compute lazily on demand',
+          explanation: '(x**2 for x in range(1000)) computes values one at a time. Uses less memory than a list.',
+        },
       ],
     },
     {
