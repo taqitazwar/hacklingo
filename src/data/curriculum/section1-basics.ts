@@ -130,6 +130,16 @@ const pythonBasicsSection: CourseSection = {
           explanation: 'print() outputs text or values to standard output (the console).',
           xpReward: 15,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-hello-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 'hello'
+print(x * 3)",
+          correctAnswer: 'hellohellohello',
+          explanation: "String * n repeats the string n times.",
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
