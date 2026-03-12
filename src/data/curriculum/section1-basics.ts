@@ -835,6 +835,17 @@ print(a ** 2 + b ** 2)",
           explanation: '3^2 + 4^2 = 9 + 16 = 25. This is the Pythagorean theorem.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'basics-boss-3',
+          type: 'FILL_BLANK',
+          question: "Swap two variables using tuple unpacking",
+          codeSnippet: "a, b = 1, 2
+___, ___ = b, a",
+          correctAnswer: 'a, b',
+          explanation: 'Python supports multiple assignment in one line for swapping values.',
+          xpReward: 20,
+          difficulty: 'medium',
         }
       ],
     },
