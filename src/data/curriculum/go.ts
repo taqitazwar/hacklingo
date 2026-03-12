@@ -428,6 +428,20 @@ const goSection2 = {
           explanation: 'Variadic parameters use ... before the type: func f(args ...int).',
           xpReward: 15,
           difficulty: 'medium',
+        },
+        {
+          id: 'go-func-extra-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'func swap(a, b int) (int, int) {
+    return b, a
+}
+x, y := swap(1, 2)
+fmt.Println(x, y)',
+          correctAnswer: '2 1',
+          explanation: 'Go supports multiple return values. swap returns (b, a) = (2, 1).',
+          xpReward: 10,
+          difficulty: 'medium',
         }
       ],
     },
