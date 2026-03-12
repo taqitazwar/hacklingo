@@ -169,7 +169,22 @@ const rustSection1 = {
           ],
           correctAnswer: 'let s3 = s1 + &s2;',
           explanation: 'The + operator takes ownership of s1 and borrows &s2. s2 must be passed as &s2.',
-        },
+        },,
+        {
+          id: 'rust-str-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the difference between &str and String in Rust?",
+          options: [
+            '&str is mutable, String is immutable',
+            '&str is a borrowed slice, String owns its data',
+            'They are identical',
+            'String is faster'
+          ],
+          correctAnswer: '&str is a borrowed slice, String owns its data',
+          explanation: '&str is an immutable reference to string data. String is a heap-allocated, growable, owned string.',
+          xpReward: 15,
+          difficulty: 'hard',
+        }
       ],
     },
     {
