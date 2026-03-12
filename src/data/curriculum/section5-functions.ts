@@ -106,6 +106,21 @@ const functionsSection: CourseSection = {
           correctAnswer: 'Hello, World!',
           explanation: 'greet() with no argument uses the default name="World". f-strings format it.',
         },
+        {
+          id: 'fn-1-9',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What are keyword arguments?',
+          difficulty: 'medium',
+          question: 'What is the benefit of keyword arguments in Python?',
+          options: [
+            'They make functions faster',
+            'You can pass arguments by name, in any order',
+            'They are required and cannot have defaults',
+            'They are only for built-in functions',
+          ],
+          correctAnswer: 'You can pass arguments by name, in any order',
+          explanation: 'greet(name="Alice", greeting="Hi") — order does not matter with keyword args.',
+        },
       ],
     },
     {
