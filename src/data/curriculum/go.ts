@@ -508,6 +508,22 @@ fmt.Println(result)',
           correctAnswer: '7',
           explanation: 'add(3, 4) = 3 + 4 = 7. Go functions return explicitly.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'go-func-extra-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'func sum(nums ...int) int {
+    total := 0
+    for _, n := range nums {
+        total += n
+    }
+    return total
+}
+fmt.Println(sum(1, 2, 3, 4, 5))',
+          correctAnswer: '15',
+          explanation: 'Variadic sum adds all args: 1+2+3+4+5 = 15.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
