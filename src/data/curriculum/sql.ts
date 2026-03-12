@@ -106,6 +106,15 @@ const sqlSection1 = {
           correctAnswer: 'ORDER BY',
           explanation: 'ORDER BY sorts results. Add DESC for descending order.',
           xpReward: 15, difficulty: 'easy',
+        },
+        {
+          id: 'sql-sel-extra-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this return?",
+          codeSnippet: "SELECT LOWER('HELLO WORLD');",
+          correctAnswer: 'hello world',
+          explanation: 'LOWER() converts a string to lowercase.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
