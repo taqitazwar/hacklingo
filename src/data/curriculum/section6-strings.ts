@@ -257,6 +257,16 @@ print(s.count('a'))",
           correctAnswer: '3',
           explanation: 'count() returns the number of non-overlapping occurrences.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'str-methods-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "s = 'Python Programming'
+print(s.lower().replace(' ', '_'))",
+          correctAnswer: 'python_programming',
+          explanation: 'lower() converts to lowercase. replace changes spaces to underscores.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
