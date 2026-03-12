@@ -244,7 +244,17 @@ const javascriptSection1 = {
           ],
           correctAnswer: 'for (let i = 0; i < 3; i++) {',
           explanation: 'let creates a new binding per iteration. Each closure captures its own i value.',
-        },
+        },,
+        {
+          id: 'js-scope-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "var x = 'global';\nfunction test() {\n  console.log(x);\n  var x = 'local';\n}\ntest();",
+          correctAnswer: 'undefined',
+          explanation: 'var is hoisted to function scope but not initialized. This is hoisting behavior.',
+          xpReward: 15,
+          difficulty: 'hard',
+        }
       ],
     },
     {
