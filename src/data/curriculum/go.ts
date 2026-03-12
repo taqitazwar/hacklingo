@@ -764,6 +764,20 @@ fmt.Println(r.Area())',
           correctAnswer: '15',
           explanation: 'Area() = W * H = 5 * 3 = 15.',
           xpReward: 10, difficulty: 'medium',
+        },
+        {
+          id: 'go-struct-extra-3',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is embedding in Go?",
+          options: [
+            'Nesting structs by name',
+            'Including a struct type without a field name for implicit promotion',
+            'Implementing interfaces',
+            'Creating type aliases'
+          ],
+          correctAnswer: 'Including a struct type without a field name for implicit promotion',
+          explanation: 'Embedding promotes the embedded type's fields and methods to the outer struct.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
