@@ -144,6 +144,19 @@ print(Foo())",
           correctAnswer: 'I am Foo',
           explanation: '__str__ is called by print(). It defines the string representation.',
           xpReward: 20, difficulty: 'medium',
+        },
+        {
+          id: 'mas-oop-4',
+          type: 'FILL_BLANK',
+          question: "Define an abstract method",
+          codeSnippet: "from abc import ABC, abstractmethod
+class Shape(ABC):
+    @___
+    def area(self):
+        pass",
+          correctAnswer: 'abstractmethod',
+          explanation: '@abstractmethod marks a method that must be implemented in subclasses.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
