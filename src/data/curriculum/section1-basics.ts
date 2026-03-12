@@ -120,6 +120,16 @@ const pythonBasicsSection: CourseSection = {
           explanation: 'print() is the built-in function to display output.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-hello-4',
+          type: 'MULTIPLE_CHOICE',
+          question: "What does the print() function do?",
+          options: ['Stores data', 'Displays output to the console', 'Reads user input', 'Runs a calculation'],
+          correctAnswer: 'Displays output to the console',
+          explanation: 'print() outputs text or values to standard output (the console).',
+          xpReward: 15,
+          difficulty: 'easy',
         }
       ],
     },
