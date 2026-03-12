@@ -346,7 +346,22 @@ print(count)",
           options: ['0\n1\n2\n3\n4', '0\n1\n2\n4', '3', 'Error'],
           correctAnswer: '0\n1\n2\n4',
           explanation: 'continue skips the rest of the current iteration. When i=3, the print is skipped.',
-        },
+        },,
+        {
+          id: 'cf-break-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "for i in range(5):
+    if i == 3:
+        break
+    print(i)",
+          correctAnswer: '0
+1
+2',
+          explanation: 'break exits the loop when i equals 3, so only 0, 1, 2 are printed.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
