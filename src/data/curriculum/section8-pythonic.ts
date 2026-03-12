@@ -108,7 +108,18 @@ const pythonicSection: CourseSection = {
           options: ['3', '6', '2', 'Error'],
           correctAnswer: '6',
           explanation: 'Nested comprehension flattens the matrix. 3 rows x 2 cols = 6 elements.',
-        },
+        },,
+        {
+          id: 'py-comp-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "squares = {x: x**2 for x in range(4)}
+print(squares[3])",
+          correctAnswer: '9',
+          explanation: 'Dict comprehension creates a dict mapping x to x^2.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
