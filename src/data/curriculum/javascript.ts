@@ -74,7 +74,18 @@ const javascriptSection1 = {
           correctAnswer: 'Error',
           explanation: 'scope is not defined — it is a typo of "score". This throws a ReferenceError.',
           hint: 'Look carefully at the variable names.',
-        },
+        },,
+        {
+          id: 'js-vars-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "let x = 1;\n{\n  let x = 2;\n  console.log(x);\n}\nconsole.log(x);",
+          correctAnswer: '2
+1',
+          explanation: 'let is block-scoped. Inner x is separate from outer x.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
