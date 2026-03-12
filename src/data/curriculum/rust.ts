@@ -474,7 +474,22 @@ const rustSection2 = {
           ],
           correctAnswer: 'println!("{}", s2);',
           explanation: 'After let s2 = s1, ownership moves to s2. Use s2 instead, or clone s1 first to keep both.',
-        },
+        },,
+        {
+          id: 'rust-own-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What happens when you pass a String to a function in Rust?",
+          options: [
+            'The string is copied',
+            'Ownership moves to the function',
+            'A reference is created',
+            'The string is cloned'
+          ],
+          correctAnswer: 'Ownership moves to the function',
+          explanation: 'String is not Copy. Passing it moves ownership, making the original invalid.',
+          xpReward: 15,
+          difficulty: 'hard',
+        }
       ],
     },
     {
