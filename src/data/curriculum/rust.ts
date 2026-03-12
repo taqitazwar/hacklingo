@@ -1191,7 +1191,19 @@ println!("{}", sum);',
           options: ['move', 'clone', 'copy', 'own'],
           correctAnswer: 'move',
           explanation: 'move forces the closure to take ownership of captured variables. Required when the closure outlives the enclosing scope.',
-        },
+        },,
+        {
+          id: 'rust-closure-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'let nums = vec![1, 2, 3, 4, 5];
+let sum: i32 = nums.iter().filter(|&&x| x % 2 == 0).sum();
+println!("{}", sum);',
+          correctAnswer: '6',
+          explanation: 'filter keeps even numbers (2, 4). sum = 2 + 4 = 6.',
+          xpReward: 15,
+          difficulty: 'hard',
+        }
       ],
     },
     {
