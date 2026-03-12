@@ -195,6 +195,17 @@ fmt.Println(nums)",
           correctAnswer: 'append',
           explanation: 'append() adds elements to a slice and returns the new slice.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'go-slice-extra-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'nums := []int{1, 2, 3, 4, 5}
+slice := nums[1:4]
+fmt.Println(slice)',
+          correctAnswer: '[2 3 4]',
+          explanation: 'Slice [1:4] takes elements at index 1, 2, 3. Result is [2 3 4].',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
