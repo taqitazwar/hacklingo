@@ -231,7 +231,18 @@ done',
           options: ['randint', 'random', 'choice', 'randrange'],
           correctAnswer: 'randint',
           explanation: 'random.randint(a, b) returns a random integer between a and b inclusive.',
-        },
+        },,
+        {
+          id: 'int-modules-2',
+          type: 'FILL_BLANK',
+          question: "Import specific items from a module",
+          codeSnippet: "___ math ___ sqrt, pi
+print(sqrt(pi))",
+          correctAnswer: 'from, import',
+          explanation: "'from module import name' imports specific names without the module prefix.",
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
