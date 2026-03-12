@@ -394,7 +394,17 @@ const sqlSection2 = {
           ],
           correctAnswer: 'LEFT JOIN orders ON customers.id = orders.customer_id',
           explanation: 'LEFT JOIN keeps all customers (left table). Customers with no orders will have NULL in orders columns.',
-        },
+        },,
+        {
+          id: 'sql-join-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What does INNER JOIN return?",
+          codeSnippet: "-- Table A: 1, 2, 3\n-- Table B: 2, 3, 4\nSELECT * FROM A INNER JOIN B ON A.id = B.id",
+          correctAnswer: 'Rows where id is 2 and 3',
+          explanation: 'INNER JOIN returns only rows with matching values in both tables.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
