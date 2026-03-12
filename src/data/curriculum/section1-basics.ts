@@ -584,6 +584,16 @@ print(s.upper())",
           correctAnswer: 'Using triple quotes (""")',
           explanation: 'Triple quotes allow strings that span multiple lines.',
           xpReward: 15, difficulty: 'easy',
+        },
+        {
+          id: 'basics-str-6',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "s = 'Hello, World!'
+print(s.find('World'))",
+          correctAnswer: '7',
+          explanation: 'find() returns the starting index of the substring. World starts at index 7.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
