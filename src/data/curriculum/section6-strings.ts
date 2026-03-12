@@ -205,7 +205,18 @@ print(f'Hello, {name.upper()}!')",
           options: ['hello world', 'hello Python', 'Python', 'Error'],
           correctAnswer: 'hello Python',
           explanation: '.replace(old, new) returns a new string with all occurrences of old replaced by new.',
-        },
+        },,
+        {
+          id: 'str-methods-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print?",
+          codeSnippet: "s = '  hello world  '
+print(s.strip().title())",
+          correctAnswer: 'Hello World',
+          explanation: 'strip() removes leading/trailing spaces. title() capitalizes each word.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
