@@ -388,6 +388,18 @@ print(flat)",
           explanation: 'Both .copy() and list() create shallow copies. b = a just creates another reference.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'lists-boss-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "a = [1, 2, 3]
+b = a * 2
+print(len(b))",
+          correctAnswer: '6',
+          explanation: 'List * n repeats the list n times. [1,2,3] * 2 = [1,2,3,1,2,3].',
+          xpReward: 20,
+          difficulty: 'medium',
         }
       ],
     },
