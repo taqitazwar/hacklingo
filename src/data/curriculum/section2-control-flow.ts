@@ -535,6 +535,21 @@ print(evens)",
           explanation: 'The modulo % operator checks divisibility. x % 2 == 0 filters even numbers.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'cf-boss-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "for i in range(1, 6):
+    print('*' * i)",
+          correctAnswer: '*
+**
+***
+****
+*****',
+          explanation: 'String * n repeats the string n times, creating a triangle pattern.',
+          xpReward: 20,
+          difficulty: 'medium',
         }
       ],
     },
