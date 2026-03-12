@@ -1020,6 +1020,20 @@ const javascriptSection3 = {
           explanation: 'Destructuring with rest collects remaining properties. rest = { age: 30 }.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'js-obj-extra-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is optional chaining (?.) used for?",
+          options: [
+            'Type checking',
+            'Safely accessing nested properties that might be null/undefined',
+            'Creating optional parameters',
+            'Async await syntax'
+          ],
+          correctAnswer: 'Safely accessing nested properties that might be null/undefined',
+          explanation: 'obj?.prop returns undefined instead of throwing if obj is null/undefined.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
