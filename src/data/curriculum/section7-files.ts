@@ -86,6 +86,21 @@ const filesSection: CourseSection = {
           correctAnswer: "['hello', 'world']",
           explanation: '.strip() removes leading and trailing whitespace including newlines from each line.',
         },
+        {
+          id: 'fl-1-7',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'Why use with open()?',
+          difficulty: 'medium',
+          question: 'Why is "with open(file) as f:" preferred over f = open(file)?',
+          options: [
+            'It is faster',
+            'It automatically closes the file even if an error occurs',
+            'It prevents reading errors',
+            'It buffers the entire file',
+          ],
+          correctAnswer: 'It automatically closes the file even if an error occurs',
+          explanation: 'Context managers guarantee cleanup. The file closes when the with block exits, even on exceptions.',
+        },
       ],
     },
     {
