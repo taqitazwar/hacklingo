@@ -237,7 +237,18 @@ const filesSection: CourseSection = {
           options: ['writer(f)', 'DictWriter(f)', 'csvwriter(f)', 'Writer(f)'],
           correctAnswer: 'writer(f)',
           explanation: 'csv.writer(f) creates a CSV writer object. .writerow() writes a row.',
-        },
+        },,
+        {
+          id: 'file-writing-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this code do?",
+          codeSnippet: "with open('log.txt', 'a') as f:
+    f.write('entry\n')",
+          correctAnswer: 'Appends entry to log.txt',
+          explanation: "'a' mode appends to the file without erasing existing content.",
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
