@@ -324,6 +324,17 @@ print(i)",
           correctAnswer: '-2',
           explanation: '10→7→4→1→-2. The loop runs until i <= 0.',
           xpReward: 10, difficulty: 'medium',
+        },
+        {
+          id: 'cf-while-6',
+          type: 'FILL_BLANK',
+          question: "Use walrus operator in while loop",
+          codeSnippet: "data = [1, 2, 3]
+while chunk ___ data.pop() if data else None:
+    print(chunk)",
+          correctAnswer: ':=',
+          explanation: 'The walrus operator := assigns and returns a value in the condition.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
