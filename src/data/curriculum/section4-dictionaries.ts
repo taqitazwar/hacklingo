@@ -257,6 +257,16 @@ print(d.get('c', 0))",
           explanation: "The 'in' operator checks if a key exists in the dictionary.",
           xpReward: 15,
           difficulty: 'easy',
+        },
+        {
+          id: 'dict-reading-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "d = {'a': 10, 'b': 20}
+print(sum(d.values()))",
+          correctAnswer: '30',
+          explanation: 'values() returns all values. sum() adds them: 10 + 20 = 30.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
