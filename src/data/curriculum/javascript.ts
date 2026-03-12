@@ -1475,7 +1475,17 @@ const javascriptSection4 = {
           ],
           correctAnswer: '  const res = await fetch(`/users/${id}`);',
           explanation: 'fetch() returns a Promise. Without await, res is a Promise object, not the response. Add await.',
-        },
+        },,
+        {
+          id: 'js-boss-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "const obj = { a: 1, b: 2, c: 3 };\nconst { a, ...rest } = obj;\nconsole.log(Object.keys(rest).length);",
+          correctAnswer: '2',
+          explanation: 'Rest spread collects remaining properties. rest = { b: 2, c: 3 }, so 2 keys.',
+          xpReward: 20,
+          difficulty: 'hard',
+        }
       ],
     },
   ],
