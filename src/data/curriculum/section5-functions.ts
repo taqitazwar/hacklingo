@@ -133,6 +133,16 @@ print(square(square(3)))",
           explanation: 'square(3) = 9. square(9) = 81. Functions can be composed.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'func-intro-3',
+          type: 'FILL_BLANK',
+          question: "Define a function",
+          codeSnippet: "___ greet(name):
+    return f'Hello, {name}!'",
+          correctAnswer: 'def',
+          explanation: "'def' is the keyword to define a function in Python.",
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
