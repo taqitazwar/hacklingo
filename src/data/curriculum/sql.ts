@@ -696,6 +696,17 @@ ___ COUNT(*) > 5;",
           explanation: 'COUNT() counts rows. COUNT(*) counts all rows; COUNT(col) counts non-NULL values.',
           xpReward: 15,
           difficulty: 'easy',
+        },
+        {
+          id: 'sql-agg-extra-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this return?",
+          codeSnippet: "-- table: scores(value)
+-- rows: 10, 20, 30
+SELECT AVG(value) FROM scores;",
+          correctAnswer: '20',
+          explanation: 'AVG sums all values and divides by count: (10+20+30)/3 = 20.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
