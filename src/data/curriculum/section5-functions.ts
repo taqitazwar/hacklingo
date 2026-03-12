@@ -120,7 +120,20 @@ const functionsSection: CourseSection = {
           ],
           correctAnswer: 'You can pass arguments by name, in any order',
           explanation: 'greet(name="Alice", greeting="Hi") — order does not matter with keyword args.',
-        },
+        },,
+        {
+          id: 'func-intro-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "def square(n):
+    return n * n
+
+print(square(square(3)))",
+          correctAnswer: '81',
+          explanation: 'square(3) = 9. square(9) = 81. Functions can be composed.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
