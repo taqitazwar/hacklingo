@@ -104,6 +104,16 @@ const intermediateSection: CourseSection = {
           correctAnswer: 'except (ValueError, TypeError):',
           explanation: 'Use a tuple: except (ValueError, TypeError): catches either type.',
         },
+        {
+          id: 'int-1-8',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does this exception print?',
+          difficulty: 'hard',
+          code: 'try:\n    raise ValueError("bad value")\nexcept ValueError as e:\n    print(type(e).__name__)',
+          options: ['ValueError', 'bad value', 'Exception', 'Error'],
+          correctAnswer: 'ValueError',
+          explanation: 'type(e).__name__ gives the class name of the exception as a string.',
+        },
       ],
     },
     {
