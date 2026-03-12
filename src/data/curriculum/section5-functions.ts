@@ -237,7 +237,20 @@ print(square(square(3)))",
           options: ['func', 'wrapper', 'call', 'apply'],
           correctAnswer: 'func',
           explanation: 'The wrapper calls the original func(*args). The decorator adds logging around the function call.',
-        },
+        },,
+        {
+          id: 'func-params-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is the output?",
+          codeSnippet: "def greet(name, greeting='Hello'):
+    return f'{greeting}, {name}!'
+
+print(greet('Alice'))",
+          correctAnswer: 'Hello, Alice!',
+          explanation: 'Default parameter is used when no argument is passed.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
