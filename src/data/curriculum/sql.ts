@@ -488,6 +488,16 @@ const sqlSection2 = {
           correctAnswer: 'All rows from both tables with NULLs for non-matches',
           explanation: 'FULL OUTER JOIN returns all rows from both tables. Unmatched rows get NULL in the opposite table's columns.',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'sql-join-extra-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What does a CROSS JOIN produce?",
+          codeSnippet: "-- Table A: 3 rows, Table B: 4 rows
+SELECT COUNT(*) FROM A CROSS JOIN B;",
+          correctAnswer: '12',
+          explanation: 'CROSS JOIN produces a Cartesian product: every row from A with every row from B. 3×4=12.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
