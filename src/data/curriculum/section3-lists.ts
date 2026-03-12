@@ -279,6 +279,17 @@ print(nums[2:4])",
           explanation: 'Slicing [2:4] returns elements at index 2 and 3.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'lists-methods-6',
+          type: 'FILL_BLANK',
+          question: "Remove first occurrence of value",
+          codeSnippet: "nums = [1, 2, 3, 2]
+nums.___(2)
+print(nums)",
+          correctAnswer: 'remove',
+          explanation: 'remove() removes the first occurrence of the specified value.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
