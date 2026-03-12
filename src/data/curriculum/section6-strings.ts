@@ -456,6 +456,18 @@ print(', '.join(words))",
           explanation: "join() concatenates list elements with the separator string between each.",
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'str-boss-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "import re
+text = 'Python 3.11 is great'
+matches = re.findall(r'\\d+', text)
+print(matches)",
+          correctAnswer: "['3', '11']",
+          explanation: r'\d+ matches sequences of digits. findall returns all matches.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
