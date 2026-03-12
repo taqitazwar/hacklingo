@@ -1,25 +1,34 @@
-import { Lesson } from './curriculum';
+import { NavigatorScreenParams } from '@react-navigation/native';
 
 export type RootStackParamList = {
   Splash: undefined;
   Welcome: undefined;
   Onboarding: undefined;
-  MainTabs: undefined;
-  Lesson: { lesson: Lesson; sectionTitle: string; accentColor: string };
-  Settings: undefined;
+  MainTabs: NavigatorScreenParams<MainTabParamList>;
+  Lesson: { lessonId: string };
   Results: {
+    lessonId: string;
+    score: number;
     xpEarned: number;
-    accuracy: number;
-    streakDay: number;
-    lessonTitle: string;
-    isStreakMilestone: boolean;
+    perfect: boolean;
+    timeSpent: number;
   };
+  Friends: undefined;
+  Settings: undefined;
+  Activity: undefined;
+  Glossary: undefined;
+  Achievements: undefined;
+  Stats: undefined;
+  DailyGoal: undefined;
+  Notifications: undefined;
+  LanguageDetail: { languageId: string };
+  Shop: undefined;
 };
 
 export type MainTabParamList = {
-  Home:        undefined;
-  Practice:    undefined;
-  Challenges:  undefined;
-  Profile:     undefined;
-  Leaderboard: undefined;
+  Learn: undefined;
+  Practice: undefined;
+  Challenges: undefined;
+  Rank: undefined;
+  Profile: undefined;
 };
