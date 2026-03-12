@@ -166,6 +166,19 @@ dog',
           correctAnswer: '15',
           explanation: 'sum(range(1,6)) = 1+2+3+4+5 = 15.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'cf-for-8',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "for i in range(5):
+    if i == 2:
+        continue
+else:
+    print('done')",
+          correctAnswer: 'done',
+          explanation: 'continue skips iterations but does not trigger else. else runs after normal completion.',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
