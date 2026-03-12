@@ -487,6 +487,17 @@ print(count)",
           explanation: 'When i == j, we print i*j which gives the diagonal of the multiplication table.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'cf-boss-3',
+          type: 'FILL_BLANK',
+          question: "Use list comprehension with condition",
+          codeSnippet: "evens = [x for x in range(10) if x ___ 2 == 0]
+print(evens)",
+          correctAnswer: '%',
+          explanation: 'The modulo % operator checks divisibility. x % 2 == 0 filters even numbers.',
+          xpReward: 20,
+          difficulty: 'medium',
         }
       ],
     },
