@@ -810,6 +810,16 @@ SELECT COUNT(*), COUNT(n) FROM values;",
           correctAnswer: 'MIN',
           explanation: 'MIN() returns the smallest value in a column.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'sql-agg-extra-6',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this return?",
+          codeSnippet: "-- table: nums(n: 3, 7, 2, 9, 1)
+SELECT MAX(n) - MIN(n) FROM nums;",
+          correctAnswer: '8',
+          explanation: 'MAX=9, MIN=1. 9-1=8 is the range.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
