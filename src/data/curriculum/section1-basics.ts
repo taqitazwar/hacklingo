@@ -110,6 +110,16 @@ const pythonBasicsSection: CourseSection = {
           explanation: 'String concatenation with + joins strings together.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-hello-3',
+          type: 'FILL_BLANK',
+          question: "Complete the print statement",
+          codeSnippet: "___('Hello, World!')",
+          correctAnswer: 'print',
+          explanation: 'print() is the built-in function to display output.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
