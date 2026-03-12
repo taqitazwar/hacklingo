@@ -472,6 +472,17 @@ print(___(s))",
           explanation: 'len() returns the number of characters in a string.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-str-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "s = 'Python'
+print(s.upper())",
+          correctAnswer: 'PYTHON',
+          explanation: 'upper() returns the string with all characters in uppercase.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
