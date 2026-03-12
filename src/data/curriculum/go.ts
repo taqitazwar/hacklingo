@@ -894,7 +894,19 @@ const goSection4 = {
           ],
           correctAnswer: 'go worker()',
           explanation: 'Use the go keyword before a function call to run it as a goroutine concurrently.',
-        },
+        },,
+        {
+          id: 'go-goroutine-extra-1',
+          type: 'FILL_BLANK',
+          question: "Launch a goroutine",
+          codeSnippet: "___ func() {
+    fmt.Println("concurrent")
+}()",
+          correctAnswer: 'go',
+          explanation: "The 'go' keyword launches a goroutine — a lightweight concurrent function.",
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
