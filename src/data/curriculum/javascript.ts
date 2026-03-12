@@ -973,7 +973,17 @@ const javascriptSection3 = {
           ],
           correctAnswer: 'console.log(config.timeout);',
           explanation: 'Property names are case-sensitive. config.Timeout is undefined. The key is "timeout" (lowercase).',
-        },
+        },,
+        {
+          id: 'js-obj-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "const person = { name: 'Alice', age: 30 };\nconst { name, ...rest } = person;\nconsole.log(Object.keys(rest)[0]);",
+          correctAnswer: 'age',
+          explanation: 'Destructuring with rest collects remaining properties. rest = { age: 30 }.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
