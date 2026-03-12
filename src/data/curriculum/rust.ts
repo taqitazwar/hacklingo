@@ -717,7 +717,21 @@ println!("{}", r);",
           ],
           correctAnswer: 'Interior mutability — borrowing rules enforced at runtime instead of compile time',
           explanation: 'RefCell allows mutation through an immutable reference. Borrow violations panic at runtime instead of compile time.',
-        },
+        },,
+        {
+          id: 'rust-box-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "When would you use Box<T> in Rust?",
+          options: [
+            'For all heap allocations',
+            'For recursive types or large data on the heap',
+            'Instead of references',
+            'For thread-safe sharing'
+          ],
+          correctAnswer: 'For recursive types or large data on the heap',
+          explanation: 'Box<T> stores data on the heap. Required for recursive types like trees/lists.',
+          xpReward: 20, difficulty: 'hard',
+        }
       ],
     },
   ],
