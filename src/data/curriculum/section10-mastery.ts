@@ -366,7 +366,22 @@ class Dog(Animal):
           ],
           correctAnswer: 'The class of a class — controls class creation and behavior',
           explanation: 'Metaclasses are the type of a class. type is the default metaclass. Used in ORMs and frameworks.',
-        },
+        },,
+        {
+          id: 'mas-boss-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is duck typing?",
+          options: [
+            'A type system for birds',
+            "Using an object based on its interface, not its class",
+            'Converting types automatically',
+            'Type checking at compile time'
+          ],
+          correctAnswer: "Using an object based on its interface, not its class",
+          explanation: "If it walks like a duck and quacks like a duck, it's a duck. Python uses behavior over type.",
+          xpReward: 25,
+          difficulty: 'hard',
+        }
       ],
     },
   ],
