@@ -300,6 +300,16 @@ print(nums)",
           correctAnswer: 'remove',
           explanation: 'remove() removes the first occurrence of the specified value.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'lists-methods-7',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "nums = [5, 3, 1, 4, 2]
+print(sorted(nums)[-1])",
+          correctAnswer: '5',
+          explanation: 'sorted() returns new sorted list. [-1] is the last (largest) element.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
