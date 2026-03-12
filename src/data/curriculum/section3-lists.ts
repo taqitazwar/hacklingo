@@ -453,6 +453,16 @@ print(len(a))",
           correctAnswer: '3',
           explanation: 'a[:] creates a shallow copy. Modifying b does not affect a.',
           xpReward: 20, difficulty: 'medium',
+        },
+        {
+          id: 'lists-boss-7',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "nums = list(range(10))
+print(nums[::3])",
+          correctAnswer: '[0, 3, 6, 9]',
+          explanation: 'Slice [::3] takes every 3rd element starting at 0.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
