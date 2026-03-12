@@ -368,6 +368,17 @@ print(result)",
           explanation: 'filter() keeps elements where the function returns True.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'py-mapfilter-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "words = ['apple', 'banana', 'cherry']
+upper = list(map(str.upper, words))
+print(upper[1])",
+          correctAnswer: 'BANANA',
+          explanation: 'map(str.upper, words) applies upper() to each word. Index 1 is BANANA.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
