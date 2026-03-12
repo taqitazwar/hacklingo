@@ -195,6 +195,16 @@ const masterySection: CourseSection = {
           correctAnswer: 'True',
           explanation: 'isinstance(d, Animal) returns True because Dog inherits from Animal — d IS an Animal.',
         },
+        {
+          id: 'mas-2-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is the MRO order?',
+          difficulty: 'hard',
+          code: 'class A: pass\nclass B(A): pass\nclass C(A): pass\nclass D(B, C): pass\nprint(D.__mro__[1].__name__)',
+          options: ['A', 'B', 'C', 'object'],
+          correctAnswer: 'B',
+          explanation: 'MRO (C3 linearization): D → B → C → A → object. Index 1 is B.',
+        },
       ],
     },
     {
