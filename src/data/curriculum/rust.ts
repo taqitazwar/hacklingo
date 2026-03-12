@@ -598,7 +598,22 @@ println!("{}", r);",
           ],
           correctAnswer: 'Compiler rules that allow omitting lifetime annotations in common patterns',
           explanation: 'Lifetime elision rules let the compiler infer lifetimes in common cases, reducing annotation noise.',
-        },
+        },,
+        {
+          id: 'rust-life-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What do lifetime annotations like 'a prevent?",
+          options: [
+            'Memory allocation',
+            'Dangling references',
+            'Stack overflow',
+            'Type mismatches'
+          ],
+          correctAnswer: 'Dangling references',
+          explanation: "Lifetime annotations tell the compiler how long references are valid, preventing dangling references.",
+          xpReward: 20,
+          difficulty: 'hard',
+        }
       ],
     },
     {
