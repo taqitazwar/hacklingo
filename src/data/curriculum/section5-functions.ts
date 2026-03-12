@@ -315,6 +315,16 @@ const functionsSection: CourseSection = {
           correctAnswer: 'By returning a tuple',
           explanation: 'return a, b returns a tuple. The caller can unpack: x, y = func()',
         },
+        {
+          id: 'fn-3-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'Sorted with lambda key?',
+          difficulty: 'medium',
+          code: 'people = [("Alice", 30), ("Bob", 25), ("Carol", 35)]\npeople.sort(key=lambda p: p[1])\nprint(people[0][0])',
+          options: ['Alice', 'Bob', 'Carol', 'Error'],
+          correctAnswer: 'Bob',
+          explanation: 'lambda p: p[1] sorts by age. Bob (25) is youngest, so he is first after sort.',
+        },
       ],
     },
     {
