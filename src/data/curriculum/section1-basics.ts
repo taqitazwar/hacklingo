@@ -635,6 +635,16 @@ print(s.upper())",
           explanation: 'Python compares values, not types. 5 and 5.0 have the same value.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-bool-5',
+          type: 'FILL_BLANK',
+          question: "Check if x is between 0 and 10",
+          codeSnippet: "x = 7
+print(0 ___ x ___ 10)",
+          correctAnswer: '<= and <=',
+          explanation: 'Python supports chained comparisons: 0 <= x <= 10 is equivalent to 0<=x and x<=10.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
