@@ -92,6 +92,17 @@ const goSection1 = {
           explanation: '%T prints the type of a variable. := infers int for 42.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'go-vars-extra-2',
+          type: 'FILL_BLANK',
+          question: "Declare a constant in Go",
+          codeSnippet: "___ Pi = 3.14159
+fmt.Println(Pi)",
+          correctAnswer: 'const',
+          explanation: "const declares a compile-time constant that cannot be changed.",
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
