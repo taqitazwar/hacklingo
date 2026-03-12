@@ -77,7 +77,17 @@ const sqlSection1 = {
           ],
           correctAnswer: 'ORDER BY age DESC;',
           explanation: 'The correct keyword is ORDER BY, not just ORDER. The BY is required.',
-        },
+        },,
+        {
+          id: 'sql-select-extra-1',
+          type: 'FILL_BLANK',
+          question: "Select distinct values",
+          codeSnippet: "SELECT ___ department FROM employees;",
+          correctAnswer: 'DISTINCT',
+          explanation: 'DISTINCT filters out duplicate values from results.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
