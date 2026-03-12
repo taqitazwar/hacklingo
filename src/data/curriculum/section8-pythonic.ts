@@ -345,7 +345,19 @@ print(pairs[0][0])",
           options: ['[0, 1, 2]', '[1, 2, 3]', '[0, 1, 2, 3]', 'Error'],
           correctAnswer: '[0, 1, 2]',
           explanation: 'Generator yields 0, 1, 2 (i < 3). list() collects all values.',
-        },
+        },,
+        {
+          id: 'py-mapfilter-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "nums = [1, 2, 3, 4, 5]
+result = list(filter(lambda x: x > 3, nums))
+print(result)",
+          correctAnswer: '[4, 5]',
+          explanation: 'filter() keeps elements where the function returns True.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
