@@ -670,6 +670,19 @@ print(evens)",
           correctAnswer: 'Runs when loop completes without break',
           explanation: 'for-else: the else block runs after the loop finishes, only if break was NOT called.',
           xpReward: 20, difficulty: 'hard',
+        },
+        {
+          id: 'cf-boss-6',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "pairs = [(1,'a'),(2,'b'),(3,'c')]
+for n, c in pairs:
+    print(n, c)",
+          correctAnswer: '1 a
+2 b
+3 c',
+          explanation: 'Tuple unpacking in for loop assigns each element.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
