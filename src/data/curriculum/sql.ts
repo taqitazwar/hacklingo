@@ -115,6 +115,15 @@ const sqlSection1 = {
           correctAnswer: 'hello world',
           explanation: 'LOWER() converts a string to lowercase.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'sql-sel-extra-5',
+          type: 'FILL_BLANK',
+          question: "Limit results to 5 rows",
+          codeSnippet: "SELECT * FROM products ORDER BY price DESC ___ 5;",
+          correctAnswer: 'LIMIT',
+          explanation: 'LIMIT n restricts the result set to n rows.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
