@@ -625,7 +625,21 @@ print(___(s))",
           options: ['A', 'B', 'C', 'Error'],
           correctAnswer: 'B',
           explanation: 'grade=85. It fails the first check (>=90). It passes elif (>=80), so "B" is printed.',
-        },
+        },,
+        {
+          id: 'basics-cond-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 7
+if x > 5:
+    print('big')
+else:
+    print('small')",
+          correctAnswer: 'big',
+          explanation: '7 > 5 is True so the if branch runs.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
