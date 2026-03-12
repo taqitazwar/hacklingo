@@ -639,6 +639,20 @@ else:
           explanation: '7 > 5 is True so the if branch runs.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-cond-3',
+          type: 'FILL_BLANK',
+          question: "Complete the elif condition",
+          codeSnippet: "grade = 75
+if grade >= 90:
+    print('A')
+___ grade >= 75:
+    print('B')",
+          correctAnswer: 'elif',
+          explanation: 'elif adds additional conditions to an if statement.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
