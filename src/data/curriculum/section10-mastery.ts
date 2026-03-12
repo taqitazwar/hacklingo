@@ -157,6 +157,22 @@ class Shape(ABC):
           correctAnswer: 'abstractmethod',
           explanation: '@abstractmethod marks a method that must be implemented in subclasses.',
           xpReward: 20, difficulty: 'hard',
+        },
+        {
+          id: 'mas-oop-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "class A:
+    x = 10
+
+print(A.x)
+A.x = 20
+a = A()
+print(a.x)",
+          correctAnswer: '10
+20',
+          explanation: 'Class attributes are accessed via class or instance. Setting A.x=20 affects all.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
