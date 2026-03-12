@@ -861,7 +861,17 @@ const javascriptSection3 = {
           ],
           correctAnswer: 'const upper = words.map(w => w.toUpperCase());',
           explanation: 'The correct method is .toUpperCase() not .toUpper(). JavaScript string methods are case-sensitive.',
-        },
+        },,
+        {
+          id: 'js-arr-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "const nums = [1, 2, 3, 4, 5];\nconsole.log(nums.reduce((acc, n) => acc + n, 0));",
+          correctAnswer: '15',
+          explanation: 'reduce() accumulates: 0+1+2+3+4+5 = 15.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
