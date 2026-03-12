@@ -805,6 +805,22 @@ const rustSection3 = {
           explanation: 'if let Some(val) = x destructures the Option variant.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'rust-enum-extra-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print?",
+          codeSnippet: 'enum Direction { North, South, East, West }
+let d = Direction::North;
+let name = match d {
+    Direction::North => "N",
+    Direction::South => "S",
+    _ => "other",
+};
+println!("{}", name);',
+          correctAnswer: 'N',
+          explanation: 'match on Direction::North returns "N".',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
