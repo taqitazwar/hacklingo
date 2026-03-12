@@ -84,6 +84,16 @@ const stringsAdvancedSection: CourseSection = {
           correctAnswer: 'Pi is 3.14',
           explanation: ':.2f formats a float to 2 decimal places. Very useful for displaying currency or measurements.',
         },
+        {
+          id: 'sf-1-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does this f-string produce?',
+          difficulty: 'medium',
+          code: 'name = "Alice"\nage = 30\nprint(f"{name} is {age} years old")',
+          options: ['name is age years old', 'Alice is 30 years old', '{name} is {age}', 'Error'],
+          correctAnswer: 'Alice is 30 years old',
+          explanation: 'f-strings evaluate expressions inside {} at runtime.',
+        },
       ],
     },
     {
