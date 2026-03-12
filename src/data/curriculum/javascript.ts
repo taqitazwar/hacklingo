@@ -468,7 +468,22 @@ const javascriptSection2 = {
           ],
           correctAnswer: 'const square = x => x * x;',
           explanation: 'Arrow function syntax is: param => expression. The > alone is the greater-than operator.',
-        },
+        },,
+        {
+          id: 'js-func-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is a higher-order function?",
+          options: [
+            'A function with many parameters',
+            'A function that takes or returns functions',
+            'A function that calls itself',
+            'An async function'
+          ],
+          correctAnswer: 'A function that takes or returns functions',
+          explanation: 'Higher-order functions operate on other functions, enabling functional programming patterns.',
+          xpReward: 15,
+          difficulty: 'medium',
+        }
       ],
     },
     {
