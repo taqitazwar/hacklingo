@@ -225,7 +225,18 @@ const dictionariesSection: CourseSection = {
           options: ['1 1', '1 2', '"a" 1', 'Error'],
           correctAnswer: '1 1',
           explanation: '.pop("a") removes key "a" and returns its value 1. The dict now has 1 entry.',
-        },
+        },,
+        {
+          id: 'dict-reading-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print?",
+          codeSnippet: "d = {'a': 1, 'b': 2}
+print(d.get('c', 0))",
+          correctAnswer: '0',
+          explanation: 'get() returns the default value (0) when key is not found.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
