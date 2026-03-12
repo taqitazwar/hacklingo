@@ -358,7 +358,21 @@ println!("{}", point.1);',
           options: ['10', '20', '(10, 20)', 'Error'],
           correctAnswer: '20',
           explanation: 'Tuple fields are accessed by index: point.0 = 10, point.1 = 20.',
-        },
+        },,
+        {
+          id: 'rust-types-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the difference between i32 and u32 in Rust?",
+          options: [
+            'i32 is 32-bit signed, u32 is 32-bit unsigned',
+            'i32 is slower than u32',
+            'u32 supports decimals',
+            'They are the same type'
+          ],
+          correctAnswer: 'i32 is 32-bit signed, u32 is 32-bit unsigned',
+          explanation: 'i = signed (can be negative), u = unsigned (non-negative only). Both are 32-bit integers.',
+          xpReward: 15, difficulty: 'easy',
+        }
       ],
     },
     {
