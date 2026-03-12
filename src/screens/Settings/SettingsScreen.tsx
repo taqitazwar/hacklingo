@@ -1,259 +1,122 @@
 import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  SafeAreaView,
-  StatusBar,
-  Switch,
-  ScrollView,
-  Pressable,
-  Alert,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from '../../types';
-import Colors from '../../constants/colors';
-import { Typography, Spacing, Layout } from '../../constants';
-import { useProgressStore } from '../../store';
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { Colors, Typography, Spacing } from '../../constants';
 
-type SettingsNav = StackNavigationProp<RootStackParamList, 'Settings'>;
-interface Props { navigation: SettingsNav; }
-
-interface SettingRowProps {
-  icon: React.ComponentProps<typeof Ionicons>['name'];
+interface SettingRow {
   label: string;
-  value?: boolean;
-  onToggle?: (v: boolean) => void;
+  value?: string;
+  toggle?: boolean;
   onPress?: () => void;
-  iconColor?: string;
-  destructive?: boolean;
+  danger?: boolean;
 }
 
-const SettingRow: React.FC<SettingRowProps> = ({
-  icon, label, value, onToggle, onPress, iconColor = Colors.textSecondary, destructive = false,
-}) => (
-  <Pressable
-    style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}
-    onPress={onPress}
-    disabled={!onPress && value === undefined}
-  >
-    <View style={styles.rowLeft}>
-      <Ionicons name={icon} size={20} color={destructive ? Colors.red : iconColor} />
-      <Text style={[styles.rowLabel, destructive && styles.rowLabelDestructive]}>{label}</Text>
-    </View>
-    {onToggle !== undefined && value !== undefined ? (
-      <Switch
-        value={value}
-        onValueChange={onToggle}
-        trackColor={{ false: Colors.backgroundTertiary, true: Colors.brandRed }}
-        thumbColor={Colors.textPrimary}
-      />
-    ) : (
-      <Ionicons name="chevron-forward" size={16} color={Colors.textMuted} />
-    )}
-  </Pressable>
-);
+const SettingsScreen: React.FC = () => {
+  const [notifications, setNotifications] = useState(true);
+  const [sound, setSound] = useState(true);
+  const [haptics, setHaptics] = useState(true);
+  const [darkMode, setDarkMode] = useState(true);
 
-const SectionLabel: React.FC<{ title: string }> = ({ title }) => (
-  <Text style={styles.sectionLabel}>{title}</Text>
-);
-
-const SettingsScreen: React.FC<Props> = ({ navigation }) => {
-  const resetProgress = useProgressStore((state) => state.resetProgress);
-  const [soundEnabled, setSoundEnabled] = useState(true);
-  const [hapticsEnabled, setHapticsEnabled] = useState(true);
-  const [dailyReminder, setDailyReminder] = useState(false);
-  const [autoAdvance, setAutoAdvance] = useState(false);
-
-  const handleResetProgress = () => {
-    Alert.alert(
-      'Reset Progress',
-      'This will delete all your XP, completed lessons, and streak data. This cannot be undone.',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Reset',
-          style: 'destructive',
-          onPress: () => {
-            resetProgress();
-            navigation.navigate('MainTabs');
-          },
-        },
-      ]
-    );
-  };
+  const sections = [
+    {
+      title: 'Account',
+      rows: [
+        { label: 'Username', value: 'coder_dev' },
+        { label: 'Email', value: 'user@email.com' },
+        { label: 'Change Password' },
+      ] as SettingRow[],
+    },
+    {
+      title: 'Preferences',
+      rows: [
+        { label: 'Daily Goal', value: '10 min' },
+        { label: 'Learning Language', value: 'Python' },
+      ] as SettingRow[],
+    },
+    {
+      title: 'Notifications',
+      rows: [
+        { label: 'Push Notifications', toggle: true },
+        { label: 'Streak Reminders', toggle: true },
+      ] as SettingRow[],
+    },
+    {
+      title: 'About',
+      rows: [
+        { label: 'Version', value: '1.0.0' },
+        { label: 'Privacy Policy' },
+        { label: 'Terms of Service' },
+      ] as SettingRow[],
+    },
+    {
+      title: 'Danger Zone',
+      rows: [
+        { label: 'Reset Progress', danger: true },
+        { label: 'Delete Account', danger: true },
+      ] as SettingRow[],
+    },
+  ];
 
   return (
     <SafeAreaView style={styles.screen}>
-      <StatusBar barStyle="light-content" backgroundColor={Colors.backgroundPrimary} />
-
-      {/* Header */}
-      <View style={styles.header}>
-        <Pressable onPress={() => navigation.goBack()} style={styles.backBtn}>
-          <Ionicons name="arrow-back" size={24} color={Colors.textPrimary} />
-        </Pressable>
-        <Text style={styles.title}>Settings</Text>
-        <View style={styles.backBtn} />
-      </View>
-
-      <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false}>
-        {/* Sound & Haptics */}
-        <SectionLabel title="Experience" />
-        <View style={styles.card}>
-          <SettingRow
-            icon="volume-high"
-            label="Sound Effects"
-            value={soundEnabled}
-            onToggle={setSoundEnabled}
-            iconColor={Colors.blue}
-          />
-          <View style={styles.divider} />
-          <SettingRow
-            icon="phone-portrait"
-            label="Haptic Feedback"
-            value={hapticsEnabled}
-            onToggle={setHapticsEnabled}
-            iconColor={Colors.teal}
-          />
-          <View style={styles.divider} />
-          <SettingRow
-            icon="flash-sharp"
-            label="Auto-advance on Correct"
-            value={autoAdvance}
-            onToggle={setAutoAdvance}
-            iconColor={Colors.yellow}
-          />
-        </View>
-
-        {/* Notifications */}
-        <SectionLabel title="Notifications" />
-        <View style={styles.card}>
-          <SettingRow
-            icon="notifications"
-            label="Daily Reminder"
-            value={dailyReminder}
-            onToggle={setDailyReminder}
-            iconColor={Colors.orange}
-          />
-        </View>
-
-        {/* Account */}
-        <SectionLabel title="Account" />
-        <View style={styles.card}>
-          <SettingRow
-            icon="refresh"
-            label="Reset Progress"
-            onPress={handleResetProgress}
-            destructive
-          />
-        </View>
-
-        {/* App info */}
-        <SectionLabel title="About" />
-        <View style={styles.card}>
-          <View style={styles.infoRow}>
-            <Text style={styles.infoLabel}>Version</Text>
-            <Text style={styles.infoValue}>1.0.0</Text>
+      <Text style={styles.title}>Settings</Text>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        {sections.map(section => (
+          <View key={section.title} style={styles.section}>
+            <Text style={styles.sectionTitle}>{section.title}</Text>
+            <View style={styles.card}>
+              {section.rows.map((row, i) => (
+                <TouchableOpacity
+                  key={row.label}
+                  style={[styles.row, i < section.rows.length - 1 && styles.rowBorder]}
+                  onPress={row.onPress}
+                >
+                  <Text style={[styles.rowLabel, row.danger && { color: Colors.brandRed }]}>{row.label}</Text>
+                  {row.value && <Text style={styles.rowValue}>{row.value}</Text>}
+                  {!row.value && !row.toggle && <Text style={styles.chevron}>›</Text>}
+                </TouchableOpacity>
+              ))}
+            </View>
           </View>
-        </View>
-
-        <View style={{ height: Spacing.xxxl }} />
+        ))}
       </ScrollView>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: Colors.backgroundPrimary,
-  },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: Spacing.base,
-    paddingVertical: Spacing.md,
-    borderBottomWidth: 1,
-    borderBottomColor: Colors.borderLight,
-  },
-  backBtn: {
-    width: 40,
-    height: 40,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+  screen: { flex: 1, backgroundColor: Colors.backgroundPrimary },
   title: {
-    fontFamily: Typography.fontFamily.black,
-    fontSize: Typography.fontSize.xl,
     color: Colors.textPrimary,
+    fontFamily: Typography.fonts.bold,
+    fontSize: Typography.sizes['2xl'],
+    padding: Spacing.lg,
   },
-  scroll: {
-    flex: 1,
-    paddingHorizontal: Spacing.base,
-  },
-  sectionLabel: {
-    fontFamily: Typography.fontFamily.bold,
-    fontSize: Typography.fontSize.xs,
+  section: { marginBottom: Spacing.lg, paddingHorizontal: Spacing.lg },
+  sectionTitle: {
     color: Colors.textMuted,
-    letterSpacing: 0.5,
-    marginTop: Spacing.xl,
-    marginBottom: Spacing.sm,
-    paddingHorizontal: Spacing.xs,
+    fontFamily: Typography.fonts.medium,
+    fontSize: Typography.sizes.xs,
     textTransform: 'uppercase',
+    letterSpacing: 1,
+    marginBottom: Spacing.sm,
   },
   card: {
     backgroundColor: Colors.backgroundSecondary,
-    borderRadius: Layout.radiusMd,
-    borderWidth: 1,
-    borderColor: Colors.borderLight,
+    borderRadius: 12,
     overflow: 'hidden',
   },
   row: {
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: Spacing.md,
+    alignItems: 'center',
+    paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.md,
   },
-  rowPressed: {
-    backgroundColor: Colors.backgroundTertiary,
-  },
-  rowLeft: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: Spacing.sm,
-  },
-  rowLabel: {
-    fontFamily: Typography.fontFamily.semibold,
-    fontSize: Typography.fontSize.base,
-    color: Colors.textPrimary,
-  },
-  rowLabelDestructive: {
-    color: Colors.red,
-  },
-  divider: {
-    height: 1,
-    backgroundColor: Colors.borderLight,
-    marginHorizontal: Spacing.md,
-  },
-  infoRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: Spacing.md,
-    paddingVertical: Spacing.md,
-  },
-  infoLabel: {
-    fontFamily: Typography.fontFamily.semibold,
-    fontSize: Typography.fontSize.base,
-    color: Colors.textPrimary,
-  },
-  infoValue: {
-    fontFamily: Typography.fontFamily.semibold,
-    fontSize: Typography.fontSize.base,
-    color: Colors.textMuted,
-  },
+  rowBorder: { borderBottomWidth: 1, borderBottomColor: Colors.backgroundTertiary },
+  rowLabel: { color: Colors.textPrimary, fontFamily: Typography.fonts.regular, fontSize: Typography.sizes.base },
+  rowValue: { color: Colors.textMuted, fontFamily: Typography.fonts.regular, fontSize: Typography.sizes.sm },
+  chevron: { color: Colors.textMuted, fontSize: 20 },
 });
 
 export default SettingsScreen;
