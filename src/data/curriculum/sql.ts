@@ -465,6 +465,20 @@ const sqlSection2 = {
           explanation: 'LEFT JOIN returns all rows from the left table plus matched rows from the right.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'sql-join-extra-3',
+          type: 'MULTIPLE_CHOICE',
+          question: "What does a FULL OUTER JOIN return?",
+          options: [
+            'Only matching rows from both tables',
+            'All rows from left table',
+            'All rows from both tables with NULLs for non-matches',
+            'Cartesian product'
+          ],
+          correctAnswer: 'All rows from both tables with NULLs for non-matches',
+          explanation: 'FULL OUTER JOIN returns all rows from both tables. Unmatched rows get NULL in the opposite table's columns.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
