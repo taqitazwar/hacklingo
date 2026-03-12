@@ -1354,6 +1354,15 @@ const javascriptSection4 = {
           correctAnswer: 'A',
           explanation: 'Synchronous code runs first: A then C. setTimeout callback runs after current call stack: B.',
           xpReward: 15, difficulty: 'hard',
+        },
+        {
+          id: 'js-promise-extra-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does Promise.all([p1, p2]) do when p1 rejects?",
+          codeSnippet: "// p1 rejects with 'error'\n// p2 resolves with 'ok'\nPromise.all([p1, p2]).catch(e => console.log(e));",
+          correctAnswer: 'error',
+          explanation: 'Promise.all rejects immediately when any promise rejects.',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
