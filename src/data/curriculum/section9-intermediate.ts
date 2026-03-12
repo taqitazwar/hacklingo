@@ -206,6 +206,16 @@ const intermediateSection: CourseSection = {
           correctAnswer: 'datetime',
           explanation: 'datetime.now() returns a datetime object. type(now).__name__ gives "datetime".',
         },
+        {
+          id: 'int-2-8',
+          type: 'FILL_BLANK',
+          instruction: 'Get a random integer',
+          difficulty: 'easy',
+          codeWithBlank: 'import random\nn = random.___(1, 10)',
+          options: ['randint', 'random', 'choice', 'randrange'],
+          correctAnswer: 'randint',
+          explanation: 'random.randint(a, b) returns a random integer between a and b inclusive.',
+        },
       ],
     },
     {
