@@ -463,7 +463,22 @@ print(result)",
           options: ['map', 'list', 'tuple', 'dict'],
           correctAnswer: 'map',
           explanation: 'zip(*pairs) transposes the list. map(list, ...) converts each resulting iterator to a list.',
-        },
+        },,
+        {
+          id: 'py-boss-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What does zip() do?",
+          options: [
+            'Compresses files',
+            'Pairs elements from multiple iterables',
+            'Sorts two lists together',
+            'Merges dictionaries'
+          ],
+          correctAnswer: 'Pairs elements from multiple iterables',
+          explanation: 'zip() combines multiple iterables into tuples of corresponding elements.',
+          xpReward: 20,
+          difficulty: 'medium',
+        }
       ],
     },
   ],
