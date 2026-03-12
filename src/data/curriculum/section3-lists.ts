@@ -431,6 +431,18 @@ print(len(b))",
           explanation: 'List * n repeats the list n times. [1,2,3] * 2 = [1,2,3,1,2,3].',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'lists-boss-6',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "a = [1, 2, 3]
+b = a[:]
+b.append(4)
+print(len(a))",
+          correctAnswer: '3',
+          explanation: 'a[:] creates a shallow copy. Modifying b does not affect a.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
