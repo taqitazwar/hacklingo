@@ -596,6 +596,20 @@ println!("{} {}", s1, s2);',
           correctAnswer: 'hello hello',
           explanation: 'clone() creates a deep copy, allowing both s1 and s2 to own their own data.',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'rust-own-extra-4',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the Copy trait in Rust?",
+          options: [
+            'A trait for deep copying',
+            'Marks types that are copied (not moved) on assignment',
+            'Enables the clone() method',
+            'Used for reference counting'
+          ],
+          correctAnswer: 'Marks types that are copied (not moved) on assignment',
+          explanation: 'Types implementing Copy are duplicated on assignment instead of moved. Integers, booleans, etc.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
