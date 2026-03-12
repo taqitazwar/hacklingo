@@ -489,6 +489,18 @@ print(result)",
           explanation: 'zip() combines multiple iterables into tuples of corresponding elements.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'py-boss-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "from functools import reduce
+nums = [1, 2, 3, 4]
+result = reduce(lambda acc, x: acc * x, nums)
+print(result)",
+          correctAnswer: '24',
+          explanation: 'reduce multiplies: 1*2=2, 2*3=6, 6*4=24.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
