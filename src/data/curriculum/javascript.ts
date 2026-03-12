@@ -1057,6 +1057,15 @@ const javascriptSection3 = {
           correctAnswer: 'Safely accessing nested properties that might be null/undefined',
           explanation: 'obj?.prop returns undefined instead of throwing if obj is null/undefined.',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'js-obj-extra-3',
+          type: 'FILL_BLANK',
+          question: "Spread object properties",
+          codeSnippet: "const a = { x: 1 };\nconst b = { ___a, y: 2 };\nconsole.log(b.x);",
+          correctAnswer: '...',
+          explanation: 'Spread operator ... copies own enumerable properties into the new object.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
