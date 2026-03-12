@@ -150,6 +150,16 @@ print(nums[::-1])",
           correctAnswer: '[3, 2, 1]',
           explanation: 'Slicing with step -1 reverses the list.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'lists-intro-7',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "a = [1, [2, 3], 4]
+print(a[1][0])",
+          correctAnswer: '2',
+          explanation: 'a[1] is [2,3]. [2,3][0] = 2.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
