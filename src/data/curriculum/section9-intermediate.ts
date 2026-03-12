@@ -452,6 +452,18 @@ print(sys.version_info.major)",
           correctAnswer: 'A directory with an __init__.py file',
           explanation: 'A package is a directory containing __init__.py that groups related modules.',
           xpReward: 20, difficulty: 'medium',
+        },
+        {
+          id: 'int-boss-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "import json
+data = {'name': 'Bug', 'legs': 6}
+json_str = json.dumps(data)
+print(type(json_str).__name__)",
+          correctAnswer: 'str',
+          explanation: 'json.dumps() serializes a Python dict to a JSON string.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
