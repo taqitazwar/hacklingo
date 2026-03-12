@@ -323,7 +323,17 @@ print(y)",
           ],
           correctAnswer: 'The remainder after division',
           explanation: '10 % 3 = 1 because 10 = 3*3 + 1. The remainder is 1.',
-        },
+        },,
+        {
+          id: 'basics-num-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print?",
+          codeSnippet: "print(10 // 3)",
+          correctAnswer: '3',
+          explanation: '// is integer division (floor division), discarding the remainder.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
