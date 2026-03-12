@@ -428,6 +428,16 @@ const functionsSection: CourseSection = {
           correctAnswer: '8',
           explanation: 'make_adder(5) creates a closure that captures n=5. add5(3) returns 3 + 5 = 8.',
         },
+        {
+          id: 'fn-4-8',
+          type: 'FILL_BLANK',
+          instruction: 'Modify a global variable inside a function',
+          difficulty: 'medium',
+          codeWithBlank: 'count = 0\ndef increment():\n    ___ count\n    count += 1',
+          options: ['global', 'nonlocal', 'extern', 'var'],
+          correctAnswer: 'global',
+          explanation: 'global count declares that count refers to the module-level variable, not a local one.',
+        },
       ],
     },
     {
