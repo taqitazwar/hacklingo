@@ -901,6 +901,15 @@ const javascriptSection3 = {
           explanation: 'reduce() accumulates: 0+1+2+3+4+5 = 15.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'js-arr-extra-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is logged?",
+          codeSnippet: "const nums = [1, 2, 3];\nconsole.log(nums.map(x => x * 2).filter(x => x > 3));",
+          correctAnswer: '[4, 6]',
+          explanation: 'map doubles: [2,4,6]. filter keeps >3: [4,6].',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
