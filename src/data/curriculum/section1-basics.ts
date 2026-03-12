@@ -811,6 +811,18 @@ else:
           explanation: 'input() always returns a string, regardless of what the user types.',
           xpReward: 15,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-input-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What does int(input()) do?",
+          codeSnippet: "# User enters: 42
+x = int(input('Enter: '))
+print(type(x).__name__)",
+          correctAnswer: 'int',
+          explanation: 'input() returns str, but int() converts it to an integer.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
