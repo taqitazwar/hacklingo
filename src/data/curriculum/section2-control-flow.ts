@@ -229,7 +229,22 @@ print(total)",
           options: ['4', '5', '6', 'Error'],
           correctAnswer: '6',
           explanation: 'count goes 0, 2, 4, 6. At 4 count += 2 makes it 6. Then 6 < 5 is False. Final value: 6.',
-        },
+        },,
+        {
+          id: 'cf-while-2',
+          type: 'PREDICT_OUTPUT',
+          question: "How many times does this loop run?",
+          codeSnippet: "n = 1
+count = 0
+while n < 32:
+    n *= 2
+    count += 1
+print(count)",
+          correctAnswer: '5',
+          explanation: '1→2→4→8→16→32. The loop runs 5 times before n reaches 32.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
