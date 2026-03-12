@@ -549,6 +549,18 @@ print(d['a'])",
           explanation: 'defaultdict(list) auto-creates empty lists for new keys.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'dict-boss-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "d1 = {'a': 1}
+d2 = {'b': 2}
+d3 = {**d1, **d2}
+print(len(d3))",
+          correctAnswer: '2',
+          explanation: 'Dict unpacking ** merges dicts. d3 = {a:1, b:2} has 2 keys.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
