@@ -407,7 +407,17 @@ const goSection2 = {
           ],
           correctAnswer: 'func greet(name string) string {',
           explanation: 'In Go, parameter type comes after the parameter name: func greet(name string) string.',
-        },
+        },,
+        {
+          id: 'go-func-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What does a variadic function parameter look like in Go?",
+          options: ['func f(args []int)', 'func f(args... int)', 'func f(args ...int)', 'func f(*args int)'],
+          correctAnswer: 'func f(args ...int)',
+          explanation: 'Variadic parameters use ... before the type: func f(args ...int).',
+          xpReward: 15,
+          difficulty: 'medium',
+        }
       ],
     },
     {
