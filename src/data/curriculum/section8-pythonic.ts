@@ -399,6 +399,17 @@ print(upper[1])",
           correctAnswer: 'BANANA',
           explanation: 'map(str.upper, words) applies upper() to each word. Index 1 is BANANA.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'py-mapfilter-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "nums = range(1, 6)
+result = list(map(lambda x: x * x, nums))
+print(result[2])",
+          correctAnswer: '9',
+          explanation: 'map squares each number: [1,4,9,16,25]. Index 2 is 9.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
