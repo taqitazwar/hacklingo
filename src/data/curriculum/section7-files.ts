@@ -141,6 +141,16 @@ print(len(lines))",
           correctAnswer: '2',
           explanation: 'readlines() returns a list of lines. Two lines = list of length 2.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'file-reading-5',
+          type: 'FILL_BLANK',
+          question: "Read entire file content",
+          codeSnippet: "with open('data.txt') as f:
+    content = f.___()  # returns whole file as string",
+          correctAnswer: 'read',
+          explanation: 'read() with no argument reads the entire file into a string.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
