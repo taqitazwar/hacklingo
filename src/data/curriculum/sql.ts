@@ -634,7 +634,19 @@ const sqlSection3 = {
           ],
           correctAnswer: 'HAVING AVG(salary) > 50000;',
           explanation: 'WHERE cannot filter on aggregate functions. Use HAVING to filter after GROUP BY.',
-        },
+        },,
+        {
+          id: 'sql-agg-extra-1',
+          type: 'FILL_BLANK',
+          question: "Filter aggregated results",
+          codeSnippet: "SELECT department, COUNT(*) FROM employees
+GROUP BY department
+___ COUNT(*) > 5;",
+          correctAnswer: 'HAVING',
+          explanation: 'HAVING filters groups after GROUP BY, unlike WHERE which filters rows.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
