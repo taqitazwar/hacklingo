@@ -1114,6 +1114,18 @@ wg.Wait()",
           correctAnswer: 'Waiting on multiple channel operations',
           explanation: 'select blocks until one of its cases can proceed. Like switch but for channels.',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'go-goroutine-extra-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this pattern implement?",
+          codeSnippet: "ch := make(chan int, 1)
+ch <- 42
+result := <-ch
+fmt.Println(result)",
+          correctAnswer: '42',
+          explanation: 'Buffered channel with capacity 1. Send 42, then receive it. Prints 42.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
