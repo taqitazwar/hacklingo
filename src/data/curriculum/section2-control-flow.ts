@@ -121,6 +121,19 @@ for i, v in ___(items):
           explanation: 'enumerate() gives both the index and value when looping.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'cf-for-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print?",
+          codeSnippet: "total = 0
+for n in [1, 2, 3, 4]:
+    total += n
+print(total)",
+          correctAnswer: '10',
+          explanation: 'Accumulating sum: 0+1+2+3+4 = 10.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
