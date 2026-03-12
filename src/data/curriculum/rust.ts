@@ -944,7 +944,21 @@ println!("{}", r.area());',
           options: ['low', 'mid', 'high', 'Error'],
           correctAnswer: 'mid',
           explanation: '7 falls in the 6..=8 range (inclusive). Range patterns ..= in match arms are very readable.',
-        },
+        },,
+        {
+          id: 'rust-pat-extra-1',
+          type: 'FILL_BLANK',
+          question: "Match on a Result type",
+          codeSnippet: "let result: Result<i32, &str> = Ok(42);
+___ result {
+    Ok(n) => println!("{}", n),
+    Err(e) => println!("Error: {}", e),
+}",
+          correctAnswer: 'match',
+          explanation: 'match is exhaustive pattern matching. It handles all variants of a type.',
+          xpReward: 15,
+          difficulty: 'medium',
+        }
       ],
     },
   ],
