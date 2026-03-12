@@ -218,6 +218,16 @@ const filesSection: CourseSection = {
           correctAnswer: "'a'",
           explanation: "'a' (append) adds to the end of the file. 'w' overwrites it.",
         },
+        {
+          id: 'fw-2-8',
+          type: 'FILL_BLANK',
+          instruction: 'Write a list to a CSV file',
+          difficulty: 'hard',
+          codeWithBlank: 'import csv\nwith open("data.csv", "w") as f:\n    writer = csv.___()\n    writer.writerow(["name", "age"])',
+          options: ['writer(f)', 'DictWriter(f)', 'csvwriter(f)', 'Writer(f)'],
+          correctAnswer: 'writer(f)',
+          explanation: 'csv.writer(f) creates a CSV writer object. .writerow() writes a row.',
+        },
       ],
     },
     {
