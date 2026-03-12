@@ -124,6 +124,16 @@ print(f'{pi:.2f}')",
           correctAnswer: '3.14',
           explanation: ':.2f formats the float to 2 decimal places.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'str-fstrings-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 42
+print(f'{x:05d}')",
+          correctAnswer: '00042',
+          explanation: ':05d pads with zeros to width 5. 42 becomes 00042.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
