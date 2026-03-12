@@ -110,7 +110,17 @@ const filesSection: CourseSection = {
           options: ['readlines', 'read', 'readline', 'getlines'],
           correctAnswer: 'readlines',
           explanation: '.readlines() returns a list of strings, one per line.',
-        },
+        },,
+        {
+          id: 'file-reading-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What mode opens a file for reading only?",
+          options: ["'w'", "'r'", "'a'", "'x'"],
+          correctAnswer: "'r'",
+          explanation: "'r' opens for reading. 'w' writes (truncates), 'a' appends, 'x' creates exclusively.",
+          xpReward: 15,
+          difficulty: 'easy',
+        }
       ],
     },
     {
