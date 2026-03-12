@@ -418,6 +418,16 @@ const functionsSection: CourseSection = {
           correctAnswer: '20',
           explanation: "nonlocal allows inner() to modify x from outer()'s scope. After inner() runs, x becomes 20.",
         },
+        {
+          id: 'fn-4-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is the closure output?',
+          difficulty: 'hard',
+          code: 'def make_adder(n):\n    def add(x):\n        return x + n\n    return add\nadd5 = make_adder(5)\nprint(add5(3))',
+          options: ['5', '3', '8', 'Error'],
+          correctAnswer: '8',
+          explanation: 'make_adder(5) creates a closure that captures n=5. add5(3) returns 3 + 5 = 8.',
+        },
       ],
     },
     {
