@@ -720,6 +720,18 @@ func (c ___) Area() float64 {
           explanation: "Methods are defined with a receiver type. (c Circle) means Circle has this method.",
           xpReward: 15,
           difficulty: 'medium',
+        },
+        {
+          id: 'go-struct-extra-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'type Rect struct { W, H int }
+func (r Rect) Area() int { return r.W * r.H }
+r := Rect{W: 5, H: 3}
+fmt.Println(r.Area())',
+          correctAnswer: '15',
+          explanation: 'Area() = W * H = 5 * 3 = 15.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
