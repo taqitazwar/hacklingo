@@ -104,6 +104,20 @@ const javascriptSection1 = {
           correctAnswer: 'const',
           explanation: 'const declares a constant. It cannot be reassigned after declaration.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'js-vars-extra-4',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the difference between == and === in JavaScript?",
+          options: [
+            'No difference',
+            '=== checks type and value, == only checks value',
+            '== is faster',
+            '=== is for objects only'
+          ],
+          correctAnswer: '=== checks type and value, == only checks value',
+          explanation: '=== strict equality: no type coercion. == loose equality: converts types if needed.',
+          xpReward: 15, difficulty: 'easy',
         }
       ],
     },
