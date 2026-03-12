@@ -106,6 +106,17 @@ const rustSection1 = {
           correctAnswer: 'Reusing a variable name with a new value/type in the same scope',
           explanation: "Shadowing lets you redeclare a variable with let, even changing its type.",
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'rust-vars-extra-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'let x = 5;
+let x = x + 1;  // shadowing
+println!("{}", x);',
+          correctAnswer: '6',
+          explanation: 'Shadowing re-declares x. The new x = old x + 1 = 6.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
