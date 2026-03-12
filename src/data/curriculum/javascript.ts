@@ -291,6 +291,15 @@ const javascriptSection1 = {
           correctAnswer: 'The time before a let/const variable is initialized',
           explanation: 'Accessing let/const before their declaration causes ReferenceError due to TDZ.',
           xpReward: 15, difficulty: 'hard',
+        },
+        {
+          id: 'js-scope-extra-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is logged?",
+          codeSnippet: "const fns = [];\nfor (let i = 0; i < 3; i++) {\n  fns.push(() => i);\n}\nconsole.log(fns[0](), fns[1](), fns[2]());",
+          correctAnswer: '0 1 2',
+          explanation: 'let has block scope, so each iteration creates a new binding. Each closure captures its own i.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
