@@ -233,7 +233,24 @@ print(Counter.count)",
           options: ['@classmethod', '@staticmethod', '@property', '@abstractmethod'],
           correctAnswer: '@classmethod',
           explanation: '@classmethod receives cls (the class) as first argument. Can access class attributes.',
-        },
+        },,
+        {
+          id: 'mas-inherit-2',
+          type: 'FILL_BLANK',
+          question: "Call parent class constructor",
+          codeSnippet: "class Animal:
+    def __init__(self, name):
+        self.name = name
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        ___().__init__(name)
+        self.breed = breed",
+          correctAnswer: 'super',
+          explanation: 'super() returns the parent class, allowing you to call its methods.',
+          xpReward: 20,
+          difficulty: 'medium',
+        }
       ],
     },
     {
