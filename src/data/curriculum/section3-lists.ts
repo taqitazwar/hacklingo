@@ -324,6 +324,18 @@ print(sorted(nums)[-1])",
           correctAnswer: '5',
           explanation: 'sorted() returns new sorted list. [-1] is the last (largest) element.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'lists-methods-8',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "a = [1, 2, 3]
+b = a
+b.append(4)
+print(len(a))",
+          correctAnswer: '4',
+          explanation: 'b = a creates a reference, not a copy. They point to the same list.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
