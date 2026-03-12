@@ -214,7 +214,19 @@ print(nums[1:4])",
           options: ['2', '3', '6', 'Error'],
           correctAnswer: '3',
           explanation: '.count(value) returns how many times the value appears in the list. 2 appears 3 times.',
-        },
+        },,
+        {
+          id: 'lists-methods-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "nums = [3, 1, 4, 1, 5]
+nums.sort()
+print(nums[0])",
+          correctAnswer: '1',
+          explanation: 'sort() sorts in place ascending. The smallest value 1 is at index 0.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
