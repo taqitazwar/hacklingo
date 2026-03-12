@@ -244,6 +244,19 @@ print(count)",
           explanation: '1→2→4→8→16→32. The loop runs 5 times before n reaches 32.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'cf-while-3',
+          type: 'FILL_BLANK',
+          question: "Create an infinite loop structure",
+          codeSnippet: "___ True:
+    user_input = input('Enter q to quit: ')
+    if user_input == 'q':
+        break",
+          correctAnswer: 'while',
+          explanation: 'while True creates an infinite loop. Use break to exit.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
