@@ -275,6 +275,20 @@ print(fn(4, 7))",
           correctAnswer: '7',
           explanation: 'Lambda with ternary: max of x and y. 7 > 4, so returns y=7.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'py-lambda-4',
+          type: 'MULTIPLE_CHOICE',
+          question: "When should you prefer def over lambda?",
+          options: [
+            'Always',
+            'When the function needs a name or multiple statements',
+            'For mathematical functions only',
+            'When passing to map()'
+          ],
+          correctAnswer: 'When the function needs a name or multiple statements',
+          explanation: 'Lambda is for simple one-liners. Use def for readable, testable, reusable functions.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
