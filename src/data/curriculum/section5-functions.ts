@@ -215,6 +215,16 @@ const functionsSection: CourseSection = {
           correctAnswer: 'x=1\ny=2',
           explanation: '**kwargs collects keyword arguments into a dict. Iterating prints each key=value on its own line.',
         },
+        {
+          id: 'fn-2-8',
+          type: 'FILL_BLANK',
+          instruction: 'Create a simple decorator',
+          difficulty: 'hard',
+          codeWithBlank: 'def logger(func):\n    def wrapper(*args):\n        print("calling")\n        return ___(*args)\n    return wrapper',
+          options: ['func', 'wrapper', 'call', 'apply'],
+          correctAnswer: 'func',
+          explanation: 'The wrapper calls the original func(*args). The decorator adds logging around the function call.',
+        },
       ],
     },
     {
