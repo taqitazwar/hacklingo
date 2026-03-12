@@ -487,6 +487,18 @@ while chunk ___ data.pop() if data else None:
           explanation: 'continue skips to the next iteration without executing the remaining code.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'cf-break-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is the output?",
+          codeSnippet: "for i in range(10):
+    if i * i > 20:
+        break
+print(i)",
+          correctAnswer: '5',
+          explanation: '5*5=25 > 20, so break fires. i is 5 at that point.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
