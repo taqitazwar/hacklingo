@@ -99,6 +99,16 @@ const pythonicSection: CourseSection = {
           correctAnswer: 'if',
           explanation: 'Add if condition at end of a list comprehension to filter elements.',
         },
+        {
+          id: 'py-1-8',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'Nested comprehension length?',
+          difficulty: 'hard',
+          code: 'matrix = [[1,2],[3,4],[5,6]]\nflat = [x for row in matrix for x in row]\nprint(len(flat))',
+          options: ['3', '6', '2', 'Error'],
+          correctAnswer: '6',
+          explanation: 'Nested comprehension flattens the matrix. 3 rows x 2 cols = 6 elements.',
+        },
       ],
     },
     {
