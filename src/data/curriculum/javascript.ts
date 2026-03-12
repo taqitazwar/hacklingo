@@ -929,6 +929,15 @@ const javascriptSection3 = {
           correctAnswer: '[4, 6]',
           explanation: 'map doubles: [2,4,6]. filter keeps >3: [4,6].',
           xpReward: 10, difficulty: 'medium',
+        },
+        {
+          id: 'js-arr-extra-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is logged?",
+          codeSnippet: "const arr = [1, 2, 3, 4, 5];\nconsole.log(arr.find(x => x > 3));",
+          correctAnswer: '4',
+          explanation: 'find() returns the first element matching the condition. 4 > 3 is the first match.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
