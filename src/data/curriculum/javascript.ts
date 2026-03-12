@@ -1162,7 +1162,24 @@ const javascriptSection4 = {
           ],
           correctAnswer: 'async function loadUser() {',
           explanation: 'await can only be used inside an async function. Add the async keyword before function.',
-        },
+        },,
+        {
+          id: 'js-async-extra-1',
+          type: 'FILL_BLANK',
+          question: "Handle async errors",
+          codeSnippet: "async function fetchData() {
+  try {
+    const result = ___ fetch(url);
+    return result.json();
+  } catch (err) {
+    console.error(err);
+  }
+}",
+          correctAnswer: 'await',
+          explanation: 'await pauses execution until the Promise resolves. Errors are caught by try/catch.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
