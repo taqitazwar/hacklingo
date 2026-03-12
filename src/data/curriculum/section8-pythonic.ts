@@ -89,6 +89,16 @@ const pythonicSection: CourseSection = {
           correctAnswer: '4',
           explanation: 'Dict comprehensions create dictionaries. {n: n**2 for n in nums} maps 1->1, 2->4, 3->9. squares[2] is 4.',
         },
+        {
+          id: 'py-1-7',
+          type: 'FILL_BLANK',
+          instruction: 'Filter with a list comprehension',
+          difficulty: 'medium',
+          codeWithBlank: 'evens = [x for x in range(10) ___ x % 2 == 0]',
+          options: ['if', 'where', 'when', 'filter'],
+          correctAnswer: 'if',
+          explanation: 'Add if condition at end of a list comprehension to filter elements.',
+        },
       ],
     },
     {
