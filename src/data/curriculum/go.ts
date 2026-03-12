@@ -356,7 +356,19 @@ fmt.Println(y)',
           ],
           correctAnswer: 'p = new(int); fmt.Println(*p)',
           explanation: 'p is nil — dereferencing it panics. new(int) allocates an int and returns its pointer.',
-        },
+        },,
+        {
+          id: 'go-ptr-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'x := 42
+p := &x
+*p = 100
+fmt.Println(x)',
+          correctAnswer: '100',
+          explanation: '&x gets pointer to x. *p = 100 dereferences and modifies x directly.',
+          xpReward: 15, difficulty: 'medium',
+        }
       ],
     },
   ],
