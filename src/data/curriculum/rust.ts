@@ -738,7 +738,17 @@ const rustSection3 = {
           ],
           correctAnswer: 'match n {\n    1 => println!("one"),\n    2 => println!("two"),\n    _ => println!("other"),\n}',
           explanation: 'Rust match must be exhaustive. Use _ as a catch-all arm for all other values.',
-        },
+        },,
+        {
+          id: 'rust-enum-extra-1',
+          type: 'FILL_BLANK',
+          question: "Unwrap an Option value",
+          codeSnippet: "let x: Option<i32> = Some(42);\nif let ___(val) = x {\n    println!("{}", val);\n}",
+          correctAnswer: 'Some',
+          explanation: 'if let Some(val) = x destructures the Option variant.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
