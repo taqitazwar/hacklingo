@@ -140,6 +140,16 @@ print(nums[1:4])",
           explanation: 'extend() adds each element of the iterable individually, unlike append() which adds the whole object.',
           xpReward: 15,
           difficulty: 'easy',
+        },
+        {
+          id: 'lists-intro-6',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "nums = [1, 2, 3]
+print(nums[::-1])",
+          correctAnswer: '[3, 2, 1]',
+          explanation: 'Slicing with step -1 reverses the list.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
