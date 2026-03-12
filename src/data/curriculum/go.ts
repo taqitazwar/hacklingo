@@ -1126,6 +1126,18 @@ fmt.Println(result)",
           correctAnswer: '42',
           explanation: 'Buffered channel with capacity 1. Send 42, then receive it. Prints 42.',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'go-concur-extra-2',
+          type: 'FILL_BLANK',
+          question: "Send to a channel",
+          codeSnippet: "ch := make(chan string)
+go func() { ch ___ 'hello' }()
+msg := <-ch
+fmt.Println(msg)",
+          correctAnswer: '<-',
+          explanation: "ch <- value sends a value to channel ch. <-ch receives from it.",
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
