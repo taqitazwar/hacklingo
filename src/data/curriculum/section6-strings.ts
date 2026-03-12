@@ -363,6 +363,16 @@ print(s[::-1])",
           correctAnswer: "'tho'",
           explanation: "Index 2='t', 3='h', 4='o'. Slice [2:5] = 'tho'.",
           xpReward: 15, difficulty: 'easy',
+        },
+        {
+          id: 'str-slicing-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "s = 'abcdefg'
+print(s[::2])",
+          correctAnswer: 'aceg',
+          explanation: 'Slice [::2] takes every 2nd character: a(0), c(2), e(4), g(6).',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
