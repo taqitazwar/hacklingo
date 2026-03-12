@@ -1186,7 +1186,18 @@ println!("{}", sum);',
           options: ['5', '10', '15', '120'],
           correctAnswer: '15',
           explanation: '(1..=5) is a range 1 to 5 inclusive. .sum() adds them: 1+2+3+4+5 = 15.',
-        },
+        },,
+        {
+          id: 'rust-iter-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'let v = vec![1, 2, 3, 4, 5];
+let count = v.iter().filter(|&&x| x % 2 == 0).count();
+println!("{}", count);',
+          correctAnswer: '2',
+          explanation: 'filter keeps 2 and 4 (even numbers). count() returns 2.',
+          xpReward: 15, difficulty: 'hard',
+        }
       ],
     },
     {
