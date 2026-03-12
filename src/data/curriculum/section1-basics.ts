@@ -861,6 +861,21 @@ else:
           explanation: '0 is falsy in Python. The else branch runs.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-cond-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 15
+if x > 20:
+    print('A')
+elif x > 10:
+    print('B')
+else:
+    print('C')",
+          correctAnswer: 'B',
+          explanation: 'x=15 fails x>20 but passes x>10. Prints B.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
