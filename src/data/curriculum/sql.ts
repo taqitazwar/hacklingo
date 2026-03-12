@@ -97,6 +97,15 @@ const sqlSection1 = {
           explanation: 'SQL can evaluate expressions directly in SELECT.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'sql-sel-extra-3',
+          type: 'MULTIPLE_CHOICE',
+          question: "Which clause sorts query results?",
+          options: ['SORT BY', 'GROUP BY', 'ORDER BY', 'ARRANGE BY'],
+          correctAnswer: 'ORDER BY',
+          explanation: 'ORDER BY sorts results. Add DESC for descending order.',
+          xpReward: 15, difficulty: 'easy',
         }
       ],
     },
