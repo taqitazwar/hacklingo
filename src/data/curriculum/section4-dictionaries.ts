@@ -305,6 +305,16 @@ const dictionariesSection: CourseSection = {
           correctAnswer: '175',
           explanation: '.values() returns all dictionary values. sum() adds them: 90 + 85 = 175.',
         },
+        {
+          id: 'dict-3-7',
+          type: 'FILL_BLANK',
+          instruction: 'Create a dict from two lists',
+          difficulty: 'medium',
+          codeWithBlank: 'keys = ["a", "b"]\nvals = [1, 2]\nd = dict(___(keys, vals))',
+          options: ['zip', 'map', 'pair', 'combine'],
+          correctAnswer: 'zip',
+          explanation: 'zip(keys, vals) pairs elements. dict() converts pairs to a dictionary.',
+        },
       ],
     },
     {
