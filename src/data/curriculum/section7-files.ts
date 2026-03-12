@@ -129,6 +129,18 @@ const filesSection: CourseSection = {
           correctAnswer: 'A single line as a string',
           explanation: 'readline() reads one line including the newline character.',
           xpReward: 15, difficulty: 'easy',
+        },
+        {
+          id: 'file-reading-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this produce?",
+          codeSnippet: "# file.txt contains: 'hello\nworld'
+with open('file.txt') as f:
+    lines = f.readlines()
+print(len(lines))",
+          correctAnswer: '2',
+          explanation: 'readlines() returns a list of lines. Two lines = list of length 2.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
