@@ -130,6 +130,16 @@ print(flat[4])",
           correctAnswer: '5',
           explanation: 'Flattened: [1,2,3,4,5,6,7,8,9]. Index 4 is 5.',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'py-comp-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "evens = {x for x in range(10) if x % 2 == 0}
+print(len(evens))",
+          correctAnswer: '5',
+          explanation: 'Set comprehension creates {0,2,4,6,8}. len = 5.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
