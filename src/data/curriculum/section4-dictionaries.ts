@@ -345,7 +345,18 @@ print(d.get('c', 0))",
           options: ['2', '4', '8', 'Error'],
           correctAnswer: '4',
           explanation: 'Dict comprehension: {1:1, 2:4, 3:9}. squares[2] = 4.',
-        },
+        },,
+        {
+          id: 'dict-methods-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print?",
+          codeSnippet: "d = {'x': 1, 'y': 2, 'z': 3}
+print(list(d.keys()))",
+          correctAnswer: "['x', 'y', 'z']",
+          explanation: 'keys() returns all keys as a dict_keys view; list() converts it.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
