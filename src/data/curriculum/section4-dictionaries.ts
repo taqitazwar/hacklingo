@@ -140,6 +140,17 @@ print(len(d))",
           correctAnswer: 'Raises KeyError',
           explanation: 'Direct key access raises KeyError if the key does not exist. Use .get() for a safe alternative.',
           xpReward: 15, difficulty: 'easy',
+        },
+        {
+          id: 'dict-intro-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "d = {'x': 1, 'y': 2}
+d['z'] = 3
+print(sorted(d.keys()))",
+          correctAnswer: "['x', 'y', 'z']",
+          explanation: 'Adding z to the dict. sorted() returns keys in alphabetical order.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
