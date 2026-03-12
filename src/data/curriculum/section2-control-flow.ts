@@ -399,6 +399,19 @@ print(count)",
           explanation: 'continue skips even numbers. Only odd 1 and 3 are printed.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'cf-break-3',
+          type: 'FILL_BLANK',
+          question: "Skip the rest of this iteration",
+          codeSnippet: "for i in range(10):
+    if i % 2 == 0:
+        ___
+    print(i)",
+          correctAnswer: 'continue',
+          explanation: 'continue skips to the next iteration without executing the remaining code.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
