@@ -131,6 +131,19 @@ print(Counter.count)",
           explanation: 'Class variables are shared across all instances.',
           xpReward: 20,
           difficulty: 'hard',
+        },
+        {
+          id: 'mas-oop-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "class Foo:
+    def __str__(self):
+        return 'I am Foo'
+
+print(Foo())",
+          correctAnswer: 'I am Foo',
+          explanation: '__str__ is called by print(). It defines the string representation.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
