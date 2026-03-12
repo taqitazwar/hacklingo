@@ -96,7 +96,20 @@ const controlFlowSection: CourseSection = {
           options: ['0 apple\n1 banana', 'apple banana', '0\n1', 'Error'],
           correctAnswer: '0 apple\n1 banana',
           explanation: 'enumerate() returns (index, value) pairs. Unpacking with i, f gives both simultaneously.',
-        },
+        },,
+        {
+          id: 'cf-for-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "for i in range(3, 0, -1):
+    print(i)",
+          correctAnswer: '3
+2
+1',
+          explanation: 'range(3, 0, -1) counts from 3 down to 1 with step -1.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
