@@ -1040,6 +1040,20 @@ SELECT COUNT(*), COUNT(n) FROM values;",
           correctAnswer: 'RANK',
           explanation: 'RANK() assigns ranks. OVER clause defines the window (partition/order).',
           xpReward: 20, difficulty: 'hard',
+        },
+        {
+          id: 'sql-window-extra-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the difference between RANK() and DENSE_RANK()?",
+          options: [
+            'No difference',
+            'RANK skips numbers after ties, DENSE_RANK does not',
+            'DENSE_RANK is slower',
+            'RANK is for strings, DENSE_RANK for numbers'
+          ],
+          correctAnswer: 'RANK skips numbers after ties, DENSE_RANK does not',
+          explanation: 'RANK: 1,1,3. DENSE_RANK: 1,1,2. Dense rank has no gaps after ties.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
