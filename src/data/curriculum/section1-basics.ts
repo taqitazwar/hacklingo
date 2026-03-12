@@ -707,6 +707,20 @@ ___ grade >= 75:
           explanation: 'elif adds additional conditions to an if statement.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-cond-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 0
+if x:
+    print('truthy')
+else:
+    print('falsy')",
+          correctAnswer: 'falsy',
+          explanation: '0 is falsy in Python. The else branch runs.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
