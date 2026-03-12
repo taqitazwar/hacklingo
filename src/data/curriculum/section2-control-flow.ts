@@ -290,6 +290,18 @@ print(count)",
           explanation: 'break immediately exits the innermost loop.',
           xpReward: 15,
           difficulty: 'easy',
+        },
+        {
+          id: 'cf-while-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "i = 10
+while i > 0:
+    i -= 3
+print(i)",
+          correctAnswer: '-2',
+          explanation: '10→7→4→1→-2. The loop runs until i <= 0.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
