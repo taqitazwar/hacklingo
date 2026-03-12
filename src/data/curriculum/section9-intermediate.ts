@@ -196,6 +196,16 @@ const intermediateSection: CourseSection = {
           correctAnswer: 'hello',
           explanation: 'sys.argv is a list of command-line arguments. [0] is the script name, [1] is the first argument.',
         },
+        {
+          id: 'int-2-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What type does datetime.now() return?',
+          difficulty: 'medium',
+          code: 'from datetime import datetime\nnow = datetime.now()\nprint(type(now).__name__)',
+          options: ['str', 'datetime', 'date', 'time'],
+          correctAnswer: 'datetime',
+          explanation: 'datetime.now() returns a datetime object. type(now).__name__ gives "datetime".',
+        },
       ],
     },
     {
