@@ -212,6 +212,16 @@ const pythonicSection: CourseSection = {
           correctAnswer: 'An iterator of elements where func returns True',
           explanation: 'filter() keeps elements for which the function returns True.',
         },
+        {
+          id: 'py-2-8',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does filter produce?',
+          difficulty: 'medium',
+          code: 'nums = [1, 2, 3, 4, 5]\nresult = list(filter(lambda x: x > 3, nums))\nprint(result)',
+          options: ['[1, 2, 3]', '[4, 5]', '[3, 4, 5]', '[1, 2]'],
+          correctAnswer: '[4, 5]',
+          explanation: 'filter keeps elements > 3. Only 4 and 5 satisfy the condition.',
+        },
       ],
     },
     {
