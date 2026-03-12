@@ -411,6 +411,24 @@ print(B().greet())",
           explanation: "If it walks like a duck and quacks like a duck, it's a duck. Python uses behavior over type.",
           xpReward: 25,
           difficulty: 'hard',
+        },
+        {
+          id: 'mas-boss-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "class Singleton:
+    _instance = None
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+a = Singleton()
+b = Singleton()
+print(a is b)",
+          correctAnswer: 'True',
+          explanation: '__new__ controls instance creation. Singleton pattern ensures only one instance exists.',
+          xpReward: 25, difficulty: 'hard',
         }
       ],
     },
