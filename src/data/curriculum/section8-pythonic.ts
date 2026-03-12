@@ -119,6 +119,17 @@ print(squares[3])",
           explanation: 'Dict comprehension creates a dict mapping x to x^2.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'py-comp-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "matrix = [[1,2,3],[4,5,6],[7,8,9]]
+flat = [n for row in matrix for n in row]
+print(flat[4])",
+          correctAnswer: '5',
+          explanation: 'Flattened: [1,2,3,4,5,6,7,8,9]. Index 4 is 5.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
