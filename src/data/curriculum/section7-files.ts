@@ -208,6 +208,16 @@ const filesSection: CourseSection = {
           correctAnswer: 'Writes each string in the list, without adding newlines',
           explanation: 'writelines() writes each string in the iterable. No newlines are added — include them yourself.',
         },
+        {
+          id: 'fw-2-7',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What mode appends to a file?',
+          difficulty: 'easy',
+          question: 'Which mode opens a file for appending without overwriting?',
+          options: ["'a'", "'w'", "'r'", "'x'"],
+          correctAnswer: "'a'",
+          explanation: "'a' (append) adds to the end of the file. 'w' overwrites it.",
+        },
       ],
     },
     {
