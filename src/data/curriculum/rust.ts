@@ -1224,7 +1224,22 @@ println!("{}", sum);',
           ],
           correctAnswer: 'Operations that the compiler cannot verify as safe — raw pointers, FFI, unsafe trait impls',
           explanation: 'unsafe blocks opt out of borrow checking for specific operations. They tell the compiler "I know what I am doing".',
-        },
+        },,
+        {
+          id: 'rust-boss-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the purpose of the borrow checker?",
+          options: [
+            'To check loan interest rates',
+            'To prevent memory leaks and data races at compile time',
+            'To manage heap allocations',
+            'To optimize code size'
+          ],
+          correctAnswer: 'To prevent memory leaks and data races at compile time',
+          explanation: "Rust's borrow checker enforces ownership rules at compile time, preventing memory bugs without garbage collection.",
+          xpReward: 25,
+          difficulty: 'hard',
+        }
       ],
     },
   ],
