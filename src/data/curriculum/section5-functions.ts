@@ -272,6 +272,17 @@ print(greet('Alice'))",
           explanation: 'Default parameter is used when no argument is passed.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'func-params-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "def add(*args):
+    return sum(args)
+print(add(1, 2, 3, 4))",
+          correctAnswer: '10',
+          explanation: '*args collects all positional arguments into a tuple. sum(1,2,3,4) = 10.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
