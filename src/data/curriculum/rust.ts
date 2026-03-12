@@ -312,6 +312,20 @@ fn main() {
           correctAnswer: '->',
           explanation: '-> specifies the return type in Rust function signatures.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'rust-func-extra-3',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is a diverging function in Rust?",
+          options: [
+            'A function with no parameters',
+            'A function that never returns (return type !)',
+            'A function that returns multiple values',
+            'An unsafe function'
+          ],
+          correctAnswer: 'A function that never returns (return type !)',
+          explanation: '! (never type) means the function never returns — it panics, loops forever, or exits.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
