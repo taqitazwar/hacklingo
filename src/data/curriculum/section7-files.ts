@@ -101,6 +101,16 @@ const filesSection: CourseSection = {
           correctAnswer: 'It automatically closes the file even if an error occurs',
           explanation: 'Context managers guarantee cleanup. The file closes when the with block exits, even on exceptions.',
         },
+        {
+          id: 'fl-1-8',
+          type: 'FILL_BLANK',
+          instruction: 'Read all lines as a list',
+          difficulty: 'easy',
+          codeWithBlank: 'with open("data.txt") as f:\n    lines = f.___()\nprint(len(lines))',
+          options: ['readlines', 'read', 'readline', 'getlines'],
+          correctAnswer: 'readlines',
+          explanation: '.readlines() returns a list of strings, one per line.',
+        },
       ],
     },
     {
