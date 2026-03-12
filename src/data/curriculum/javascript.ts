@@ -95,6 +95,15 @@ const javascriptSection1 = {
           explanation: "typeof null === 'object' is a historic JavaScript bug that was never fixed.",
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'js-vars-extra-3',
+          type: 'FILL_BLANK',
+          question: "Declare a constant",
+          codeSnippet: "___ PI = 3.14159;\nconsole.log(PI);",
+          correctAnswer: 'const',
+          explanation: 'const declares a constant. It cannot be reassigned after declaration.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
