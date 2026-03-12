@@ -109,6 +109,18 @@ const controlFlowSection: CourseSection = {
           explanation: 'range(3, 0, -1) counts from 3 down to 1 with step -1.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'cf-for-3',
+          type: 'FILL_BLANK',
+          question: "Loop over index and value",
+          codeSnippet: "items = ['a', 'b', 'c']
+for i, v in ___(items):
+    print(i, v)",
+          correctAnswer: 'enumerate',
+          explanation: 'enumerate() gives both the index and value when looping.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
