@@ -439,6 +439,16 @@ print(___(x))",
           correctAnswer: '3',
           explanation: '17 // 5 = 3 (integer division, discards remainder).',
           xpReward: 15, difficulty: 'easy',
+        },
+        {
+          id: 'basics-num-6',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 1_000_000
+print(x == 1000000)",
+          correctAnswer: 'True',
+          explanation: 'Underscores in numeric literals are ignored. 1_000_000 == 1000000.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
