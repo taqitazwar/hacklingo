@@ -251,6 +251,16 @@ const stringsAdvancedSection: CourseSection = {
           correctAnswer: '-1',
           explanation: 'Negative indices count from the end. word[-1] is the last character: "n".',
         },
+        {
+          id: 'ss-3-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is the reversed string?',
+          difficulty: 'medium',
+          code: 's = "Python"\nprint(s[::-1])',
+          options: ['nohtyP', 'Python', 'P', 'Error'],
+          correctAnswer: 'nohtyP',
+          explanation: 's[::-1] reverses the string using step=-1.',
+        },
       ],
     },
     {
