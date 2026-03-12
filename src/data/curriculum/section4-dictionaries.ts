@@ -276,6 +276,17 @@ print(sum(d.values()))",
           correctAnswer: '30',
           explanation: 'values() returns all values. sum() adds them: 10 + 20 = 30.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'dict-reading-5',
+          type: 'FILL_BLANK',
+          question: "Loop over dict and get values",
+          codeSnippet: "d = {'a': 1, 'b': 2}
+for v in d.___():
+    print(v)",
+          correctAnswer: 'values',
+          explanation: '.values() returns a view of all dictionary values.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
