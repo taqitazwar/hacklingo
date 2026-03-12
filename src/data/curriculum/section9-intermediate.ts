@@ -305,6 +305,16 @@ print(math.ceil(4.1))",
           correctAnswer: '5',
           explanation: 'math.ceil() rounds up to the nearest integer.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'int-modules-5',
+          type: 'FILL_BLANK',
+          question: "Get current timestamp",
+          codeSnippet: "import time
+t = time.___()  # seconds since epoch",
+          correctAnswer: 'time',
+          explanation: 'time.time() returns the current Unix timestamp in seconds.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
