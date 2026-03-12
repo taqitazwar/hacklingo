@@ -103,7 +103,18 @@ const stringsAdvancedSection: CourseSection = {
           options: ['.2f', '2d', '.2', 'f2'],
           correctAnswer: '.2f',
           explanation: '{value:.2f} formats a float with 2 decimal places.',
-        },
+        },,
+        {
+          id: 'str-fstrings-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "name = 'World'
+print(f'Hello, {name.upper()}!')",
+          correctAnswer: 'Hello, WORLD!',
+          explanation: 'F-strings can contain any expression, including method calls.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
