@@ -124,6 +124,15 @@ const sqlSection1 = {
           correctAnswer: 'LIMIT',
           explanation: 'LIMIT n restricts the result set to n rows.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'sql-sel-extra-6',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this return?",
+          codeSnippet: "SELECT ROUND(3.7654, 2);",
+          correctAnswer: '3.77',
+          explanation: 'ROUND(n, d) rounds to d decimal places. 3.7654 → 3.77.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
