@@ -263,6 +263,23 @@ class Dog(Animal):
           explanation: 'super() returns the parent class, allowing you to call its methods.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'mas-inherit-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "class A:
+    def greet(self):
+        return 'A'
+
+class B(A):
+    def greet(self):
+        return super().greet() + 'B'
+
+print(B().greet())",
+          correctAnswer: 'AB',
+          explanation: 'B.greet calls super().greet() which returns A, then appends B.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
