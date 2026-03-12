@@ -283,6 +283,19 @@ print(add(1, 2, 3, 4))",
           correctAnswer: '10',
           explanation: '*args collects all positional arguments into a tuple. sum(1,2,3,4) = 10.',
           xpReward: 10, difficulty: 'medium',
+        },
+        {
+          id: 'func-params-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "def show(**kwargs):
+    for k, v in kwargs.items():
+        print(f'{k}={v}')
+show(x=1, y=2)",
+          correctAnswer: 'x=1
+y=2',
+          explanation: '**kwargs collects keyword arguments into a dict.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
