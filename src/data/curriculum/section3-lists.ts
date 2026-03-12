@@ -258,6 +258,17 @@ print(a + b)",
           explanation: '+ concatenates two lists into a new list.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'lists-methods-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "nums = [1, 2, 3, 4, 5]
+print(nums[2:4])",
+          correctAnswer: '[3, 4]',
+          explanation: 'Slicing [2:4] returns elements at index 2 and 3.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
