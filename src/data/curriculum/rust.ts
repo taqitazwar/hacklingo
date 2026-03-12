@@ -263,7 +263,20 @@ println!("{}", double(5));',
           ],
           correctAnswer: 'fn greet(name: &str) {',
           explanation: 'Rust requires explicit type annotations on function parameters. name: &str specifies a string slice.',
-        },
+        },,
+        {
+          id: 'rust-func-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'fn double(x: i32) -> i32 { x * 2 }
+fn main() {
+    println!("{}", double(7));
+}',
+          correctAnswer: '14',
+          explanation: 'double(7) returns 7 * 2 = 14. No return keyword needed when the last expression is the return value.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
