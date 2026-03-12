@@ -323,6 +323,22 @@ print(B().greet())",
           correctAnswer: 'A class inheriting from multiple parent classes',
           explanation: 'class C(A, B): inherits from both A and B. Python uses MRO to resolve conflicts.',
           xpReward: 20, difficulty: 'medium',
+        },
+        {
+          id: 'mas-inherit-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "class A:
+    def method(self):
+        return 'A'
+
+class B(A):
+    pass
+
+print(B().method())",
+          correctAnswer: 'A',
+          explanation: 'B inherits method from A. B().method() calls A.method().',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
