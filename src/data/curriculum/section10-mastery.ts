@@ -88,6 +88,16 @@ const masterySection: CourseSection = {
           correctAnswer: '    def __init__(self, name):',
           explanation: 'The constructor method must be named __init__ (double underscores on each side).',
         },
+        {
+          id: 'mas-1-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does __repr__ return?',
+          difficulty: 'hard',
+          code: 'class Point:\n    def __init__(self, x, y):\n        self.x, self.y = x, y\n    def __repr__(self):\n        return f"Point({self.x}, {self.y})"\nprint(repr(Point(1, 2)))',
+          options: ['Point', 'Point(1, 2)', '(1, 2)', 'Error'],
+          correctAnswer: 'Point(1, 2)',
+          explanation: '__repr__ defines the developer representation. repr() calls it.',
+        },
       ],
     },
     {
