@@ -92,6 +92,20 @@ const rustSection1 = {
           explanation: 'Variables in Rust are immutable by default. mut makes them mutable.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'rust-vars-extra-3',
+          type: 'MULTIPLE_CHOICE',
+          question: "What does shadowing allow in Rust?",
+          options: [
+            'Making immutable variables mutable',
+            'Reusing a variable name with a new value/type in the same scope',
+            'Hiding variables from closures',
+            'Creating global variables'
+          ],
+          correctAnswer: 'Reusing a variable name with a new value/type in the same scope',
+          explanation: "Shadowing lets you redeclare a variable with let, even changing its type.",
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
