@@ -216,6 +216,16 @@ const dictionariesSection: CourseSection = {
           correctAnswer: 'Adds or updates key-value pairs from other into the dict',
           explanation: '.update() merges another dict in place. Existing keys are overwritten; new keys are added.',
         },
+        {
+          id: 'dict-2-8',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does .pop() return?',
+          difficulty: 'medium',
+          code: 'd = {"a": 1, "b": 2}\nval = d.pop("a")\nprint(val, len(d))',
+          options: ['1 1', '1 2', '"a" 1', 'Error'],
+          correctAnswer: '1 1',
+          explanation: '.pop("a") removes key "a" and returns its value 1. The dict now has 1 entry.',
+        },
       ],
     },
     {
