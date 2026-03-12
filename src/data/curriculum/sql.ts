@@ -87,6 +87,16 @@ const sqlSection1 = {
           explanation: 'DISTINCT filters out duplicate values from results.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'sql-sel-extra-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this return?",
+          codeSnippet: "SELECT 2 + 2 AS result;",
+          correctAnswer: '4',
+          explanation: 'SQL can evaluate expressions directly in SELECT.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
