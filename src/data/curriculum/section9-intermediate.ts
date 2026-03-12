@@ -89,6 +89,21 @@ const intermediateSection: CourseSection = {
           correctAnswer: 'good',
           explanation: 'The else block runs only if no exception was raised. int("42") succeeds, so else runs.',
         },
+        {
+          id: 'int-1-7',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'Catching multiple exceptions?',
+          difficulty: 'medium',
+          question: 'How do you catch multiple exception types in one except clause?',
+          options: [
+            'except ValueError, TypeError:',
+            'except (ValueError, TypeError):',
+            'except ValueError or TypeError:',
+            'except ValueError & TypeError:',
+          ],
+          correctAnswer: 'except (ValueError, TypeError):',
+          explanation: 'Use a tuple: except (ValueError, TypeError): catches either type.',
+        },
       ],
     },
     {
