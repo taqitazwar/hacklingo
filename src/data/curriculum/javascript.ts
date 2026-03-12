@@ -1413,6 +1413,18 @@ const javascriptSection4 = {
           correctAnswer: 'error',
           explanation: 'Promise.all rejects immediately when any promise rejects.',
           xpReward: 15, difficulty: 'hard',
+        },
+        {
+          id: 'js-async-extra-3',
+          type: 'FILL_BLANK',
+          question: "Make a function async",
+          codeSnippet: "___ function fetchData() {
+  const data = await fetch(url);
+  return data.json();
+}",
+          correctAnswer: 'async',
+          explanation: "'async' makes a function return a Promise and allows using 'await' inside it.",
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
