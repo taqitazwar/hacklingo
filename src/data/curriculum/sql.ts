@@ -321,7 +321,21 @@ INSERT INTO accounts VALUES (2, 300);\nROLLBACK TO step1;',
           options: ['step1', 'checkpoint', 'mark1', 'save1'],
           correctAnswer: 'step1',
           explanation: 'SAVEPOINT creates a point within a transaction to roll back to without canceling the entire transaction.',
-        },
+        },,
+        {
+          id: 'sql-txn-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What does ROLLBACK do?",
+          options: [
+            'Saves changes permanently',
+            'Undoes all changes in the current transaction',
+            'Deletes all rows',
+            'Creates a savepoint'
+          ],
+          correctAnswer: 'Undoes all changes in the current transaction',
+          explanation: 'ROLLBACK reverts all changes made since the last COMMIT or BEGIN TRANSACTION.',
+          xpReward: 15, difficulty: 'medium',
+        }
       ],
     },
   ],
