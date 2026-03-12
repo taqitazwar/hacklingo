@@ -155,6 +155,16 @@ const stringsAdvancedSection: CourseSection = {
           correctAnswer: 'HELLO WORLD',
           explanation: '.upper() converts all characters to uppercase.',
         },
+        {
+          id: 'sm-2-7',
+          type: 'FILL_BLANK',
+          instruction: 'Check if a string starts with a prefix',
+          difficulty: 'easy',
+          codeWithBlank: 'url = "https://example.com"\nprint(url.___("https"))',
+          options: ['startswith', 'begins', 'prefix', 'starts'],
+          correctAnswer: 'startswith',
+          explanation: '.startswith(prefix) returns True if the string starts with the given prefix.',
+        },
       ],
     },
     {
