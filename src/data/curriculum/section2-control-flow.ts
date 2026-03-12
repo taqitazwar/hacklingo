@@ -190,6 +190,16 @@ for i, v in ___(items, start=1):
           correctAnswer: 'enumerate',
           explanation: 'enumerate(iterable, start=1) begins counting at 1 instead of 0.',
           xpReward: 10, difficulty: 'medium',
+        },
+        {
+          id: 'cf-for-10',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "total = sum(i ** 2 for i in range(4))
+print(total)",
+          correctAnswer: '14',
+          explanation: '0^2+1^2+2^2+3^2 = 0+1+4+9 = 14. Generator expression used as argument.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
