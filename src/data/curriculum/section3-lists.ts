@@ -160,6 +160,20 @@ print(a[1][0])",
           correctAnswer: '2',
           explanation: 'a[1] is [2,3]. [2,3][0] = 2.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'lists-intro-8',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the difference between list and tuple?",
+          options: [
+            'No difference',
+            'Lists are mutable, tuples are immutable',
+            'Tuples are faster to create',
+            'Lists use [] but cannot be indexed'
+          ],
+          correctAnswer: 'Lists are mutable, tuples are immutable',
+          explanation: 'Lists can be modified (append, remove, etc.). Tuples cannot be changed after creation.',
+          xpReward: 15, difficulty: 'easy',
         }
       ],
     },
