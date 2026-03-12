@@ -487,6 +487,17 @@ print(x == 1000000)",
           correctAnswer: '3.14',
           explanation: 'round(x, n) rounds to n decimal places.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'basics-num-8',
+          type: 'FILL_BLANK',
+          question: "Convert to float",
+          codeSnippet: "x = '3.14'
+y = ___(x)
+print(type(y).__name__)",
+          correctAnswer: 'float',
+          explanation: 'float() converts strings and integers to floating-point numbers.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
