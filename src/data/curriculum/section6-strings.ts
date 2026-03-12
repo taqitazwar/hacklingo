@@ -261,6 +261,16 @@ const stringsAdvancedSection: CourseSection = {
           correctAnswer: 'nohtyP',
           explanation: 's[::-1] reverses the string using step=-1.',
         },
+        {
+          id: 'ss-3-8',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What does .join() produce?',
+          difficulty: 'medium',
+          question: 'What does "-".join(["a", "b", "c"]) produce?',
+          options: ['a-b-c', '[a, b, c]', 'abc', 'a b c'],
+          correctAnswer: 'a-b-c',
+          explanation: '.join() inserts the separator between each element: "a" + "-" + "b" + "-" + "c".',
+        },
       ],
     },
     {
