@@ -159,6 +159,16 @@ print('World')",
           correctAnswer: 'end',
           explanation: "The end parameter controls what print() appends. Default is newline.",
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'basics-hello-8',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "for i in range(3):
+    print(i, end=' ')",
+          correctAnswer: '0 1 2 ',
+          explanation: 'end= replaces the newline. Each number prints followed by a space.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
