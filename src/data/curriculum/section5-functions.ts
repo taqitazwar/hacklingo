@@ -721,6 +721,20 @@ print(counter(), counter())",
           correctAnswer: '1 2',
           explanation: 'nonlocal lets inner function modify outer scope variable. Each call increments.',
           xpReward: 25, difficulty: 'hard',
+        },
+        {
+          id: 'func-boss-3',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is memoization?",
+          options: [
+            'Storing function results to avoid repeated computation',
+            'Writing comments in code',
+            'Allocating memory',
+            'Optimizing loops'
+          ],
+          correctAnswer: 'Storing function results to avoid repeated computation',
+          explanation: 'Memoization caches return values. @functools.lru_cache does this automatically.',
+          xpReward: 25, difficulty: 'hard',
         }
       ],
     },
