@@ -353,6 +353,17 @@ print(y)",
           explanation: '** is the exponentiation operator. 2^8 = 256.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-num-4',
+          type: 'FILL_BLANK',
+          question: "Convert float to integer",
+          codeSnippet: "x = 3.9
+print(___(x))",
+          correctAnswer: 'int',
+          explanation: 'int() truncates a float toward zero. int(3.9) = 3.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
