@@ -94,6 +94,16 @@ const stringsAdvancedSection: CourseSection = {
           correctAnswer: 'Alice is 30 years old',
           explanation: 'f-strings evaluate expressions inside {} at runtime.',
         },
+        {
+          id: 'sf-1-8',
+          type: 'FILL_BLANK',
+          instruction: 'Format a float to 2 decimal places',
+          difficulty: 'medium',
+          codeWithBlank: 'pi = 3.14159\nprint(f"{pi:___}")',
+          options: ['.2f', '2d', '.2', 'f2'],
+          correctAnswer: '.2f',
+          explanation: '{value:.2f} formats a float with 2 decimal places.',
+        },
       ],
     },
     {
