@@ -296,6 +296,20 @@ print(a, b, c)",
           correctAnswer: '0 5 0',
           explanation: 'Chained assignment creates separate references. Changing b only affects b.',
           xpReward: 10, difficulty: 'medium',
+        },
+        {
+          id: 'basics-vars-6',
+          type: 'MULTIPLE_CHOICE',
+          question: "Which statement is true about Python variables?",
+          options: [
+            'You must declare their type',
+            'They are dynamically typed',
+            'They must be initialized to 0',
+            'They cannot change type'
+          ],
+          correctAnswer: 'They are dynamically typed',
+          explanation: 'Python is dynamically typed — variables can hold any type and change type.',
+          xpReward: 15, difficulty: 'easy',
         }
       ],
     },
