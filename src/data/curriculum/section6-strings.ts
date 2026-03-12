@@ -237,6 +237,16 @@ print(len(words))",
           correctAnswer: '2',
           explanation: 'split() without args splits on whitespace. Result has 2 words.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'str-methods-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "s = 'banana'
+print(s.count('a'))",
+          correctAnswer: '3',
+          explanation: 'count() returns the number of non-overlapping occurrences.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
