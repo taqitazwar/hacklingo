@@ -329,6 +329,16 @@ print(a, b, c)",
           correctAnswer: 'They are dynamically typed',
           explanation: 'Python is dynamically typed — variables can hold any type and change type.',
           xpReward: 15, difficulty: 'easy',
+        },
+        {
+          id: 'basics-vars-7',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 5
+print(x := x + 1)",
+          correctAnswer: '6',
+          explanation: 'The walrus operator := assigns and returns the value. x becomes 6.',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
