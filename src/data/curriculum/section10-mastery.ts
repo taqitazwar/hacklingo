@@ -112,7 +112,26 @@ const masterySection: CourseSection = {
           ],
           correctAnswer: 'Bundling data and methods together, hiding internal details',
           explanation: 'Encapsulation hides implementation. Use _ (convention) or __ (name mangling) for private attributes.',
-        },
+        },,
+        {
+          id: 'mas-oop-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "class Counter:
+    count = 0
+    def increment(self):
+        Counter.count += 1
+
+c1 = Counter()
+c2 = Counter()
+c1.increment()
+c2.increment()
+print(Counter.count)",
+          correctAnswer: '2',
+          explanation: 'Class variables are shared across all instances.',
+          xpReward: 20,
+          difficulty: 'hard',
+        }
       ],
     },
     {
