@@ -325,6 +325,21 @@ const functionsSection: CourseSection = {
           correctAnswer: 'Bob',
           explanation: 'lambda p: p[1] sorts by age. Bob (25) is youngest, so he is first after sort.',
         },
+        {
+          id: 'fn-3-8',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What is map() in Python?',
+          difficulty: 'medium',
+          question: 'What does map(func, iterable) do?',
+          options: [
+            'Creates a dictionary from the iterable',
+            'Applies func to each element and returns an iterator of results',
+            'Filters elements where func returns True',
+            'Sorts the iterable using func',
+          ],
+          correctAnswer: 'Applies func to each element and returns an iterator of results',
+          explanation: 'map(str, [1, 2, 3]) applies str to each element: ["1", "2", "3"].',
+        },
       ],
     },
     {
