@@ -101,6 +101,16 @@ const dictionariesSection: CourseSection = {
           correctAnswer: 'A hash map mapping unique keys to values',
           explanation: 'Dicts use hash maps internally, giving O(1) average time for get/set/delete operations.',
         },
+        {
+          id: 'dict-1-8',
+          type: 'FILL_BLANK',
+          instruction: 'Get all values from a dictionary',
+          difficulty: 'easy',
+          codeWithBlank: 'scores = {"Alice": 95, "Bob": 87}\nfor score in scores.___():\n    print(score)',
+          options: ['values', 'keys', 'items', 'all'],
+          correctAnswer: 'values',
+          explanation: '.values() returns all values in the dict.',
+        },
       ],
     },
     {
