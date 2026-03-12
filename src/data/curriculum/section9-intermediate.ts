@@ -271,6 +271,16 @@ print(type(os.getcwd()))",
           correctAnswer: "<class 'str'>",
           explanation: 'os.getcwd() returns the current directory as a string.',
           xpReward: 10, difficulty: 'medium',
+        },
+        {
+          id: 'int-modules-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "import math
+print(math.ceil(4.1))",
+          correctAnswer: '5',
+          explanation: 'math.ceil() rounds up to the nearest integer.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
