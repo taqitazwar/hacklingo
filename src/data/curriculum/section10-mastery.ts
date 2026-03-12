@@ -456,6 +456,20 @@ print(a is b)",
           correctAnswer: 'True',
           explanation: '__new__ controls instance creation. Singleton pattern ensures only one instance exists.',
           xpReward: 25, difficulty: 'hard',
+        },
+        {
+          id: 'mas-boss-4',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the purpose of __slots__ in Python?",
+          options: [
+            'To limit which attributes a class can have',
+            'To define abstract methods',
+            'To make classes iterable',
+            'To create class-level constants'
+          ],
+          correctAnswer: 'To limit which attributes a class can have',
+          explanation: '__slots__ restricts instance attributes to those listed, reducing memory usage.',
+          xpReward: 25, difficulty: 'hard',
         }
       ],
     },
