@@ -493,7 +493,21 @@ for k, v in d.___():
           options: ['1', '2', '3', 'Error'],
           correctAnswer: '3',
           explanation: 'Counter counts occurrences. "a" appears 3 times.',
-        },
+        },,
+        {
+          id: 'dict-boss-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is the output?",
+          codeSnippet: "from collections import defaultdict
+d = defaultdict(list)
+d['a'].append(1)
+d['a'].append(2)
+print(d['a'])",
+          correctAnswer: '[1, 2]',
+          explanation: 'defaultdict(list) auto-creates empty lists for new keys.',
+          xpReward: 20,
+          difficulty: 'medium',
+        }
       ],
     },
   ],
