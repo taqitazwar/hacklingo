@@ -368,6 +368,18 @@ while chunk ___ data.pop() if data else None:
           correctAnswer: ':=',
           explanation: 'The walrus operator := assigns and returns a value in the condition.',
           xpReward: 20, difficulty: 'hard',
+        },
+        {
+          id: 'cf-while-7',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "n = 1
+while n < 100:
+    n *= 2
+print(n)",
+          correctAnswer: '128',
+          explanation: '1→2→4→8→16→32→64→128. 128 >= 100 so loop stops.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
