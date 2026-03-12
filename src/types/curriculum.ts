@@ -1,39 +1,51 @@
-import { Challenge } from './challenge';
+export type ChallengeDifficulty = 'easy' | 'medium' | 'hard';
+export type ChallengeType = 'PREDICT_OUTPUT' | 'FILL_BLANK' | 'MULTIPLE_CHOICE' | 'FIX_BUG' | 'REORDER_BLOCKS' | 'TRUE_FALSE';
 
-export type LessonStatus = 'locked' | 'available' | 'completed';
-export type LessonType = 'standard' | 'boss' | 'review' | 'final_exam';
-
-export interface Lesson {
+export interface BaseChallenge {
   id: string;
-  sectionId: string;
-  title: string;
-  description: string;
-  lessonType: LessonType;
-  /** One-indexed position within the section */
-  order: number;
-  challenges: Challenge[];
-  /** XP bonus awarded on first completion */
-  completionXpBonus: number;
+  type: ChallengeType;
+  question: string;
+  explanation: string;
+  xpReward: number;
+  difficulty: ChallengeDifficulty;
+  hint?: string;
+  tags?: string[];
 }
 
-export interface CourseSection {
-  id: string;
-  title: string;
-  description: string;
-  /** Hex color accent used for this section's nodes on the course map */
-  accentColor: string;
-  /** One-indexed position in the overall course */
-  order: number;
-  lessons: Lesson[];
+export interface PredictOutputChallenge extends BaseChallenge {
+  type: 'PREDICT_OUTPUT';
+  codeSnippet: string;
+  correctAnswer: string;
 }
 
-export type LanguageStatus = 'available' | 'coming_soon';
-
-export interface Language {
-  id: string;
-  name: string;
-  description: string;
-  icon: string;
-  status: LanguageStatus;
-  sections: CourseSection[];
+export interface FillBlankChallenge extends BaseChallenge {
+  type: 'FILL_BLANK';
+  codeSnippet: string;
+  correctAnswer: string;
 }
+
+export interface MultipleChoiceChallenge extends BaseChallenge {
+  type: 'MULTIPLE_CHOICE';
+  options: string[];
+  correctAnswer: string;
+  codeSnippet?: string;
+}
+
+export interface FixBugChallenge extends BaseChallenge {
+  type: 'FIX_BUG';
+  buggyCode: string;
+  correctCode: string;
+}
+
+export interface ReorderBlocksChallenge extends BaseChallenge {
+  type: 'REORDER_BLOCKS';
+  blocks: string[];
+  correctOrder: string[];
+}
+
+export type Challenge =
+  | PredictOutputChallenge
+  | FillBlankChallenge
+  | MultipleChoiceChallenge
+  | FixBugChallenge
+  | ReorderBlocksChallenge;
