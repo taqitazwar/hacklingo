@@ -120,6 +120,15 @@ const filesSection: CourseSection = {
           explanation: "'r' opens for reading. 'w' writes (truncates), 'a' appends, 'x' creates exclusively.",
           xpReward: 15,
           difficulty: 'easy',
+        },
+        {
+          id: 'file-reading-3',
+          type: 'MULTIPLE_CHOICE',
+          question: "What does file.readline() return?",
+          options: ['All lines as a list', 'A single line as a string', 'The file size', 'A generator of lines'],
+          correctAnswer: 'A single line as a string',
+          explanation: 'readline() reads one line including the newline character.',
+          xpReward: 15, difficulty: 'easy',
         }
       ],
     },
