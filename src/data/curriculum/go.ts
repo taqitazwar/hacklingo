@@ -218,6 +218,16 @@ fmt.Println(slice)',
           correctAnswer: '[2 3 4]',
           explanation: 'Slice [1:4] takes elements at index 1, 2, 3. Result is [2 3 4].',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'go-slice-extra-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'nums := make([]int, 3, 5)
+fmt.Println(len(nums), cap(nums))',
+          correctAnswer: '3 5',
+          explanation: 'make([]int, len, cap) creates a slice with length 3 and capacity 5.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
