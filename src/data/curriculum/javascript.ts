@@ -1209,6 +1209,21 @@ const javascriptSection4 = {
           explanation: 'await pauses execution until the Promise resolves. Errors are caught by try/catch.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'js-promise-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What are the three states of a Promise?",
+          options: [
+            'New, Running, Done',
+            'Pending, Fulfilled, Rejected',
+            'Start, Progress, End',
+            'Created, Resolved, Failed'
+          ],
+          correctAnswer: 'Pending, Fulfilled, Rejected',
+          explanation: 'Promises are pending until resolved (fulfilled) or rejected.',
+          xpReward: 15,
+          difficulty: 'medium',
         }
       ],
     },
