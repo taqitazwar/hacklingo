@@ -1,49 +1,51 @@
 import React, { useEffect, useRef } from 'react';
-import { View, StyleSheet, Animated } from 'react-native';
-import { Colors, Layout } from '../../constants';
+import { View, Animated, StyleSheet } from 'react-native';
+import { Colors } from '../../constants';
 
 interface ProgressBarProps {
   progress: number;
   height?: number;
-  trackColor?: string;
-  fillColor?: string;
-  animationDuration?: number;
+  color?: string;
+  backgroundColor?: string;
+  animated?: boolean;
+  borderRadius?: number;
 }
-
-const DEFAULT_HEIGHT = 8;
-const DEFAULT_ANIMATION_DURATION = 350;
 
 const ProgressBar: React.FC<ProgressBarProps> = ({
   progress,
-  height = DEFAULT_HEIGHT,
-  trackColor = Colors.borderLight,
-  fillColor = Colors.black,
-  animationDuration = DEFAULT_ANIMATION_DURATION,
+  height = 8,
+  color = Colors.green,
+  backgroundColor = Colors.backgroundTertiary,
+  animated = true,
+  borderRadius = 4,
 }) => {
-  const clampedProgress = Math.min(1, Math.max(0, progress));
-  const widthAnimation = useRef(new Animated.Value(clampedProgress)).current;
+  const width = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    Animated.timing(widthAnimation, {
-      toValue: clampedProgress,
-      duration: animationDuration,
-      useNativeDriver: false,
-    }).start();
-  }, [clampedProgress, animationDuration]);
-
-  const animatedWidth = widthAnimation.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['0%', '100%'],
-  });
-
-  const borderRadius = height / 2;
+    const clamped = Math.max(0, Math.min(1, progress));
+    if (animated) {
+      Animated.spring(width, {
+        toValue: clamped,
+        useNativeDriver: false,
+        tension: 60,
+        friction: 10,
+      }).start();
+    } else {
+      width.setValue(clamped);
+    }
+  }, [progress]);
 
   return (
-    <View style={[styles.track, { height, borderRadius, backgroundColor: trackColor }]}>
+    <View style={[styles.track, { height, backgroundColor, borderRadius }]}>
       <Animated.View
         style={[
           styles.fill,
-          { width: animatedWidth, borderRadius, backgroundColor: fillColor },
+          {
+            height,
+            backgroundColor: color,
+            borderRadius,
+            width: width.interpolate({ inputRange: [0, 1], outputRange: ['0%', '100%'] }),
+          },
         ]}
       />
     </View>
@@ -51,13 +53,8 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
 };
 
 const styles = StyleSheet.create({
-  track: {
-    width: '100%',
-    overflow: 'hidden',
-  },
-  fill: {
-    height: '100%',
-  },
+  track: { overflow: 'hidden', width: '100%' },
+  fill: {},
 });
 
 export default ProgressBar;
