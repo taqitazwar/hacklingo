@@ -148,6 +148,20 @@ done',
           correctAnswer: 'BaseException',
           explanation: 'BaseException is the base for all exceptions. Exception inherits from it (excludes SystemExit, etc).',
           xpReward: 15, difficulty: 'hard',
+        },
+        {
+          id: 'int-except-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "def safe_div(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return None
+print(safe_div(10, 0))",
+          correctAnswer: 'None',
+          explanation: 'ZeroDivisionError is caught. The function returns None.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
