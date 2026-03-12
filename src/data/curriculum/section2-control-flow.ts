@@ -134,6 +134,20 @@ print(total)",
           explanation: 'Accumulating sum: 0+1+2+3+4 = 10.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'cf-for-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "words = ['cat', 'dog', 'fish']
+for w in words:
+    if len(w) == 3:
+        print(w)",
+          correctAnswer: 'cat
+dog',
+          explanation: 'cat and dog have length 3. fish has length 4.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
