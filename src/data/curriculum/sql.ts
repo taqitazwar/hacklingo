@@ -829,7 +829,22 @@ ___ COUNT(*) > 5;",
           options: ['EXPLAIN', 'ANALYZE', 'DESCRIBE', 'PLAN'],
           correctAnswer: 'EXPLAIN',
           explanation: 'EXPLAIN shows the query execution plan, revealing if indexes are being used or if a full table scan occurs.',
-        },
+        },,
+        {
+          id: 'sql-idx-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the primary purpose of an index?",
+          options: [
+            'To enforce uniqueness',
+            'To speed up data retrieval queries',
+            'To store data more compactly',
+            'To create relationships between tables'
+          ],
+          correctAnswer: 'To speed up data retrieval queries',
+          explanation: 'Indexes speed up SELECT queries at the cost of slower INSERT/UPDATE operations.',
+          xpReward: 15,
+          difficulty: 'medium',
+        }
       ],
     },
     {
