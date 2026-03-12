@@ -108,6 +108,17 @@ print(len(nums))",
           explanation: 'append() adds one element. The list now has 4 items.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'lists-intro-3',
+          type: 'FILL_BLANK',
+          question: "Access the last element",
+          codeSnippet: "nums = [10, 20, 30]
+print(nums[___])",
+          correctAnswer: '-1',
+          explanation: 'Negative indices count from the end. -1 is the last element.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
