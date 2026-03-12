@@ -824,7 +824,18 @@ ___ grade >= 75:
           options: ['3', '1', '0', '10'],
           correctAnswer: '1',
           explanation: '10 % 3 = 1 because 10 = 3*3 + 1. The remainder is 1.',
-        },
+        },,
+        {
+          id: 'basics-boss-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is the output?",
+          codeSnippet: "a, b = 3, 4
+print(a ** 2 + b ** 2)",
+          correctAnswer: '25',
+          explanation: '3^2 + 4^2 = 9 + 16 = 25. This is the Pythagorean theorem.',
+          xpReward: 20,
+          difficulty: 'medium',
+        }
       ],
     },
   ],
