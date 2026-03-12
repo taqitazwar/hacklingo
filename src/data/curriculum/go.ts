@@ -687,7 +687,20 @@ const goSection3 = {
           ],
           correctAnswer: 'func (c Circle) Area() float64 {',
           explanation: 'Method receivers go before the function name: func (receiver Type) MethodName() ReturnType.',
-        },
+        },,
+        {
+          id: 'go-struct-extra-1',
+          type: 'FILL_BLANK',
+          question: "Define a struct method",
+          codeSnippet: "type Circle struct { Radius float64 }
+func (c ___) Area() float64 {
+    return 3.14 * c.Radius * c.Radius
+}",
+          correctAnswer: 'Circle',
+          explanation: "Methods are defined with a receiver type. (c Circle) means Circle has this method.",
+          xpReward: 15,
+          difficulty: 'medium',
+        }
       ],
     },
     {
