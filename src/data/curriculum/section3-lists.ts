@@ -345,6 +345,18 @@ print(matrix[1][0])",
           explanation: 'matrix[1] is [3,4]. [0] of that is 3.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'lists-boss-3',
+          type: 'FILL_BLANK',
+          question: "Flatten a list of lists",
+          codeSnippet: "nested = [[1,2],[3,4],[5]]
+flat = [x for sub in nested for x in ___]
+print(flat)",
+          correctAnswer: 'sub',
+          explanation: 'The nested comprehension iterates over each sublist, then each element.',
+          xpReward: 20,
+          difficulty: 'medium',
         }
       ],
     },
