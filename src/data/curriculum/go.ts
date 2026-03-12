@@ -1062,6 +1062,20 @@ wg.Wait()",
           correctAnswer: 'Done',
           explanation: 'WaitGroup.Done() signals that a goroutine has finished. Wait() blocks until count is 0.',
           xpReward: 15, difficulty: 'hard',
+        },
+        {
+          id: 'go-concur-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is the select statement used for in Go?",
+          options: [
+            'Choosing between data types',
+            'Waiting on multiple channel operations',
+            'Selecting rows from a database',
+            'Pattern matching'
+          ],
+          correctAnswer: 'Waiting on multiple channel operations',
+          explanation: 'select blocks until one of its cases can proceed. Like switch but for channels.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
