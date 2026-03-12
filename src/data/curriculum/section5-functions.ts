@@ -143,6 +143,18 @@ print(square(square(3)))",
           correctAnswer: 'def',
           explanation: "'def' is the keyword to define a function in Python.",
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'func-intro-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What does a function return if there's no return statement?",
+          codeSnippet: "def do_nothing():
+    pass
+
+print(do_nothing())",
+          correctAnswer: 'None',
+          explanation: 'Functions without a return statement implicitly return None.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
