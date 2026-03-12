@@ -216,6 +216,17 @@ print(s.strip().title())",
           explanation: 'strip() removes leading/trailing spaces. title() capitalizes each word.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'str-methods-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "s = 'hello world'
+words = s.split()
+print(len(words))",
+          correctAnswer: '2',
+          explanation: 'split() without args splits on whitespace. Result has 2 words.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
