@@ -632,6 +632,20 @@ console.log(square(5));",
           explanation: 'add5 closes over n=5. add5(3) returns 3 + 5 = 8.',
           xpReward: 15,
           difficulty: 'medium',
+        },
+        {
+          id: 'js-closure-extra-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is a closure in JavaScript?",
+          options: [
+            'A function that takes no arguments',
+            'A function that remembers its lexical scope',
+            'A closed braces {} block',
+            'A try-catch block'
+          ],
+          correctAnswer: 'A function that remembers its lexical scope',
+          explanation: 'A closure is a function plus its surrounding scope, even after the outer function returns.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
