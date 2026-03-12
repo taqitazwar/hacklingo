@@ -753,6 +753,17 @@ SELECT AVG(value) FROM scores;",
           correctAnswer: '20',
           explanation: 'AVG sums all values and divides by count: (10+20+30)/3 = 20.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'sql-agg-extra-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this return?",
+          codeSnippet: "-- table: values(n)
+-- rows: 10, NULL, 20, 30
+SELECT COUNT(*), COUNT(n) FROM values;",
+          correctAnswer: '4, 3',
+          explanation: 'COUNT(*) counts all rows (4). COUNT(n) skips NULLs (3).',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
