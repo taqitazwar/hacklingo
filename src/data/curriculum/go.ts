@@ -451,6 +451,17 @@ fmt.Println(x, y)',
           explanation: 'Go supports multiple return values. swap returns (b, a) = (2, 1).',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'go-func-extra-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print?",
+          codeSnippet: 'func add(a, b int) int { return a + b }
+result := add(3, 4)
+fmt.Println(result)',
+          correctAnswer: '7',
+          explanation: 'add(3, 4) = 3 + 4 = 7. Go functions return explicitly.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
