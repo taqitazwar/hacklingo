@@ -428,6 +428,17 @@ print(s[1])",
           explanation: 'String indexing starts at 0. Index 1 is the second character.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-str-3',
+          type: 'FILL_BLANK',
+          question: "Get the length of string s",
+          codeSnippet: "s = 'hello'
+print(___(s))",
+          correctAnswer: 'len',
+          explanation: 'len() returns the number of characters in a string.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
