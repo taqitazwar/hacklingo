@@ -162,6 +162,16 @@ print(safe_div(10, 0))",
           correctAnswer: 'None',
           explanation: 'ZeroDivisionError is caught. The function returns None.',
           xpReward: 10, difficulty: 'easy',
+        },
+        {
+          id: 'int-except-6',
+          type: 'FILL_BLANK',
+          question: "Create a custom exception",
+          codeSnippet: "class ValidationError(___):  # inherit from built-in
+    pass",
+          correctAnswer: 'Exception',
+          explanation: 'Custom exceptions inherit from Exception (or any of its subclasses).',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
