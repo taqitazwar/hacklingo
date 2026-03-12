@@ -389,6 +389,19 @@ print(lo, hi)",
           explanation: 'Functions can return multiple values as a tuple, which can be unpacked.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'func-return-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is the output?",
+          codeSnippet: "def check(n):
+    if n > 0:
+        return 'positive'
+    return 'non-positive'
+print(check(-3))",
+          correctAnswer: 'non-positive',
+          explanation: '-3 > 0 is False, so the second return executes.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
