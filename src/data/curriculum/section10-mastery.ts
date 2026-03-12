@@ -205,6 +205,16 @@ const masterySection: CourseSection = {
           correctAnswer: 'B',
           explanation: 'MRO (C3 linearization): D → B → C → A → object. Index 1 is B.',
         },
+        {
+          id: 'mas-2-8',
+          type: 'FILL_BLANK',
+          instruction: 'Use @classmethod',
+          difficulty: 'hard',
+          codeWithBlank: 'class Dog:\n    species = "Canis familiaris"\n    ___\n    def get_species(cls):\n        return cls.species',
+          options: ['@classmethod', '@staticmethod', '@property', '@abstractmethod'],
+          correctAnswer: '@classmethod',
+          explanation: '@classmethod receives cls (the class) as first argument. Can access class attributes.',
+        },
       ],
     },
     {
