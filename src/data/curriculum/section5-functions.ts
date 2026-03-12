@@ -205,6 +205,16 @@ const functionsSection: CourseSection = {
           correctAnswer: '10',
           explanation: '*args collects all positional arguments into a tuple. sum((1,2,3,4)) = 10.',
         },
+        {
+          id: 'fn-2-7',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does **kwargs print?',
+          difficulty: 'hard',
+          code: 'def show(**kwargs):\n    for k, v in kwargs.items():\n        print(f"{k}={v}")\nshow(x=1, y=2)',
+          options: ['x=1 y=2', 'x=1\ny=2', '{x:1, y:2}', 'Error'],
+          correctAnswer: 'x=1\ny=2',
+          explanation: '**kwargs collects keyword arguments into a dict. Iterating prints each key=value on its own line.',
+        },
       ],
     },
     {
