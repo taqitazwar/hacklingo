@@ -374,7 +374,18 @@ const filesSection: CourseSection = {
           options: ['{"name": "Alice"}', 'Alice', 'name', 'Error'],
           correctAnswer: 'Alice',
           explanation: 'json.loads() parses a JSON string into a Python dict. data["name"] accesses "name".',
-        },
+        },,
+        {
+          id: 'file-boss-2',
+          type: 'FILL_BLANK',
+          question: "Open a file safely using a context manager",
+          codeSnippet: "___ open('data.txt', 'r') as file:
+    content = file.read()",
+          correctAnswer: 'with',
+          explanation: "'with' creates a context manager that automatically closes the file.",
+          xpReward: 20,
+          difficulty: 'medium',
+        }
       ],
     },
   ],
