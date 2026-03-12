@@ -398,6 +398,18 @@ for k, v in d.___():
           explanation: 'items() returns (key, value) tuples for iteration.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'dict-methods-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "d = {'a': 1}
+d.setdefault('b', 2)
+d.setdefault('a', 99)
+print(d['a'], d['b'])",
+          correctAnswer: '1 2',
+          explanation: 'setdefault() only sets the value if the key is absent. a already exists, so it stays 1.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
