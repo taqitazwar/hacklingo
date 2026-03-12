@@ -179,6 +179,17 @@ else:
           correctAnswer: 'done',
           explanation: 'continue skips iterations but does not trigger else. else runs after normal completion.',
           xpReward: 15, difficulty: 'hard',
+        },
+        {
+          id: 'cf-for-9',
+          type: 'FILL_BLANK',
+          question: "Loop with index starting at 1",
+          codeSnippet: "items = ['a', 'b', 'c']
+for i, v in ___(items, start=1):
+    print(i, v)",
+          correctAnswer: 'enumerate',
+          explanation: 'enumerate(iterable, start=1) begins counting at 1 instead of 0.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
