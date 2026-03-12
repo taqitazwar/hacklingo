@@ -82,7 +82,17 @@ const goSection1 = {
           ],
           correctAnswer: '    x := 10',
           explanation: 'In Go, you must declare variables before use. := declares and assigns in one step.',
-        },
+        },,
+        {
+          id: 'go-vars-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'x := 42\nfmt.Printf("%T\\n", x)',
+          correctAnswer: 'int',
+          explanation: '%T prints the type of a variable. := infers int for 42.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
