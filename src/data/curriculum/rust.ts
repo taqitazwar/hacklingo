@@ -531,6 +531,15 @@ const rustSection2 = {
           explanation: 'String is not Copy. Passing it moves ownership, making the original invalid.',
           xpReward: 15,
           difficulty: 'hard',
+        },
+        {
+          id: 'rust-own-extra-2',
+          type: 'FILL_BLANK',
+          question: "Borrow a value without moving",
+          codeSnippet: "fn print_len(s: ___ String) {\n    println!("{}", s.len());\n}",
+          correctAnswer: '&',
+          explanation: '& creates a reference (borrow). The function borrows without taking ownership.',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
