@@ -200,6 +200,18 @@ print(total)",
           correctAnswer: '14',
           explanation: '0^2+1^2+2^2+3^2 = 0+1+4+9 = 14. Generator expression used as argument.',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'cf-for-11',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "result = []
+for x in range(5):
+    result.append(x ** 2)
+print(result)",
+          correctAnswer: '[0, 1, 4, 9, 16]',
+          explanation: 'Squares of 0-4: [0, 1, 4, 9, 16].',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
