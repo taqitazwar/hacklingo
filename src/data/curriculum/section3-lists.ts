@@ -119,6 +119,17 @@ print(nums[___])",
           explanation: 'Negative indices count from the end. -1 is the last element.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'lists-intro-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What does slicing return?",
+          codeSnippet: "nums = [0, 1, 2, 3, 4]
+print(nums[1:4])",
+          correctAnswer: '[1, 2, 3]',
+          explanation: 'Slicing nums[1:4] returns elements at index 1, 2, 3 (not 4).',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
