@@ -96,6 +96,16 @@ const functionsSection: CourseSection = {
           correctAnswer: '9',
           explanation: 'power(3) uses default exp=2. 3 ** 2 = 9.',
         },
+        {
+          id: 'fn-1-8',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What does this return?',
+          difficulty: 'medium',
+          code: 'def greet(name="World"):\n    return f"Hello, {name}!"\nprint(greet())',
+          options: ['Hello, World!', 'Hello, name!', 'Hello, !', 'Error'],
+          correctAnswer: 'Hello, World!',
+          explanation: 'greet() with no argument uses the default name="World". f-strings format it.',
+        },
       ],
     },
     {
