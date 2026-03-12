@@ -232,7 +232,19 @@ print(squares[3])",
           options: ['[1, 2, 3]', '[4, 5]', '[3, 4, 5]', '[1, 2]'],
           correctAnswer: '[4, 5]',
           explanation: 'filter keeps elements > 3. Only 4 and 5 satisfy the condition.',
-        },
+        },,
+        {
+          id: 'py-lambda-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "pairs = [(1, 'b'), (2, 'a'), (3, 'c')]
+pairs.sort(key=lambda p: p[1])
+print(pairs[0][0])",
+          correctAnswer: '2',
+          explanation: 'Sorting by second element: a < b < c. So (2, a) is first.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
