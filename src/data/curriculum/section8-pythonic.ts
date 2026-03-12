@@ -265,6 +265,16 @@ print(pairs[0][0])",
           explanation: 'Sorting by second element: a < b < c. So (2, a) is first.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'py-lambda-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "fn = lambda x, y: x if x > y else y
+print(fn(4, 7))",
+          correctAnswer: '7',
+          explanation: 'Lambda with ternary: max of x and y. 7 > 4, so returns y=7.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
