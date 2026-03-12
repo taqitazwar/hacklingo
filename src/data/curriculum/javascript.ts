@@ -503,6 +503,16 @@ const javascriptSection2 = {
           explanation: 'Higher-order functions operate on other functions, enabling functional programming patterns.',
           xpReward: 15,
           difficulty: 'medium',
+        },
+        {
+          id: 'js-func-extra-2',
+          type: 'FILL_BLANK',
+          question: "Use arrow function shorthand",
+          codeSnippet: "const square = ___ => x * x;
+console.log(square(5));",
+          correctAnswer: 'x',
+          explanation: 'Arrow functions: param => expression. No {} or return needed for one expression.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
