@@ -290,6 +290,17 @@ fn main() {
           explanation: 'double(7) returns 7 * 2 = 14. No return keyword needed when the last expression is the return value.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'rust-func-extra-2',
+          type: 'FILL_BLANK',
+          question: "Specify return type",
+          codeSnippet: "fn add(a: i32, b: i32) ___ i32 {
+    a + b
+}",
+          correctAnswer: '->',
+          explanation: '-> specifies the return type in Rust function signatures.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
