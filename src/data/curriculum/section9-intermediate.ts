@@ -385,6 +385,20 @@ print(sys.version_info.major)",
           explanation: 'sys.version_info.major is 3 for Python 3.x.',
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'int-boss-3',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is a package in Python?",
+          options: [
+            'A single .py file',
+            'A directory with an __init__.py file',
+            'A compiled .pyc file',
+            'A virtual environment'
+          ],
+          correctAnswer: 'A directory with an __init__.py file',
+          explanation: 'A package is a directory containing __init__.py that groups related modules.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
