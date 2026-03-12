@@ -543,6 +543,17 @@ print(result)",
           correctAnswer: '24',
           explanation: 'reduce multiplies: 1*2=2, 2*3=6, 6*4=24.',
           xpReward: 20, difficulty: 'hard',
+        },
+        {
+          id: 'py-boss-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "from itertools import islice
+gen = (x**2 for x in range(100))
+print(list(islice(gen, 3)))",
+          correctAnswer: '[0, 1, 4]',
+          explanation: 'islice takes first 3 elements from generator: 0^2, 1^2, 2^2.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
