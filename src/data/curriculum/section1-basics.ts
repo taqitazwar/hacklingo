@@ -513,7 +513,17 @@ print(___(s))",
           options: ['False', 'True', 'not False', 'Error'],
           correctAnswer: 'True',
           explanation: '"not" inverts a boolean. not False = True.',
-        },
+        },,
+        {
+          id: 'basics-bool-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "print(not True or False)",
+          correctAnswer: 'False',
+          explanation: 'not True = False. False or False = False.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
