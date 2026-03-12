@@ -85,6 +85,16 @@ const javascriptSection1 = {
           explanation: 'let is block-scoped. Inner x is separate from outer x.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'js-vars-extra-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "console.log(typeof null);",
+          correctAnswer: 'object',
+          explanation: "typeof null === 'object' is a historic JavaScript bug that was never fixed.",
+          xpReward: 10,
+          difficulty: 'medium',
         }
       ],
     },
