@@ -356,6 +356,18 @@ print(list(d.keys()))",
           explanation: 'keys() returns all keys as a dict_keys view; list() converts it.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'dict-methods-3',
+          type: 'FILL_BLANK',
+          question: "Iterate key-value pairs",
+          codeSnippet: "d = {'a': 1, 'b': 2}
+for k, v in d.___():
+    print(k, v)",
+          correctAnswer: 'items',
+          explanation: 'items() returns (key, value) tuples for iteration.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
