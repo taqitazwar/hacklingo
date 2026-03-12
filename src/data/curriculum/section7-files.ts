@@ -394,6 +394,20 @@ const filesSection: CourseSection = {
           explanation: "'with' creates a context manager that automatically closes the file.",
           xpReward: 20,
           difficulty: 'medium',
+        },
+        {
+          id: 'file-boss-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this write to file.txt?",
+          codeSnippet: "with open('file.txt', 'w') as f:
+    for i in range(3):
+        f.write(f'line {i}\n')",
+          correctAnswer: 'line 0
+line 1
+line 2
+',
+          explanation: 'Each iteration writes a line with a newline character.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
