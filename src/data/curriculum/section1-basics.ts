@@ -211,7 +211,20 @@ const pythonBasicsSection: CourseSection = {
           ],
           correctAnswer: 'It swaps the values of a and b',
           explanation: 'Python allows tuple unpacking for elegant variable swapping without a temp variable.',
-        },
+        },,
+        {
+          id: 'basics-vars-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 5
+y = x
+x = 10
+print(y)",
+          correctAnswer: '5',
+          explanation: 'y is assigned the value of x at that moment (5), not a reference.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
