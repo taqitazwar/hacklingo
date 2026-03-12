@@ -111,6 +111,16 @@ const dictionariesSection: CourseSection = {
           correctAnswer: 'values',
           explanation: '.values() returns all values in the dict.',
         },
+        {
+          id: 'dict-1-9',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'What is printed?',
+          difficulty: 'medium',
+          code: 'd = {"a": 1, "b": 2}\nd["c"] = 3\nprint(len(d))',
+          options: ['2', '3', '4', 'Error'],
+          correctAnswer: '3',
+          explanation: 'Adding key "c" grows the dict to 3 entries. len() returns the number of key-value pairs.',
+        },
       ],
     },
     {
