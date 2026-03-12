@@ -293,6 +293,20 @@ print(B().greet())",
           correctAnswer: 'AB',
           explanation: 'B.greet calls super().greet() which returns A, then appends B.',
           xpReward: 20, difficulty: 'hard',
+        },
+        {
+          id: 'mas-inherit-4',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is multiple inheritance in Python?",
+          options: [
+            'Having multiple methods in a class',
+            'A class inheriting from multiple parent classes',
+            'Using super() multiple times',
+            'Multiple levels of single inheritance'
+          ],
+          correctAnswer: 'A class inheriting from multiple parent classes',
+          explanation: 'class C(A, B): inherits from both A and B. Python uses MRO to resolve conflicts.',
+          xpReward: 20, difficulty: 'medium',
         }
       ],
     },
