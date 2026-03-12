@@ -1308,6 +1308,15 @@ const javascriptSection4 = {
           explanation: 'Promises are pending until resolved (fulfilled) or rejected.',
           xpReward: 15,
           difficulty: 'medium',
+        },
+        {
+          id: 'js-async-extra-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is logged first?",
+          codeSnippet: "console.log('A');\nsetTimeout(() => console.log('B'), 0);\nconsole.log('C');",
+          correctAnswer: 'A',
+          explanation: 'Synchronous code runs first: A then C. setTimeout callback runs after current call stack: B.',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
