@@ -914,6 +914,16 @@ println!("{}", name);',
           correctAnswer: 'N',
           explanation: 'match on Direction::North returns "N".',
           xpReward: 15, difficulty: 'medium',
+        },
+        {
+          id: 'rust-enum-extra-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What does Option::None.unwrap_or(42) return?",
+          codeSnippet: 'let x: Option<i32> = None;
+println!("{}", x.unwrap_or(42));',
+          correctAnswer: '42',
+          explanation: 'unwrap_or() returns the contained value or the default (42) if None.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
