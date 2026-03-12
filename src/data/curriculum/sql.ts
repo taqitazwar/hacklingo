@@ -414,6 +414,16 @@ const sqlSection2 = {
           explanation: 'INNER JOIN returns only rows with matching values in both tables.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'sql-join-extra-2',
+          type: 'FILL_BLANK',
+          question: "Write a LEFT JOIN",
+          codeSnippet: "SELECT * FROM customers\n___ JOIN orders ON customers.id = orders.customer_id;",
+          correctAnswer: 'LEFT',
+          explanation: 'LEFT JOIN returns all rows from the left table plus matched rows from the right.',
+          xpReward: 10,
+          difficulty: 'medium',
         }
       ],
     },
