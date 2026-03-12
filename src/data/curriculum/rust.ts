@@ -82,7 +82,17 @@ const rustSection1 = {
           ],
           correctAnswer: '    let mut score = 0;',
           explanation: 'Add mut after let to make the variable mutable. Without it, Rust will not allow reassignment.',
-        },
+        },,
+        {
+          id: 'rust-vars-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: 'let mut x = 5;\nx += 1;\nprintln!("{}", x);',
+          correctAnswer: '6',
+          explanation: 'Variables in Rust are immutable by default. mut makes them mutable.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
