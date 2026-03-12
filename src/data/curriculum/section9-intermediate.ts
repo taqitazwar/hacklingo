@@ -129,6 +129,16 @@ done',
           explanation: 'ValueError is raised. finally always runs regardless of exceptions.',
           xpReward: 10,
           difficulty: 'medium',
+        },
+        {
+          id: 'int-except-3',
+          type: 'FILL_BLANK',
+          question: "Raise a custom exception",
+          codeSnippet: "if age < 0:
+    ___ ValueError('Age cannot be negative')",
+          correctAnswer: 'raise',
+          explanation: "'raise' throws an exception. You can raise built-in or custom exceptions.",
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
