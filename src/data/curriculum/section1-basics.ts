@@ -275,6 +275,17 @@ print(x % y)",
           explanation: '10 % 3 = 1 (remainder of 10 / 3).',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-vars-5',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "a = b = c = 0
+b = 5
+print(a, b, c)",
+          correctAnswer: '0 5 0',
+          explanation: 'Chained assignment creates separate references. Changing b only affects b.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
