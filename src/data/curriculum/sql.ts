@@ -249,7 +249,16 @@ const sqlSection1 = {
           options: ['NOW()', 'TODAY()', 'CURRENT_DATE', 'DATE()'],
           correctAnswer: 'CURRENT_DATE',
           explanation: 'CURRENT_DATE returns todays date. NOW() or CURRENT_TIMESTAMP returns date and time.',
-        },
+        },,
+        {
+          id: 'sql-func-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this return?",
+          codeSnippet: "SELECT UPPER('hello world');",
+          correctAnswer: 'HELLO WORLD',
+          explanation: 'UPPER() converts a string to all uppercase.',
+          xpReward: 10, difficulty: 'easy',
+        }
       ],
     },
     {
