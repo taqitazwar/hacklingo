@@ -365,7 +365,21 @@ print(greet('Alice'))",
           ],
           correctAnswer: 'Applies func to each element and returns an iterator of results',
           explanation: 'map(str, [1, 2, 3]) applies str to each element: ["1", "2", "3"].',
-        },
+        },,
+        {
+          id: 'func-return-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print?",
+          codeSnippet: "def minmax(lst):
+    return min(lst), max(lst)
+
+lo, hi = minmax([3, 1, 4, 1, 5, 9])
+print(lo, hi)",
+          correctAnswer: '1 9',
+          explanation: 'Functions can return multiple values as a tuple, which can be unpacked.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
