@@ -201,6 +201,21 @@ const dictionariesSection: CourseSection = {
           correctAnswer: '["x", "y", "z"]',
           explanation: '.keys() returns a view of all keys. list() converts it to a list.',
         },
+        {
+          id: 'dict-2-7',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What does .update() do?',
+          difficulty: 'medium',
+          question: 'What does dict.update(other) do?',
+          options: [
+            'Replaces the dict entirely with other',
+            'Adds or updates key-value pairs from other into the dict',
+            'Returns a new merged dict',
+            'Raises an error if keys overlap',
+          ],
+          correctAnswer: 'Adds or updates key-value pairs from other into the dict',
+          explanation: '.update() merges another dict in place. Existing keys are overwritten; new keys are added.',
+        },
       ],
     },
     {
