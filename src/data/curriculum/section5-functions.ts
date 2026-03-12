@@ -581,6 +581,20 @@ outer()",
           correctAnswer: 'outer',
           explanation: 'inner() sees x from its enclosing scope (outer), not global scope.',
           xpReward: 15, difficulty: 'hard',
+        },
+        {
+          id: 'func-scope-4',
+          type: 'FILL_BLANK',
+          question: "Modify global variable inside function",
+          codeSnippet: "count = 0
+def increment():
+    ___ count
+    count += 1
+increment()
+print(count)",
+          correctAnswer: 'global',
+          explanation: "'global' keyword lets a function modify a module-level variable.",
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
