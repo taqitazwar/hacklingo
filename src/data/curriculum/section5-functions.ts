@@ -522,6 +522,21 @@ print(check(-3))",
           explanation: 'LEGB is the scope resolution order Python uses to look up names.',
           xpReward: 15,
           difficulty: 'medium',
+        },
+        {
+          id: 'func-scope-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x = 'global'
+def outer():
+    x = 'outer'
+    def inner():
+        print(x)
+    inner()
+outer()",
+          correctAnswer: 'outer',
+          explanation: 'inner() sees x from its enclosing scope (outer), not global scope.',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
