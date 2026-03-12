@@ -98,6 +98,21 @@ const masterySection: CourseSection = {
           correctAnswer: 'Point(1, 2)',
           explanation: '__repr__ defines the developer representation. repr() calls it.',
         },
+        {
+          id: 'mas-1-8',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What is encapsulation?',
+          difficulty: 'medium',
+          question: 'What does encapsulation mean in OOP?',
+          options: [
+            'Wrapping code in functions',
+            'Bundling data and methods together, hiding internal details',
+            'Inheriting from a parent class',
+            'Making all attributes strings',
+          ],
+          correctAnswer: 'Bundling data and methods together, hiding internal details',
+          explanation: 'Encapsulation hides implementation. Use _ (convention) or __ (name mangling) for private attributes.',
+        },
       ],
     },
     {
