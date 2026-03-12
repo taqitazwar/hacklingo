@@ -348,6 +348,16 @@ print(x := x + 1)",
           correctAnswer: '6',
           explanation: 'The walrus operator := assigns and returns the value. x becomes 6.',
           xpReward: 15, difficulty: 'hard',
+        },
+        {
+          id: 'basics-vars-8',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "x, y, z = 'abc'
+print(y)",
+          correctAnswer: 'b',
+          explanation: 'String unpacking assigns each character. y gets the second character b.',
+          xpReward: 15, difficulty: 'hard',
         }
       ],
     },
