@@ -656,7 +656,25 @@ outer()",
           ],
           correctAnswer: 'Memoizes function results — caches return values keyed by arguments',
           explanation: '@lru_cache speeds up recursive functions like Fibonacci by caching previously computed results.',
-        },
+        },,
+        {
+          id: 'func-boss-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "def make_counter():
+    count = 0
+    def increment():
+        nonlocal count
+        count += 1
+        return count
+    return increment
+
+counter = make_counter()
+print(counter(), counter())",
+          correctAnswer: '1 2',
+          explanation: 'nonlocal lets inner function modify outer scope variable. Each call increments.',
+          xpReward: 25, difficulty: 'hard',
+        }
       ],
     },
   ],
