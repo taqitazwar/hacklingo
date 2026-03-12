@@ -184,7 +184,18 @@ fmt.Println(Pi)",
           ],
           correctAnswer: 'fmt.Println(scores["Alice"])',
           explanation: 'Go maps use bracket notation: scores["Alice"]. Dot notation is for struct fields.',
-        },
+        },,
+        {
+          id: 'go-slice-extra-1',
+          type: 'FILL_BLANK',
+          question: "Append to a slice",
+          codeSnippet: "nums := []int{1, 2, 3}
+nums = ___(nums, 4)
+fmt.Println(nums)",
+          correctAnswer: 'append',
+          explanation: 'append() adds elements to a slice and returns the new slice.',
+          xpReward: 10, difficulty: 'easy',
+        }
       ],
     },
     {
