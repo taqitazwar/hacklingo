@@ -472,7 +472,22 @@ print(count)",
           ],
           correctAnswer: 'When the loop completes without hitting break',
           explanation: 'The else block after a for loop runs only if the loop was NOT exited by break.',
-        },
+        },,
+        {
+          id: 'cf-boss-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "for i in range(1, 4):
+    for j in range(1, 4):
+        if i == j:
+            print(i * j)",
+          correctAnswer: '1
+4
+9',
+          explanation: 'When i == j, we print i*j which gives the diagonal of the multiplication table.',
+          xpReward: 20,
+          difficulty: 'medium',
+        }
       ],
     },
   ],
