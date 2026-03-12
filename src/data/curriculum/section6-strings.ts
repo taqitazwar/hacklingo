@@ -312,7 +312,18 @@ print(s.strip().title())",
           options: ['a-b-c', '[a, b, c]', 'abc', 'a b c'],
           correctAnswer: 'a-b-c',
           explanation: '.join() inserts the separator between each element: "a" + "-" + "b" + "-" + "c".',
-        },
+        },,
+        {
+          id: 'str-slicing-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is the output?",
+          codeSnippet: "s = 'Python'
+print(s[::-1])",
+          correctAnswer: 'nohtyP',
+          explanation: 'Slice with step -1 reverses the string.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
