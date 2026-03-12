@@ -113,7 +113,23 @@ const intermediateSection: CourseSection = {
           options: ['ValueError', 'bad value', 'Exception', 'Error'],
           correctAnswer: 'ValueError',
           explanation: 'type(e).__name__ gives the class name of the exception as a string.',
-        },
+        },,
+        {
+          id: 'int-except-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "try:
+    result = int('abc')
+except ValueError as e:
+    print('caught')
+finally:
+    print('done')",
+          correctAnswer: 'caught
+done',
+          explanation: 'ValueError is raised. finally always runs regardless of exceptions.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
