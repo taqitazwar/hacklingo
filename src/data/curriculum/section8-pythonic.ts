@@ -197,6 +197,21 @@ const pythonicSection: CourseSection = {
           correctAnswer: '(3, "a")',
           explanation: 'Sorting by p[1] (second element) sorts alphabetically: "a", "b", "c". First item is (3, "a").',
         },
+        {
+          id: 'py-2-7',
+          type: 'MULTIPLE_CHOICE',
+          instruction: 'What is filter() in Python?',
+          difficulty: 'medium',
+          question: 'What does filter(func, iterable) return?',
+          options: [
+            'A list of all elements transformed by func',
+            'An iterator of elements where func returns True',
+            'The first element where func returns True',
+            'A dict with func applied to keys',
+          ],
+          correctAnswer: 'An iterator of elements where func returns True',
+          explanation: 'filter() keeps elements for which the function returns True.',
+        },
       ],
     },
     {
