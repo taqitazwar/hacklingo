@@ -956,7 +956,22 @@ ___ COUNT(*) > 5;",
           ],
           correctAnswer: 'SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT',
           explanation: 'SQL clause order: SELECT > FROM > JOIN > WHERE > GROUP BY > HAVING > ORDER BY > LIMIT.',
-        },
+        },,
+        {
+          id: 'sql-boss-extra-1',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is a CTE (Common Table Expression)?",
+          options: [
+            'A type of index',
+            'A temporary named result set defined with WITH',
+            'A constraint type',
+            'A type of join'
+          ],
+          correctAnswer: 'A temporary named result set defined with WITH',
+          explanation: 'WITH cte AS (...) SELECT * FROM cte creates a readable, reusable subquery.',
+          xpReward: 20,
+          difficulty: 'hard',
+        }
       ],
     },
   ],
