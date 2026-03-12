@@ -252,6 +252,16 @@ print(sqrt(pi))",
           explanation: "'from module import name' imports specific names without the module prefix.",
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'int-modules-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "import os
+print(type(os.getcwd()))",
+          correctAnswer: "<class 'str'>",
+          explanation: 'os.getcwd() returns the current directory as a string.',
+          xpReward: 10, difficulty: 'medium',
         }
       ],
     },
