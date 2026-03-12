@@ -120,7 +120,18 @@ const dictionariesSection: CourseSection = {
           options: ['2', '3', '4', 'Error'],
           correctAnswer: '3',
           explanation: 'Adding key "c" grows the dict to 3 entries. len() returns the number of key-value pairs.',
-        },
+        },,
+        {
+          id: 'dict-intro-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "d = {}
+d['key'] = 'value'
+print(len(d))",
+          correctAnswer: '1',
+          explanation: 'You can add key-value pairs to an empty dict. len() returns the count.',
+          xpReward: 10, difficulty: 'easy',
+        }
       ],
     },
     {
