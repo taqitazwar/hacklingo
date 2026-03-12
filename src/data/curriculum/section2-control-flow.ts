@@ -361,6 +361,20 @@ print(count)",
           explanation: 'break exits the loop when i equals 3, so only 0, 1, 2 are printed.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'cf-continue-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "for i in range(5):
+    if i % 2 == 0:
+        continue
+    print(i)",
+          correctAnswer: '1
+3',
+          explanation: 'continue skips even numbers. Only odd 1 and 3 are printed.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
