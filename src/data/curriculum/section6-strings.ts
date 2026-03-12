@@ -114,6 +114,16 @@ print(f'Hello, {name.upper()}!')",
           explanation: 'F-strings can contain any expression, including method calls.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'str-fstrings-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "pi = 3.14159
+print(f'{pi:.2f}')",
+          correctAnswer: '3.14',
+          explanation: ':.2f formats the float to 2 decimal places.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
