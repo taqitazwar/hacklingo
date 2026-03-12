@@ -236,6 +236,18 @@ print(nums[0])",
           explanation: 'pop() removes and returns the last element by default.',
           xpReward: 15,
           difficulty: 'easy',
+        },
+        {
+          id: 'lists-methods-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "a = [1, 2]
+b = [3, 4]
+print(a + b)",
+          correctAnswer: '[1, 2, 3, 4]',
+          explanation: '+ concatenates two lists into a new list.',
+          xpReward: 10,
+          difficulty: 'easy',
         }
       ],
     },
