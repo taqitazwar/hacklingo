@@ -964,6 +964,20 @@ const goSection4 = {
           explanation: "The 'go' keyword launches a goroutine — a lightweight concurrent function.",
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'go-goroutine-extra-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What is a goroutine?",
+          options: [
+            'A Go package',
+            'A lightweight thread managed by the Go runtime',
+            'An error handler',
+            'A type of channel'
+          ],
+          correctAnswer: 'A lightweight thread managed by the Go runtime',
+          explanation: 'Goroutines are cheaper than OS threads and managed by the Go scheduler.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
