@@ -574,6 +574,17 @@ const rustSection2 = {
           correctAnswer: '&',
           explanation: '& creates a reference (borrow). The function borrows without taking ownership.',
           xpReward: 15, difficulty: 'hard',
+        },
+        {
+          id: 'rust-own-extra-3',
+          type: 'PREDICT_OUTPUT',
+          question: "What does Clone do?",
+          codeSnippet: 'let s1 = String::from("hello");
+let s2 = s1.clone();
+println!("{} {}", s1, s2);',
+          correctAnswer: 'hello hello',
+          explanation: 'clone() creates a deep copy, allowing both s1 and s2 to own their own data.',
+          xpReward: 15, difficulty: 'medium',
         }
       ],
     },
