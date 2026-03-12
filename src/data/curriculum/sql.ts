@@ -1110,6 +1110,17 @@ SELECT MAX(n) - MIN(n) FROM nums;",
           correctAnswer: 'RANK skips numbers after ties, DENSE_RANK does not',
           explanation: 'RANK: 1,1,3. DENSE_RANK: 1,1,2. Dense rank has no gaps after ties.',
           xpReward: 20, difficulty: 'hard',
+        },
+        {
+          id: 'sql-window-extra-3',
+          type: 'FILL_BLANK',
+          question: "Compute running total with window function",
+          codeSnippet: "SELECT date, amount,
+  ___(amount) OVER (ORDER BY date) AS running_total
+FROM sales;",
+          correctAnswer: 'SUM',
+          explanation: 'SUM() OVER (ORDER BY ...) computes a running total up to the current row.',
+          xpReward: 20, difficulty: 'hard',
         }
       ],
     },
