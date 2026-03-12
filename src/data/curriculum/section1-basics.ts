@@ -100,7 +100,17 @@ const pythonBasicsSection: CourseSection = {
           options: ['a b c', 'a-b-c', 'a, b, c', 'abc'],
           correctAnswer: 'a-b-c',
           explanation: 'The sep parameter sets the separator between values. Default is a space; here it is "-".',
-        },
+        },,
+        {
+          id: 'basics-hello-2',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print?",
+          codeSnippet: "print('Python' + ' ' + '3')",
+          correctAnswer: 'Python 3',
+          explanation: 'String concatenation with + joins strings together.',
+          xpReward: 10,
+          difficulty: 'easy',
+        }
       ],
     },
     {
