@@ -733,7 +733,17 @@ ___ grade >= 75:
           options: ['int', 'float', 'str', 'depends on what the user types'],
           correctAnswer: 'str',
           explanation: 'input() always returns a string. You must convert it with int() or float() if you need a number.',
-        },
+        },,
+        {
+          id: 'basics-input-2',
+          type: 'MULTIPLE_CHOICE',
+          question: "What type does input() always return?",
+          options: ['int', 'float', 'str', 'bool'],
+          correctAnswer: 'str',
+          explanation: 'input() always returns a string, regardless of what the user types.',
+          xpReward: 15,
+          difficulty: 'easy',
+        }
       ],
     },
     {
