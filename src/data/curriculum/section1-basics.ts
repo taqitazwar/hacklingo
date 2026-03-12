@@ -987,6 +987,16 @@ print(type(x).__name__)",
           explanation: 'input() returns str, but int() converts it to an integer.',
           xpReward: 10,
           difficulty: 'easy',
+        },
+        {
+          id: 'basics-input-4',
+          type: 'PREDICT_OUTPUT',
+          question: "What does this print if user enters 'hello'?",
+          codeSnippet: "x = input('Enter: ')
+print(x.upper())",
+          correctAnswer: 'HELLO',
+          explanation: 'input() gets the string. upper() converts to uppercase.',
+          xpReward: 10, difficulty: 'easy',
         }
       ],
     },
