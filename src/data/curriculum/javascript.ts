@@ -580,7 +580,17 @@ const javascriptSection2 = {
           ],
           correctAnswer: 'for (let i = 0; i < 3; i++) {',
           explanation: 'var is function-scoped, so all closures share the same i=3 at end. let creates a new i per iteration.',
-        },
+        },,
+        {
+          id: 'js-closure-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What is printed?",
+          codeSnippet: "function makeAdder(n) {\n  return x => x + n;\n}\nconst add5 = makeAdder(5);\nconsole.log(add5(3));",
+          correctAnswer: '8',
+          explanation: 'add5 closes over n=5. add5(3) returns 3 + 5 = 8.',
+          xpReward: 15,
+          difficulty: 'medium',
+        }
       ],
     },
     {
