@@ -988,7 +988,17 @@ const rustSection4 = {
           ],
           correctAnswer: 'fn print_it<T: Display>(x: T) {',
           explanation: 'T must be declared as a generic parameter with a Display trait bound to use {} formatting.',
-        },
+        },,
+        {
+          id: 'rust-trait-extra-1',
+          type: 'PREDICT_OUTPUT',
+          question: "What does #[derive(Debug)] enable?",
+          codeSnippet: '#[derive(Debug)]\nstruct Point { x: i32, y: i32 }\nlet p = Point { x: 1, y: 2 };\nprintln!("{:?}", p);',
+          correctAnswer: 'Point { x: 1, y: 2 }',
+          explanation: 'derive(Debug) auto-implements the Debug trait for {:?} formatting.',
+          xpReward: 10,
+          difficulty: 'medium',
+        }
       ],
     },
     {
