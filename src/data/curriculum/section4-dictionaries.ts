@@ -315,6 +315,16 @@ const dictionariesSection: CourseSection = {
           correctAnswer: 'zip',
           explanation: 'zip(keys, vals) pairs elements. dict() converts pairs to a dictionary.',
         },
+        {
+          id: 'dict-3-8',
+          type: 'PREDICT_OUTPUT',
+          instruction: 'Dict comprehension output?',
+          difficulty: 'hard',
+          code: 'squares = {x: x**2 for x in range(1, 4)}\nprint(squares[2])',
+          options: ['2', '4', '8', 'Error'],
+          correctAnswer: '4',
+          explanation: 'Dict comprehension: {1:1, 2:4, 3:9}. squares[2] = 4.',
+        },
       ],
     },
     {
